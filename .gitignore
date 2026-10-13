@@ -1,0 +1,5 @@
+# Capturas geradas pelos testes (os scripts em qa/ continuam versionados)
+qa/shots/
+
+# Anotações internas de pendências com o cliente
+PENDENCIAS.md

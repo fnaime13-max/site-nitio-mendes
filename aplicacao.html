@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aplicação · Planejamento Nutricional Estratégico · Nítio Mendes</title>
+<meta name="description" content="Aplicação para o Planejamento Nutricional Estratégico do nutricionista Nítio Mendes. Responda em cerca de 3 minutos.">
+<link rel="canonical" href="https://nitiomendes.com.br/aplicacao.html">
+<meta name="theme-color" content="#0f0f0f">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Aplicação #TeamNítio · Planejamento Nutricional Estratégico">
+<meta property="og:description" content="Responda em cerca de 3 minutos. Cada aplicação é analisada pessoalmente.">
+<meta property="og:image" content="https://nitiomendes.com.br/assets/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/aplicacao.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="app" data-theme="dark">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mono" viewBox="0 0 100 100">
+    <path class="mono-a" d="M0 0H23V100H0Z"/>
+    <path class="mono-a" d="M0 0H25L100 74V100H77Z"/>
+    <path class="mono-a" d="M77 30L100 22V100H77Z"/>
+    <path class="mono-b" d="M54 40L100 0V22L77 30L66 41Z"/>
+    <path class="mono-b" d="M23 60L46 82L23 100Z"/>
+  </symbol>
+</svg>
+
+<div class="app__progress" aria-hidden="true"><span data-progress></span></div>
+
+<aside class="app__aside" aria-hidden="true">
+  <div class="app__photo">
+    <picture>
+      <source type="image/webp" srcset="assets/images/consultorio-sofa-640.webp 640w, assets/images/consultorio-sofa-1100.webp 1100w" sizes="40vw">
+      <img src="assets/images/consultorio-sofa-1100.jpg" srcset="assets/images/consultorio-sofa-640.jpg 640w, assets/images/consultorio-sofa-1100.jpg 1100w" sizes="40vw" width="1200" height="1600" alt="">
+    </picture>
+  </div>
+  <div class="app__aside-copy">
+    <p class="app__tag">#TeamNítio</p>
+    <p class="app__aside-title">Planejamento Nutricional <em>Estratégico</em></p>
+    <p class="app__aside-note">Cada aplicação é analisada pessoalmente.</p>
+  </div>
+</aside>
+
+<header class="app__header">
+  <a class="brand" href="index.html" aria-label="Nítio Mendes Nutrição Avançada, voltar ao site">
+    <svg class="brand__mono" aria-hidden="true"><use href="#mono"/></svg>
+    <span class="brand__name">Nítio Mendes<small>Nutrição Avançada</small></span>
+  </a>
+  <p class="app__count" aria-hidden="true"><span data-count-current>00</span> / <span data-count-total>13</span></p>
+  <a class="app__exit" href="index.html">Voltar ao site</a>
+</header>
+
+<main class="app__main" id="conteudo-principal">
+  <p class="visually-hidden" aria-live="polite" data-live></p>
+
+  <!-- Boas-vindas (texto original do formulário) -->
+  <section class="screen is-active" data-screen="welcome" aria-labelledby="w-title">
+    <p class="app__eyebrow">Aplicação #TeamNítio</p>
+    <h1 class="screen__title" id="w-title">Planejamento Nutricional <em>Estratégico</em></h1>
+    <div class="screen__text">
+      <p><strong>Seja bem-vindo(a)</strong> ao formulário de aplicação para o nosso time!</p>
+      <p><strong>Esse é um serviço de extrema exclusividade.</strong> Por isso o preenchimento desse formulário será fundamental para eu avaliar se será a solução ideal para a sua situação.</p>
+      <p>Preste muita atenção em cada item do formulário. Após a análise das suas respostas, poderemos entrar em contato com você.</p>
+    </div>
+    <div class="screen__actions">
+      <button type="button" class="btn btn--light btn--big" data-start>Combinado! <svg class="i" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="screen__time"><em>Tempo médio de resposta:</em> <strong>3 minutos</strong></p>
+    </div>
+  </section>
+
+  <form class="flow" data-flow novalidate hidden>
+    <div class="flow__steps" data-steps></div>
+    <div class="flow__nav">
+      <button type="button" class="round" data-back aria-label="Pergunta anterior"><svg class="i" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+      <button type="button" class="round" data-fwd aria-label="Próxima pergunta"><svg class="i" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button>
+    </div>
+  </form>
+
+  <!-- Agradecimento (texto original do formulário) -->
+  <section class="screen" data-screen="thanks" aria-labelledby="t-title" hidden>
+    <div class="thanks__mark" aria-hidden="true"><svg><use href="#mono"/></svg></div>
+    <h1 class="screen__title" id="t-title" tabindex="-1">Recebemos sua <em>aplicação!</em></h1>
+    <div class="screen__text">
+      <p>Obrigado! Irei analisar sua aplicação pessoalmente e, caso seja selecionado(a), entrarei em contato com você em até 48 horas no seu WhatsApp.</p>
+      <p class="thanks__wa" data-thanks-wa hidden>Se o WhatsApp não abriu sozinho, <a href="#" data-thanks-wa-link target="_blank" rel="noopener">toque aqui para enviar suas respostas</a>.</p>
+    </div>
+    <div class="screen__actions">
+      <a class="btn btn--light btn--big" href="https://instagram.com/nitiomendes" target="_blank" rel="noopener">Acompanhe no Instagram @nitiomendes</a>
+      <a class="link-arrow" href="index.html">Voltar ao site</a>
+    </div>
+  </section>
+</main>
+
+<noscript><p class="app__noscript">Para preencher a aplicação, ative o JavaScript ou fale com a equipe pelo <a href="https://wa.me/5531992748134">WhatsApp</a>.</p></noscript>
+
+<script src="js/aplicacao.js" defer></script>
+</body>
+</html>
