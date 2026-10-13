@@ -166,7 +166,7 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
 @media (min-width:640px){ .hero__roles{ font-size:var(--fs-h2); } }
 .hero__side{ max-width:26rem; }
 .hero__desc{ font-size:var(--fs-body); color:var(--muted); }
-.hero__plan{ display:inline-flex; align-items:center; gap:.75rem; margin-top:1.5rem; padding:.85rem 1.2rem; border:1px solid var(--accent); border-radius:9999px; font-size:var(--fs-eyebrow); font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--foreground); background:rgba(255,59,29,.08); transition:background-color .35s, color .35s; pointer-events:auto; }
+.hero__plan{ display:inline-flex; align-items:center; gap:.75rem; margin-top:1.5rem; padding:.85rem 1.2rem; border:1px solid var(--accent); border-radius:9999px; font-size:var(--fs-eyebrow); font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--foreground); background:#1a0c0a; transition:background-color .35s, color .35s; pointer-events:auto; position:relative; z-index:31; }
 .hero__plan:hover{ background:var(--accent); color:#08080a; }
 .hero__plan span{ color:var(--accent); transition:color .35s; }
 .hero__plan:hover span{ color:#08080a; }
@@ -183,7 +183,7 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
 .hero__portrait .liquid{ position:absolute; inset:0; pointer-events:auto; background:none; }
 .hero__portrait img{ object-fit:contain; object-position:center bottom; }
 .hero__fade{ position:absolute; inset-inline:0; bottom:0; z-index:20; height:26vh; background:linear-gradient(to bottom, transparent, #08080a); pointer-events:none; }
-.hero__name{ position:absolute; inset-inline:0; bottom:0; z-index:10; transform:translateY(6%); display:flex; flex-direction:column; align-items:center; font-family:var(--font-display); font-weight:400; text-transform:uppercase; line-height:0.86; letter-spacing:-0.01em; color:var(--accent); font-size:var(--fs-mega); }
+.hero__name{ position:absolute; inset-inline:0; bottom:0; z-index:10; transform:translateY(6%); display:flex; flex-direction:column; align-items:center; font-family:var(--font-display); font-weight:400; text-transform:uppercase; line-height:0.86; letter-spacing:-0.01em; color:var(--foreground); font-size:var(--fs-mega); }
 @media (min-width:640px){ .hero__name{ font-size:var(--fs-hero); line-height:0.78; } }
 .hero__name .ln{ white-space:nowrap; padding-top:0.14em; margin-top:-0.14em; }
 .hero__cue{ position:absolute; z-index:30; bottom:2rem; left:var(--gutter); display:flex; align-items:center; gap:0.75rem; font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:0.22em; color:var(--muted); }
@@ -198,11 +198,7 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
 .liquid__ph{ position:absolute; inset:0; background:radial-gradient(130% 130% at 30% 15%, var(--surface-2), var(--background)); display:grid; place-items:center; font-size:var(--fs-eyebrow); letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
 .liquid.is-missing img{ display:none; }
 .liquid:not(.is-missing) .liquid__ph{ display:none; }
-.liquid__veil{ position:absolute; inset:0; background:var(--background); mix-blend-mode:color; opacity:.88; transition:opacity 380ms ease-out; pointer-events:none; }
-.liquid__glow{ position:absolute; inset:0; background:linear-gradient(120deg, transparent 30%, color-mix(in srgb, var(--accent) 35%, transparent) 50%, transparent 70%); opacity:0; transition:opacity 340ms ease-out; pointer-events:none; mix-blend-mode:screen; }
 .liquid__vig{ position:absolute; inset:0; background:radial-gradient(120% 120% at 50% 120%, color-mix(in srgb, #08080a 70%, transparent), transparent 60%); pointer-events:none; }
-.liquid.is-hover .liquid__veil{ opacity:0; }
-.liquid.is-hover .liquid__glow{ opacity:1; }
 .liquid--bare{ background:none; }
 
 /* ============ MARQUEE ============ */
@@ -450,10 +446,9 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
 
   <div class="hero__portrait">
     <figure class="liquid liquid--bare" data-liquid="30" data-bare>
-      <svg class="liquid__fx" aria-hidden="true"><filter id="lq-hero"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
       <picture>
         <source type="image/webp" srcset="assets/images/nitio-recorte.webp">
-        <img src="assets/images/nitio-recorte.png" width="632" height="666" alt="Nítio Mendes, de terno azul-marinho, sentado à mesa do consultório" fetchpriority="high" data-hero-img style="filter:url(#lq-hero)">
+        <img src="assets/images/nitio-recorte.png" width="780" height="833" alt="Nítio Mendes, de terno azul-marinho, sentado à mesa do consultório" fetchpriority="high" data-hero-img>
       </picture>
     </figure>
   </div>
@@ -818,9 +813,8 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
     <li class="rv" style="--rv-y:60px;--rv-d:620ms">
       <article class="work">
         <figure class="liquid" data-liquid="28" data-label="Consultório">
-          <svg class="liquid__fx" aria-hidden="true"><filter id="lq-w1"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
-          <img src="assets/images/consultorio-mesa-1100.webp" width="1080" height="1920" loading="lazy" decoding="async" alt="Sala de atendimento com mesa de mármore, iluminação linear e o monograma Nítio Mendes na parede" style="filter:url(#lq-w1);object-position:50% 58%">
-          <span class="liquid__ph">Consultório</span><span class="liquid__veil"></span><span class="liquid__glow"></span><span class="liquid__vig"></span>
+          <img src="assets/images/consultorio-mesa-1100.webp" width="1080" height="1920" loading="lazy" decoding="async" alt="Sala de atendimento com mesa de mármore, iluminação linear e o monograma Nítio Mendes na parede" style="object-position:50% 58%">
+          <span class="liquid__ph">Consultório</span><span class="liquid__vig"></span>
         </figure>
         <div class="work__row">
           <div><h3 class="work__name">Consultório em Contagem</h3><p class="work__blurb">Ambiente clínico pensado para acolher, com estrutura completa para avaliação clínica e de composição corporal.</p></div>
@@ -833,9 +827,8 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
     <li class="rv" style="--rv-y:60px;--rv-d:620ms;--rv-delay:120ms">
       <article class="work">
         <figure class="liquid" data-liquid="28" data-label="Avaliação">
-          <svg class="liquid__fx" aria-hidden="true"><filter id="lq-w2"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
-          <img src="assets/images/consultorio-detalhes-1100.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Adipômetro digital e modelos de um quilo de gordura e um quilo de músculo sobre a mesa de mármore" style="filter:url(#lq-w2);object-position:50% 40%">
-          <span class="liquid__ph">Avaliação</span><span class="liquid__veil"></span><span class="liquid__glow"></span><span class="liquid__vig"></span>
+          <img src="assets/images/consultorio-detalhes-1100.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Adipômetro digital e modelos de um quilo de gordura e um quilo de músculo sobre a mesa de mármore" style="object-position:50% 40%">
+          <span class="liquid__ph">Avaliação</span><span class="liquid__vig"></span>
         </figure>
         <div class="work__row">
           <div><h3 class="work__name">Composição corporal</h3><p class="work__blurb">A balança mede peso, não saúde. A avaliação acompanha massa magra e gordura ao longo de todo o processo.</p></div>
@@ -847,9 +840,8 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
     <li class="rv" style="--rv-y:60px;--rv-d:620ms">
       <article class="work">
         <figure class="liquid" data-liquid="28" data-label="Neuroemocional">
-          <svg class="liquid__fx" aria-hidden="true"><filter id="lq-w3"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
-          <img src="assets/images/livro-neuroemocional-640.webp" width="576" height="770" loading="lazy" decoding="async" alt="Nítio Mendes segurando o livro Neuroemocional diante do painel da Editora Lisboa" style="filter:url(#lq-w3);object-position:50% 30%">
-          <span class="liquid__ph">Neuroemocional</span><span class="liquid__veil"></span><span class="liquid__glow"></span><span class="liquid__vig"></span>
+          <img src="assets/images/livro-neuroemocional-640.webp" width="576" height="770" loading="lazy" decoding="async" alt="Nítio Mendes segurando o livro Neuroemocional diante do painel da Editora Lisboa" style="object-position:50% 30%">
+          <span class="liquid__ph">Neuroemocional</span><span class="liquid__vig"></span>
         </figure>
         <div class="work__row">
           <div><h3 class="work__name">Neuroemocional</h3><p class="work__blurb">Como as novas descobertas da neurociência podem te ajudar a gerenciar as suas emoções.</p></div>
@@ -862,9 +854,8 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
     <li class="rv" style="--rv-y:60px;--rv-d:620ms;--rv-delay:120ms">
       <article class="work">
         <figure class="liquid" data-liquid="28" data-label="Ebook">
-          <svg class="liquid__fx" aria-hidden="true"><filter id="lq-w4"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
-          <img src="assets/images/ebook-emagreca-640.webp" width="577" height="770" loading="lazy" decoding="async" alt="Exemplar do ebook Emagreça de Verdade e Evite o Reganho de Peso" style="filter:url(#lq-w4);object-position:50% 50%">
-          <span class="liquid__ph">Ebook</span><span class="liquid__veil"></span><span class="liquid__glow"></span><span class="liquid__vig"></span>
+          <img src="assets/images/ebook-emagreca-640.webp" width="577" height="770" loading="lazy" decoding="async" alt="Exemplar do ebook Emagreça de Verdade e Evite o Reganho de Peso" style="object-position:50% 50%">
+          <span class="liquid__ph">Ebook</span><span class="liquid__vig"></span>
         </figure>
         <div class="work__row">
           <div><h3 class="work__name">Emagreça de Verdade</h3><p class="work__blurb">Guia clínico e prático para quem já tentou emagrecer e não conseguiu manter o resultado. Sem efeito sanfona.</p></div>
@@ -1191,26 +1182,10 @@ burger.addEventListener('click', () => {
 menu.addEventListener('click', (e) => { if (e.target.closest('a') && !e.target.closest('a[href^="#"]')) closeMenu(); });
 addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
 
-/* ---------- LiquidImage: distorção com mola (tensão 140 / atrito 13) ---------- */
+/* ---------- Imagens: placeholder se alguma faltar ---------- */
 $$('[data-liquid]').forEach((fig) => {
   const img = $('img', fig);
   if (img) { const miss = () => fig.classList.add('is-missing'); img.addEventListener('error', miss); if (img.complete && img.naturalWidth === 0 && img.currentSrc) miss(); }
-  if (!finePointer || reduced) return;
-  const disp = $('feDisplacementMap', fig), turb = $('feTurbulence', fig);
-  const maxScale = +fig.dataset.liquid || 28;
-  let x = 0, v = 0, target = 0, running = false, last = 0;
-  const step = (t) => {
-    const dt = Math.min(0.032, (t - last) / 1000 || 0.016); last = t;
-    const k = 140, c = 13;
-    const a = -k * (x - target) - c * v;
-    v += a * dt; x += v * dt;
-    disp.setAttribute('scale', (1 + (maxScale - 1) * Math.max(0, x)).toFixed(2));
-    turb.setAttribute('baseFrequency', (0.009 + 0.013 * Math.max(0, x)).toFixed(4));
-    if (Math.abs(x - target) > 0.001 || Math.abs(v) > 0.001) requestAnimationFrame(step); else { running = false; disp.setAttribute('scale', target ? maxScale : 1); }
-  };
-  const go = (to) => { target = to; fig.classList.toggle('is-hover', !!to); if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); } };
-  fig.addEventListener('pointerenter', () => go(1));
-  fig.addEventListener('pointerleave', () => go(0));
 });
 
 /* ---------- Especialidades: painel com o texto completo ---------- */
