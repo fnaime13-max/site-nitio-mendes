@@ -11,7 +11,7 @@ const widths = process.argv.slice(2).map(Number).filter(Boolean);
     await ctx.addInitScript(() => { try { sessionStorage.setItem('nm-intro', '1'); } catch (e) {} });
     const pg = await ctx.newPage();
     await pg.goto(URL); await pg.waitForTimeout(1800);
-    const ids = await pg.evaluate(() => [...document.querySelectorAll('main > section, footer')].map((s, i) => { s.dataset.qa = i; return i; }));
+    const ids = await pg.evaluate(() => [...document.querySelectorAll('main > section, body > footer')].map((s, i) => { s.dataset.qa = i; return i; }));
     for (const i of ids) {
       await pg.evaluate((i) => { document.documentElement.style.scrollBehavior = 'auto'; const s = document.querySelector(`[data-qa="${i}"]`); window.scrollTo(0, s.offsetTop - 1); }, i);
       await pg.waitForTimeout(250);
