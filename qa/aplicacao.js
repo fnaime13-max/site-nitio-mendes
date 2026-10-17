@@ -1,7 +1,7 @@
 // Testa o formulário de aplicação. Uso: PW=<playwright> node qa/aplicacao.js
 const path = require('path');
 const { chromium } = require(process.env.PW || 'playwright');
-const URL = 'http://127.0.0.1:8765/aplicacao.html?utm_source=site&utm_content=teste';
+const URL = 'http://127.0.0.1:8765/aplicacao.html?utm_source=site&utm_content=teste&plano=anual';
 const shot = (n) => path.resolve(__dirname, 'shots', n);
 const res = [];
 const ok = (n, c, x = '') => res.push(`${c ? 'PASSOU' : 'FALHOU'}  ${n}${x ? '  · ' + x : ''}`);
@@ -62,13 +62,21 @@ const ok = (n, c, x = '') => res.push(`${c ? 'PASSOU' : 'FALHOU'}  ${n}${x ? '  
     await pg.click('.q.is-active [data-ok]'); await pg.waitForTimeout(800);
     // 12 tentativas
     await pg.click('.q.is-active .choice >> nth=1'); await pg.waitForTimeout(1000);
-    // 13 motivo + envio
-    await pg.keyboard.type('Quero um acompanhamento próximo.');
-    await pg.screenshot({ path: shot(`apl-${tag}-13-final.png`) });
+    // 13 plano (vem marcado pelo ?plano=anual do link)
+    if (tag === 'desk') ok('Plano vem pré-marcado pelo link do site', await pg.isChecked('.q.is-active input[value="Anual (12 meses)"]'));
+    await pg.click('.q.is-active [data-ok]'); await pg.waitForTimeout(800);
+    // 14 motivo
+    await pg.keyboard.type('Quero um acompanhamento próximo.'); await press();
+    // 15 consentimento LGPD: obrigatório
+    await pg.screenshot({ path: shot(`apl-${tag}-15-lgpd.png`) });
+    await pg.click('.q.is-active [data-ok]'); await pg.waitForTimeout(400);
+    if (tag === 'desk') ok('Sem o aceite LGPD a aplicação não é enviada', await pg.isVisible('#lgpd-err') && (await step()) === 14);
+    await pg.click('.q.is-active .consent-box');
     const [popup] = await Promise.all([ctx.waitForEvent('page'), pg.click('.q.is-active [data-ok]')]);
     const u = decodeURIComponent(popup.url().replace(/\+/g, ' ')); await popup.close();
     await pg.waitForTimeout(900);
-    ok(`[${tag}] Envio abre o WhatsApp do Nítio com as respostas`, u.includes('5531992748134') && u.includes('Maria Teste') && u.includes('@mariateste') && u.includes('+55 31 99999-8888') && u.includes('Medicações') && u.includes('teste'), u.slice(0, 120));
+    ok(`[${tag}] Envio abre o WhatsApp do Nítio com as respostas`, u.includes('5531992748134') && u.includes('Maria Teste') && u.includes('@mariateste') && u.includes('+55 31 99999-8888') && u.includes('Medicações') && u.includes('teste') && u.includes('Anual (12 meses)') && u.includes('Consentimento LGPD: sim'), u.slice(0, 120));
+    if (tag === 'desk') ok('Eventos inicio_formulario e envio_formulario registrados', await pg.evaluate(() => ['inicio_formulario', 'envio_formulario'].every((n) => window.dataLayer.some((e) => e.event === n))));
     ok(`[${tag}] Tela "Recebemos sua aplicação!" aparece`, await pg.isVisible('#t-title'));
     await pg.screenshot({ path: shot(`apl-${tag}-14-obrigado.png`) });
     ok(`[${tag}] Sem rolagem horizontal`, (await pg.evaluate(() => document.documentElement.scrollWidth - innerWidth)) === 0);

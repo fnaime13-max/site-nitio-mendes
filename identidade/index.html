@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit de identidade · Nítio Mendes</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--nm-black); color: #fff; font-family: var(--nm-sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  main { width: min(1160px, 100% - 32px); margin: 0 auto; padding: 56px 0 120px; }
+  h1 { text-transform: uppercase; font-family: var(--nm-serif);  font-size: clamp(2.2rem, 1.4rem + 3vw, 3.6rem); line-height: 1.05; font-weight: 800; }
+  h2 { text-transform: uppercase; margin: 72px 0 8px; font-family: var(--nm-serif);  font-size: 1.9rem; font-weight: 800; }
+  .eyebrow { font-size: .7rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--nm-gold); }
+  .note { color: var(--nm-text-2); max-width: 70ch; margin-top: 8px; }
+  code { font-size: .82rem; color: var(--nm-gold-light); }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); margin-top: 24px; }
+  .sw { border-radius: 16px; overflow: hidden; border: 1px solid var(--nm-line); background: #141414; }
+  .sw i { display: block; height: 96px; }
+  .sw p { padding: 10px 12px; font-size: .82rem; line-height: 1.4; }
+  .sw small { display: block; color: var(--nm-text-3); }
+  .type { display: grid; gap: 18px; margin-top: 24px; padding: 28px; border-radius: 24px; border: 1px solid var(--nm-line); background: #141414; }
+  .t-display { text-transform: uppercase; font-family: var(--nm-serif); font-size: clamp(2.4rem, 1.5rem + 3.5vw, 4.2rem); line-height: 1; font-weight: 800; }
+  .t-h { text-transform: uppercase; font-family: var(--nm-serif); font-size: 2rem; font-weight: 800; }
+  .t-body { font-size: 1.05rem; color: var(--nm-text-2); max-width: 60ch; }
+  .t-body b { color: var(--nm-gold); }
+  .t-label { font-size: .72rem; letter-spacing: .3em; text-transform: uppercase; color: rgba(255,255,255,.45); display: flex; justify-content: space-between; }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 24px; }
+  .btn { display: inline-flex; align-items: center; gap: .6rem; min-height: 52px; padding: .9rem 1.7rem; border-radius: 999px; font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+  .btn--gold { background: var(--nm-gold-grad); color: #111; }
+  .btn--line { border: 1px solid var(--nm-gold-line); }
+  .pills { display: grid; gap: 8px; width: min(420px, 100%); }
+  .ncard { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; width: min(560px, 100%); padding: 26px 26px 26px 10px; overflow: hidden; }
+  .ncard .n { font-family: var(--nm-serif); font-size: 8rem; line-height: .8; }
+  .ncard h3 { text-transform: uppercase; font-family: var(--nm-serif);  font-size: 1.6rem; line-height: 1.1; font-weight: 800; }
+  .ncard p { margin-top: 6px; color: var(--nm-text-2); font-size: .95rem; }
+  .ncard b { color: var(--nm-gold); }
+  .arc { position: relative; height: 160px; margin-top: 24px; overflow: hidden; border-radius: 24px; background: #141414; }
+  .arc::before { content: ""; position: absolute; left: 50%; top: 30px; translate: -50% 0; width: 140%; aspect-ratio: 2.4 / 1; border-radius: 50%; border: 1px solid var(--nm-gold-line); }
+  .posts { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px; }
+  .post { position: relative; width: 360px; max-width: 100%; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 6px; background: radial-gradient(70% 60% at 70% 30%, rgba(201,152,58,.18), transparent 70%), linear-gradient(180deg, #121212, #1E1E1E); padding: 28px; display: flex; flex-direction: column; }
+  .post__lbl { display: flex; justify-content: space-between; font-size: .5rem; letter-spacing: .26em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+  .post h4 { text-transform: uppercase; margin-top: auto; font-family: var(--nm-serif);  font-size: 2.1rem; line-height: 1.05; font-weight: 800; }
+  .post h4 em { font-style: italic; }
+  .post p { margin-top: 12px; font-size: .8rem; color: var(--nm-text-2); }
+  .post .bign { position: absolute; right: -10px; top: 20px; font-family: var(--nm-serif); font-size: 15rem; line-height: .8; opacity: .95; }
+  .post .mono { width: 26px; height: 26px; margin-top: 18px; }
+  /* Open Graph 1200×630: capturado em assets/images/og-image.jpg */
+  .og { position: relative; width: 1200px; height: 630px; overflow: hidden; background: radial-gradient(55% 70% at 78% 40%, rgba(201,152,58,.22), transparent 70%), linear-gradient(180deg, #0F0F0F, #1A1A1A); transform-origin: 0 0; }
+  .og-wrap { width: min(1200px, 100%); aspect-ratio: 1200 / 630; overflow: hidden; border-radius: 12px; border: 1px solid var(--nm-line); margin-top: 24px; }
+  .og__copy { position: absolute; left: 80px; top: 80px; width: 640px; }
+  .og__lbl { font-size: 15px; letter-spacing: .3em; text-transform: uppercase; color: var(--nm-gold); font-weight: 600; }
+  .og__t { text-transform: uppercase; margin-top: 26px; font-family: var(--nm-serif); font-size: 84px; line-height: .92; white-space: nowrap; font-weight: 800; }
+  .og__s { margin-top: 26px; font-size: 22px; color: var(--nm-text-2); }
+  .og__brand { position: absolute; left: 80px; bottom: 64px; display: flex; align-items: center; gap: 14px; font-size: 18px; font-weight: 600; letter-spacing: .22em; }
+  .og__brand b { color: var(--nm-gold); }
+  .og__brand svg { width: 40px; height: 40px; }
+  .og__band { position: absolute; left: 700px; right: -200px; bottom: 120px; height: 120px; transform: rotate(-14deg); background: linear-gradient(180deg, transparent 0 5px, #050505 5px calc(100% - 5px), transparent calc(100% - 5px)), var(--nm-gold-grad); }
+  .og__img { position: absolute; right: 10px; bottom: 0; height: 560px; width: auto; filter: drop-shadow(0 30px 40px rgba(0,0,0,.6)); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFEB99"/><stop offset=".3" stop-color="#E2B955"/><stop offset=".6" stop-color="#C69A3E"/><stop offset="1" stop-color="#8A5A12"/></linearGradient></defs>
+  <symbol id="mono" viewBox="0 0 100 100"><path fill="url(#g-gold)" d="M0 0H23V100H0Z"/><path fill="url(#g-gold)" d="M0 0H25L100 74V100H77Z"/><path fill="url(#g-gold)" d="M77 30L100 22V100H77Z"/><path fill="#fff" d="M54 40L100 0V22L77 30L66 41Z"/><path fill="#fff" d="M23 60L46 82L23 100Z"/></symbol>
+  <symbol id="seal" viewBox="0 0 24 24"><path fill="url(#g-gold)" d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12z"/><path fill="#111" d="M10.1 16.3l-3.9-3.9 1.4-1.4 2.5 2.5 6.2-6.2 1.4 1.4z"/></symbol>
+</svg>
+<main>
+  <p class="eyebrow">Kit de identidade · uso interno</p>
+  <h1>Estética · Performance · Qualidade de vida</h1>
+  <p class="note">Base para o site, os slides e os posts do Instagram. Todas as cores, fontes e formas estão em <code>css/tokens.css</code>. O monograma é provisório (desenho da placa do consultório) até o cliente enviar o arquivo oficial.</p>
+
+  <h2>Paleta</h2>
+  <p class="note">Fundo preto com gradiente sutil para grafite e muito espaço negativo. Ouro só para destaques. Nunca usar dourado como cor de texto sobre fundo branco.</p>
+  <div class="grid">
+    <div class="sw"><i style="background:#0F0F0F"></i><p>Preto profundo<small>#0F0F0F · --nm-black</small></p></div>
+    <div class="sw"><i style="background:#1E1E1E"></i><p>Grafite<small>#1E1E1E · --nm-graphite</small></p></div>
+    <div class="sw"><i style="background:#232323"></i><p>Pílula<small>#232323 · --nm-pill</small></p></div>
+    <div class="sw"><i style="background:#ECECEC"></i><p>Claro (transição)<small>#ECECEC · --nm-light</small></p></div>
+    <div class="sw"><i style="background:#C9983A"></i><p>Ouro de texto<small>#C9983A · --nm-gold · 7:1 no preto</small></p></div>
+    <div class="sw"><i style="background:#E8CB6F"></i><p>Ouro claro<small>#E8CB6F · números e ênfases</small></p></div>
+    <div class="sw"><i style="background:var(--nm-gold-grad)"></i><p>Ouro metálico<small>#FFEB99 → #E2B955 → #C69A3E → #8A5A12</small></p></div>
+    <div class="sw"><i style="background:#fff"></i><p>Branco<small>#FFFFFF · corpo do texto</small></p></div>
+  </div>
+
+  <h2>Tipografia</h2>
+  <div class="type">
+    <p class="t-label"><span>Nitio Mendes</span><span>Estética · Performance · Qualidade de vida</span></p>
+    <p class="t-display">Quem é Nítio Mendes?</p>
+    <p class="t-h">Alguns resultados aqui do <span class="nm-gold-text">Time</span></p>
+    <p class="t-body">Corpo em Montserrat 400. Palavras-chave em <b>dourado e negrito</b>, como em <b>emagrecimento, definição corporal, hipertrofia, longevidade e performance</b>.</p>
+    <p class="note"><code>Títulos: Barlow Condensed 800, caixa-alta</code> · <code>Corpo: Montserrat 400 / 600</code> · <code>Rótulos: Montserrat 12px, caixa-alta, tracking .3em</code></p>
+  </div>
+
+  <h2>Componentes</h2>
+  <div class="row">
+    <span class="btn btn--gold">Aplicar ao Planejamento</span>
+    <span class="btn btn--line">Falar no WhatsApp</span>
+    <span class="nm-seal">10 meses entre as fotos</span>
+  </div>
+  <div class="row">
+    <ul class="pills">
+      <li class="nm-pill"><svg><use href="#seal"/></svg>Plano alimentar individualizado</li>
+      <li class="nm-pill"><svg><use href="#seal"/></svg>App exclusivo de dieta</li>
+      <li class="nm-pill nm-pill--gold"><svg style="--seal-fill:#111"><use href="#seal"/></svg>6 consultas e 24 checkpoints</li>
+    </ul>
+    <div class="nm-card ncard"><span class="n nm-gold-text">4</span><div><h3>24 checkpoints e ajustes quinzenais</h3><p>Formulário com <b>fotos, peso, fome, sono</b> e performance.</p></div></div>
+  </div>
+  <div class="arc" aria-hidden="true"></div>
+  <p class="note">Arco dourado: recorta seções como "6 benefícios" e "Como funciona".</p>
+
+  <h2>Posts do Instagram (4:5)</h2>
+  <p class="note">Mesma paleta, mesmas pílulas e numerais. Rótulos do topo iguais aos dos slides.</p>
+  <div class="posts">
+    <div class="post">
+      <p class="post__lbl"><span>Nitio Mendes</span><span>Estética · Performance</span></p>
+      <span class="bign nm-gold-text" aria-hidden="true">6</span>
+      <h4>Você terá acesso a <em class="nm-gold-text">6 benefícios</em></h4>
+      <p>Acompanhamento Premium · 12 meses</p>
+      <svg class="mono"><use href="#mono"/></svg>
+    </div>
+    <div class="post" style="background:linear-gradient(180deg,#121212,#1E1E1E)">
+      <p class="post__lbl"><span>Nitio Mendes</span><span>Qualidade de vida</span></p>
+      <h4>Não é uma <em class="nm-gold-text">dieta</em>.</h4>
+      <p>É um processo completo para você chegar ao seu resultado e conseguir mantê-lo.</p>
+      <ul class="pills" style="margin-top:16px"><li class="nm-pill" style="font-size:.75rem;padding:.5rem .7rem"><svg><use href="#seal"/></svg>Sem cardápio engessado</li></ul>
+      <svg class="mono"><use href="#mono"/></svg>
+    </div>
+  </div>
+
+  <h2>Imagem de compartilhamento (1200×630)</h2>
+  <div class="og-wrap"><div class="og" id="og">
+    <div class="og__band"></div>
+    <img class="og__img" src="../assets/images/nitio-recorte.png" alt="">
+    <div class="og__copy">
+      <p class="og__lbl">Nutricionista · Contagem, MG e online</p>
+      <p class="og__t">Não é uma dieta.<br><span class="nm-gold-text">É acompanhamento.</span></p>
+      <p class="og__s">12 meses com nutricionistas, médico e personal trainer.</p>
+    </div>
+    <p class="og__brand"><svg><use href="#mono"/></svg><span><b>N</b>ITIO<b>M</b>ENDES</span></p>
+  </div></div>
+</main>
+<script>
+  /* o quadro OG é desenhado em 1200 px e reduzido para caber na tela */
+  const og = document.getElementById('og');
+  const fit = () => { og.style.transform = `scale(${og.parentElement.clientWidth / 1200})`; };
+  fit(); addEventListener('resize', fit);
+</script>
+</body>
+</html>

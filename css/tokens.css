@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Nítio Mendes · Identidade "Estética · Performance · Qualidade de vida"
+   Tokens compartilhados: site, aplicação, /identidade e materiais (posts, slides).
+   Preto profundo + ouro metálico. Barlow Condensed 800 (caixa-alta) nos títulos,
+   Montserrat no corpo e nos rótulos.
+   ========================================================================== */
+/* Fontes de reserva com a mesma largura das fontes web: evitam que o texto
+   mude de linha quando a fonte carrega (CLS). Medido em out/2026. */
+@font-face { font-family: "Barlow Condensed Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"); font-weight: 700 800; size-adjust: 68.7%; }
+@font-face { font-family: "Montserrat Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); size-adjust: 108%; }
+
+:root {
+  /* Fundo: preto profundo com gradiente sutil para grafite */
+  --nm-black: #0F0F0F;
+  --nm-black-2: #121212;
+  --nm-graphite: #1E1E1E;
+  --nm-graphite-2: #262626;
+  --nm-pill: #232323;
+  --nm-light: #ECECEC;          /* páginas de transição claras ("Como funciona") */
+  --nm-ink: #121212;            /* texto sobre o claro */
+
+  /* Ouro */
+  --nm-gold: #C9983A;           /* dourado sólido de destaque em texto (≈7:1 sobre #0F0F0F) */
+  --nm-gold-light: #E8CB6F;     /* números e ênfases */
+  --nm-gold-deep: #8A5A12;      /* sombra do metal; só decorativo */
+  --nm-gold-grad: linear-gradient(135deg, #FFEB99 0%, #E2B955 26%, #C69A3E 52%, #8A5A12 82%, #C69A3E 100%);
+  /* Botões, selos e pílulas com texto escuro: termina em #B0802C (texto #111 ≥ 5,3:1 em todo o botão) */
+  --nm-gold-grad-ui: linear-gradient(135deg, #FFEB99 0%, #E2B955 30%, #C69A3E 62%, #B0802C 100%);
+  --nm-gold-grad-v: linear-gradient(180deg, #FFEB99 0%, #E2B955 30%, #C69A3E 60%, #8A5A12 100%);
+  --nm-gold-line: rgba(201, 152, 58, .55);
+  --nm-gold-hair: rgba(201, 152, 58, .28);
+
+  /* Texto */
+  --nm-white: #FFFFFF;
+  --nm-text-2: rgba(255, 255, 255, .74);   /* corpo secundário  (≈12:1) */
+  --nm-text-3: rgba(255, 255, 255, .56);   /* rótulos            (≈6,3:1) */
+  --nm-line: rgba(255, 255, 255, .10);
+  --nm-line-2: rgba(255, 255, 255, .18);
+
+  /* Tipografia */
+  /* Títulos: condensada pesada, sempre em caixa-alta (troca pedida em 16/10/2026: a serifa fina ficou fraca). */
+  --nm-display: "Barlow Condensed", "Barlow Condensed Fallback", "Arial Narrow", Impact, sans-serif;
+  --nm-serif: var(--nm-display); /* nome antigo, mantido para compatibilidade */
+  --nm-sans: "Montserrat", "Montserrat Fallback", "Helvetica Neue", Arial, sans-serif;
+
+  /* Forma */
+  --nm-r-pill: 10px;
+  --nm-r-card: 24px;
+  --nm-r-btn: 999px;
+
+  /* Movimento */
+  --nm-ease: cubic-bezier(.16, 1, .3, 1);
+  --nm-ease-io: cubic-bezier(.65, 0, .35, 1);
+}
+
+/* ---------- Componentes de marca reutilizáveis ---------- */
+
+/* Texto em ouro metálico (numerais gigantes, palavras-chave grandes) */
+.nm-gold-text {
+  background: var(--nm-gold-grad);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pílula com selo-check dourado */
+.nm-pill {
+  display: flex; align-items: center; gap: .7rem;
+  padding: .7rem 1rem; border-radius: var(--nm-r-pill);
+  background: var(--nm-pill); color: var(--nm-white);
+  font-family: var(--nm-sans); font-size: .95rem; line-height: 1.35;
+}
+.nm-pill > svg { flex: none; width: 1.25rem; height: 1.25rem; }
+.nm-pill--gold { background: var(--nm-gold-grad-ui); color: #111; font-weight: 600; }
+.nm-pill--gold .nm-seal-ic { --seal-fill: #111; --seal-check: #E8CB6F; }
+
+/* Selo dourado sobre fotos */
+.nm-seal {
+  display: inline-flex; align-items: center; gap: .45rem;
+  padding: .45rem .8rem; border-radius: 999px;
+  background: var(--nm-gold-grad-ui); color: #111;
+  font-family: var(--nm-sans); font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  box-shadow: 0 6px 20px -8px rgba(0,0,0,.8);
+}
+
+/* Cartão com moldura dourada fina */
+.nm-card {
+  position: relative; border-radius: var(--nm-r-card);
+  border: 1px solid var(--nm-gold-line);
+  background: rgba(12, 12, 12, .78);
+}

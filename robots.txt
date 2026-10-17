@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /qa/
+Disallow: /ferramentas/
+Disallow: /identidade/
+
 Sitemap: https://nitiomendes.com.br/sitemap.xml

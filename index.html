@@ -3,579 +3,506 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nítio Mendes · Nutricionista clínico em Contagem, MG e online</title>
-<meta name="description" content="Nutrição clínica com acompanhamento próximo, personalizado e humanizado: escuta ativa, leitura de exames, plano individual, suporte diário e checkpoints quinzenais. Presencial em Contagem, MG, e online para o Brasil e o exterior.">
+<title>Nutricionista em Contagem, MG e online · Nítio Mendes · Acompanhamento de 12 meses</title>
+<meta name="description" content="Nutricionista em Contagem, MG, e online para todo o Brasil e o exterior. Programa de acompanhamento de 12 meses com nutricionistas, médico e personal trainer: emagrecimento, definição, hipertrofia, longevidade e performance.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://nitiomendes.com.br/">
-<meta name="theme-color" content="#08080a">
+<meta name="theme-color" content="#0F0F0F">
 <meta name="author" content="Nítio Mendes">
+<meta name="geo.region" content="BR-MG">
+<meta name="geo.placename" content="Contagem">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Nítio Mendes Nutrição Avançada">
-<meta property="og:title" content="Nítio Mendes · O resultado mora na constância">
-<meta property="og:description" content="Acompanhamento nutricional clínico, próximo e personalizado. Presencial em Contagem, MG, e online.">
+<meta property="og:site_name" content="Nítio Mendes · Nutrição">
+<meta property="og:title" content="Nítio Mendes · Nutricionista em Contagem, MG e online">
+<meta property="og:description" content="Não é uma dieta. É um acompanhamento de 12 meses com equipe ao seu lado em cada etapa.">
 <meta property="og:url" content="https://nitiomendes.com.br/">
 <meta property="og:image" content="https://nitiomendes.com.br/assets/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nítio Mendes, nutricionista, ao lado do texto Não é uma dieta. É acompanhamento.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nítio Mendes · Nutricionista em Contagem, MG e online">
+<meta name="twitter:description" content="Acompanhamento de 12 meses com equipe multidisciplinar. Presencial em Contagem e online.">
+<meta name="twitter:image" content="https://nitiomendes.com.br/assets/images/og-image.jpg">
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;600&display=block" rel="stylesheet">
-<link rel="preload" as="image" href="assets/images/nitio-recorte.webp" type="image/webp">
-<script>
-  /* abertura uma vez por sessão; decide antes da primeira pintura */
-  (function () {
-    var d = document.documentElement; d.classList.add('js');
-    try { if (sessionStorage.getItem('nm-intro') === '1') d.classList.add('intro-seen'); } catch (e) {}
-  })();
-</script>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Montserrat:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Montserrat:wght@400;500;600;700;800&display=swap"></noscript>
+<link rel="preload" as="image" href="assets/images/nitio-recorte.webp" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- Dados estruturados. NAP idêntico ao Perfil da Empresa no Google.
+     TODO: confirmar CRN, horários, geo (lat/long) e URL do Perfil da Empresa no Google.
+     AggregateRating NÃO incluído: só entra com nota E número de avaliações reais do Google. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nítio Mendes Nutrição Avançada",
-  "description": "Nutrição clínica com acompanhamento próximo, personalizado e humanizado, presencial em Contagem, MG, e online.",
-  "url": "https://nitiomendes.com.br/",
-  "image": "https://nitiomendes.com.br/assets/images/og-image.jpg",
-  "email": "nitiomendes@gmail.com",
-  "telephone": "+55 31 99274-8134",
-  "address": { "@type": "PostalAddress", "streetAddress": "Av. Dr. João Augusto da Fonseca e Silva, 396, 2º andar", "addressLocality": "Contagem", "addressRegion": "MG", "addressCountry": "BR" },
-  "founder": { "@type": "Person", "name": "Nítio Mendes", "jobTitle": "Nutricionista clínico" },
-  "sameAs": ["https://instagram.com/nitiomendes"]
+  "@graph": [
+    {
+      "@type": ["MedicalBusiness", "LocalBusiness"],
+      "@id": "https://nitiomendes.com.br/#negocio",
+      "name": "Nítio Mendes Nutrição",
+      "alternateName": "Nítio Mendes · Nutricionista em Contagem",
+      "description": "Programa de acompanhamento nutricional de 12 meses com equipe multidisciplinar (nutricionistas, médico e personal trainer). Presencial em Contagem, MG, e online para o Brasil e o exterior.",
+      "url": "https://nitiomendes.com.br/",
+      "image": "https://nitiomendes.com.br/assets/images/og-image.jpg",
+      "logo": "https://nitiomendes.com.br/assets/icons/favicon.svg",
+      "email": "nitiomendes@gmail.com",
+      "telephone": "+55-31-99274-8134",
+      "priceRange": "$$$",
+      "medicalSpecialty": "DietNutrition",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Dr. João Augusto da Fonseca e Silva, 396, 2º andar",
+        "addressLocality": "Contagem",
+        "addressRegion": "MG",
+        "postalCode": "",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Contagem" },
+        { "@type": "City", "name": "Belo Horizonte" },
+        { "@type": "AdministrativeArea", "name": "Região Metropolitana de Belo Horizonte" },
+        { "@type": "Country", "name": "Brasil" }
+      ],
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.+Dr.+Jo%C3%A3o+Augusto+da+Fonseca+e+Silva%2C+396%2C+Novo+Eldorado%2C+Contagem+-+MG",
+      "founder": { "@id": "https://nitiomendes.com.br/#nitio" },
+      "sameAs": ["https://instagram.com/nitiomendes"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nitiomendes.com.br/#nitio",
+      "name": "Nítio Mendes",
+      "jobTitle": "Nutricionista",
+      "image": "https://nitiomendes.com.br/assets/images/nitio-retrato-1100.jpg",
+      "worksFor": { "@id": "https://nitiomendes.com.br/#negocio" },
+      "knowsAbout": ["Emagrecimento", "Hipertrofia", "Nutrição esportiva", "Longevidade", "Saúde hormonal", "Nutrição para usuários de GLP-1"],
+      "sameAs": ["https://instagram.com/nitiomendes"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nitiomendes.com.br/#site",
+      "url": "https://nitiomendes.com.br/",
+      "name": "Nítio Mendes",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://nitiomendes.com.br/#negocio" }
+    }
+    ,
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-performance-esportiva-nutricao-atletas", "name": "Performance esportiva e nutrição para atletas", "description": "Estratégia nutricional clínica para atletas amadores e profissionais, focada em performance, recuperação e composição corporal.", "url": "https://nitiomendes.com.br/#especialidade-performance-esportiva-nutricao-atletas", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-emagrecimento-metabolico-hormonal", "name": "Emagrecimento com enfoque metabólico e hormonal", "description": "Emagrecimento clínico com leitura metabólica e hormonal, sem dietas restritivas e sem efeito sanfona.", "url": "https://nitiomendes.com.br/#especialidade-emagrecimento-metabolico-hormonal", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-hipertrofia-ganho-massa-muscular", "name": "Ganho de massa muscular", "description": "Estratégia nutricional para hipertrofia com leitura clínica, ajuste calórico e periodização integrada ao treino.", "url": "https://nitiomendes.com.br/#especialidade-hipertrofia-ganho-massa-muscular", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-glp1-gip-tirzepatida-semaglutida", "name": "Nutrição para quem usa Mounjaro, Ozempic ou Wegovy", "description": "Acompanhamento nutricional clínico para quem usa GLP-1 ou GIP como tirzepatida e semaglutida, preservando massa magra e saúde metabólica.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-glp1-gip-tirzepatida-semaglutida", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-saude-hormonal-masculina-feminina", "name": "Saúde hormonal masculina e feminina", "description": "Nutrição integrada à saúde hormonal, considerando testosterona, estrogênio, tireoide, cortisol e ciclo menstrual.", "url": "https://nitiomendes.com.br/#especialidade-saude-hormonal-masculina-feminina", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-longevidade-qualidade-vida", "name": "Nutrição para longevidade e qualidade de vida", "description": "Estratégia nutricional voltada para envelhecimento saudável, prevenção clínica e qualidade de vida a longo prazo.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-longevidade-qualidade-vida", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-pos-bariatrica", "name": "Nutrição pós-bariátrica", "description": "Acompanhamento clínico pós-cirurgia bariátrica para preservar massa muscular, prevenir deficiências e sustentar o resultado a longo prazo.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-pos-bariatrica", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-feminina-saude-da-mulher", "name": "Nutrição feminina e saúde da mulher", "description": "Estratégia nutricional individualizada para cada fase do ciclo menstrual, gestação, pós-parto e menopausa, com leitura clínica dos seus marcadores.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-feminina-saude-da-mulher", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-saude-mental-equilibrio-emocional", "name": "Nutrição para saúde mental e equilíbrio emocional", "description": "Abordagem clínica integrada do eixo intestino-cérebro, inflamação e micronutrientes para ansiedade, foco, humor e saúde mental.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-saude-mental-equilibrio-emocional", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-executivos-alta-performance-cognitiva", "name": "Nutrição para empresários e alta performance cognitiva", "description": "Estratégia nutricional para empresários e executivos com rotina intensa, focada em energia constante, clareza mental e produtividade sustentável.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-executivos-alta-performance-cognitiva", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-pre-concepcao", "name": "Nutrição Pré-Concepção", "description": "Preparo nutricional do corpo para a gestação, com foco em fertilidade, equilíbrio hormonal e qualidade dos óvulos.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-pre-concepcao", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]},
+    {"@type": "Service", "@id": "https://nitiomendes.com.br/#especialidade-nutricao-na-gestacao", "name": "Nutrição na Gestação", "description": "Acompanhamento nutricional clínico durante a gravidez, garantindo o desenvolvimento saudável do bebê e a saúde da mãe em cada etapa.", "url": "https://nitiomendes.com.br/#especialidade-nutricao-na-gestacao", "serviceType": "Acompanhamento nutricional", "provider": {"@id": "https://nitiomendes.com.br/#negocio"}, "areaServed": ["Contagem, MG", "Belo Horizonte, MG", "Brasil"]}
+  ]
 }
 </script>
+<!--FAQ-LD-->
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Aceita plano de saúde?", "acceptedAnswer": {"@type": "Answer", "text": "Trabalho exclusivamente com atendimento particular. Nessa modalidade, você investe diretamente no acompanhamento e, com o recibo que emito, pode solicitar reembolso ao seu plano de saúde. É um direito seu escolher por quem quer ser acompanhado, e aqui o processo é ilimitado e personalizado, sem restrições de número de consultas como acontece em muitos convênios. Para saber o valor do reembolso disponível, entre em contato com a central do seu plano e pergunte sobre cobertura para nutricionista particular."}}, {"@type": "Question", "name": "Em quanto tempo começo a ver resultados?", "acceptedAnswer": {"@type": "Answer", "text": "Os primeiros sinais costumam aparecer nas primeiras semanas, como melhora de disposição, aumento da performance, mais controle alimentar e sensação de organização. Resultados visuais ficam mais evidentes entre 20 e 30 dias. O ponto central aqui não é só o resultado rápido, e sim conseguir sustentar esse resultado sem efeito sanfona. O processo é construído para evoluir de forma contínua, respeitando seu ponto de partida, sua rotina e sua adesão."}}, {"@type": "Question", "name": "E se eu já tentei de tudo e não funcionou?", "acceptedAnswer": {"@type": "Answer", "text": "A maioria das pessoas que entra no acompanhamento já tentou dieta, treino, aplicativo ou acompanhamento anterior. O que normalmente falhou não foi a pessoa, foi a estratégia aplicada fora do contexto real dela. Aqui o trabalho começa entendendo o que já foi tentado, o que travou seus resultados e o que precisa ser ajustado para que o processo funcione na sua vida, não em uma rotina idealizada."}}, {"@type": "Question", "name": "Preciso seguir tudo à risca? Tenho uma rotina corrida.", "acceptedAnswer": {"@type": "Answer", "text": "O acompanhamento não é pensado para uma rotina perfeita, e sim para a sua rotina real. O plano é ajustado à sua agenda, compromissos, vida social e contexto atual. O foco não é perfeição, é constância bem orientada. Por isso o acompanhamento e os ajustes são parte central do processo."}}, {"@type": "Question", "name": "E se minha rotina mudar no meio do processo?", "acceptedAnswer": {"@type": "Answer", "text": "Mudanças de rotina são esperadas, não exceção. Viagens, trabalho, eventos e imprevistos fazem parte da vida. O acompanhamento existe justamente para adaptar a estratégia quando isso acontece, e não para te cobrar perfeição."}}, {"@type": "Question", "name": "Como funciona o suporte entre as sessões?", "acceptedAnswer": {"@type": "Answer", "text": "O suporte é diário e direto. Você tem acesso a mim e à equipe para dúvidas, ajustes e alinhamentos sem precisar esperar pela próxima consulta. Além disso, os checkpoints quinzenais garantem que o processo nunca fique à deriva."}}, {"@type": "Question", "name": "O atendimento online funciona tão bem quanto o presencial?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O acompanhamento online segue exatamente o mesmo padrão clínico do presencial. Temos pacientes em mais de 11 países e o resultado é equivalente quando existe comprometimento dos dois lados. A única diferença é a avaliação física, que no online é feita por fotos e medidas enviadas pelo paciente."}}, {"@type": "Question", "name": "Preciso levar exames na primeira conversa?", "acceptedAnswer": {"@type": "Answer", "text": "Não é obrigatório, mas se você já tiver exames recentes, eles ajudam a personalizar ainda mais o processo desde o início. Caso não tenha, orientamos quais solicitar com base no seu perfil clínico."}}, {"@type": "Question", "name": "Atende fora do Brasil?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Atendimento online para qualquer país. Já acompanhamos pacientes em Canadá, EUA, Alemanha, Austrália, Portugal, Espanha e Inglaterra, entre outros."}}, {"@type": "Question", "name": "Tenho uma condição de saúde específica, como diabetes, hipotireoidismo ou uso de medicamentos como tirzepatida. Consigo ser atendido?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O acompanhamento é clínico e integrado, com equipe multidisciplinar que inclui equipe médica, educador físico e nutricionistas especializados. Condições de saúde específicas são consideradas desde o início do processo e a estratégia é adaptada para cada caso."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Atende por convênio ou plano de saúde?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O atendimento é exclusivamente particular: não atendemos por convênio nem por plano de saúde. Você investe diretamente no acompanhamento e, com o recibo que emito, pode solicitar reembolso ao seu plano de saúde, se ele tiver essa cobertura. É um direito seu escolher por quem quer ser acompanhado, e aqui o processo é contínuo e personalizado, sem as restrições de número de consultas que acontecem em muitos convênios. Para saber o valor do reembolso disponível, entre em contato com a central do seu plano e pergunte sobre cobertura para nutricionista particular."}}, {"@type": "Question", "name": "Em quanto tempo começo a ver resultados?", "acceptedAnswer": {"@type": "Answer", "text": "Os primeiros sinais costumam aparecer nas primeiras semanas, como melhora de disposição, aumento da performance, mais controle alimentar e sensação de organização. Resultados visuais ficam mais evidentes entre 20 e 30 dias. O ponto central aqui não é só o resultado rápido, e sim conseguir sustentar esse resultado sem efeito sanfona. O processo é construído para evoluir de forma contínua, respeitando seu ponto de partida, sua rotina e sua adesão."}}, {"@type": "Question", "name": "E se eu já tentei de tudo e não funcionou?", "acceptedAnswer": {"@type": "Answer", "text": "A maioria das pessoas que entra no acompanhamento já tentou dieta, treino, aplicativo ou acompanhamento anterior. O que normalmente falhou não foi a pessoa, foi a estratégia aplicada fora do contexto real dela. Aqui o trabalho começa entendendo o que já foi tentado, o que travou seus resultados e o que precisa ser ajustado para que o processo funcione na sua vida, não em uma rotina idealizada."}}, {"@type": "Question", "name": "Preciso seguir tudo à risca? Tenho uma rotina corrida.", "acceptedAnswer": {"@type": "Answer", "text": "O acompanhamento não é pensado para uma rotina perfeita, e sim para a sua rotina real. O plano é ajustado à sua agenda, compromissos, vida social e contexto atual. O foco não é perfeição, é constância bem orientada. Por isso o acompanhamento e os ajustes são parte central do processo."}}, {"@type": "Question", "name": "E se minha rotina mudar no meio do processo?", "acceptedAnswer": {"@type": "Answer", "text": "Mudanças de rotina são esperadas, não exceção. Viagens, trabalho, eventos e imprevistos fazem parte da vida. O acompanhamento existe justamente para adaptar a estratégia quando isso acontece, e não para te cobrar perfeição."}}, {"@type": "Question", "name": "Como funciona o suporte entre as sessões?", "acceptedAnswer": {"@type": "Answer", "text": "O suporte é diário e direto. Você tem acesso a mim e à equipe para dúvidas, ajustes e alinhamentos sem precisar esperar pela próxima consulta. Além disso, os checkpoints quinzenais garantem que o processo nunca fique à deriva."}}, {"@type": "Question", "name": "O atendimento online funciona tão bem quanto o presencial?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O acompanhamento online segue exatamente o mesmo padrão clínico do presencial. Temos pacientes em mais de 13 países e o resultado é equivalente quando existe comprometimento dos dois lados. A única diferença é a avaliação física, que no online é feita por fotos e medidas enviadas pelo paciente, com estimativa de composição corporal por inteligência artificial."}}, {"@type": "Question", "name": "Preciso levar exames na primeira conversa?", "acceptedAnswer": {"@type": "Answer", "text": "Não é obrigatório, mas se você já tiver exames recentes, eles ajudam a personalizar ainda mais o processo desde o início. Caso não tenha, orientamos quais solicitar com base no seu perfil clínico."}}, {"@type": "Question", "name": "Atende fora do Brasil?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Atendimento online para qualquer país. Já acompanhamos pacientes em Canadá, EUA, Alemanha, Austrália, Portugal, Espanha e Inglaterra, entre outros."}}, {"@type": "Question", "name": "Tenho uma condição de saúde específica, como diabetes, hipotireoidismo ou uso de medicamentos como tirzepatida. Consigo ser atendido?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O acompanhamento é clínico e integrado, com equipe multidisciplinar que inclui equipe médica, educador físico e nutricionistas especializados. Condições de saúde específicas são avaliadas individualmente desde o início do processo, com acompanhamento médico quando necessário, e a estratégia é adaptada para cada caso."}}, {"@type": "Question", "name": "Vocês atendem só quem quer estética?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A estética é um dos objetivos possíveis, ao lado de performance e qualidade de vida. Acompanhamos emagrecimento, definição corporal e hipertrofia, mas também longevidade, saúde hormonal, saúde da mulher, gestação, pós-bariátrica, saúde mental e performance esportiva e cognitiva. O ponto de partida é sempre o seu objetivo e o seu momento de saúde."}}, {"@type": "Question", "name": "O que está incluso e o que não está?", "acceptedAnswer": {"@type": "Answer", "text": "No plano anual estão inclusos 6 consultas com os nutricionistas da equipe, 24 checkpoints com ajustes quinzenais, plano alimentar individualizado, aplicativo exclusivo de dieta, análise e prescrição de exames, prescrição de suplementos e manipulados, suporte diário via WhatsApp em horário comercial, o grupo exclusivo com a equipe e o Grupo VIP. O plano semestral tem o mesmo padrão, com 4 consultas e 12 checkpoints. Não estão inclusos os custos de terceiros: a realização dos exames laboratoriais e a compra de suplementos e manipulados. A prescrição está inclusa; a compra fica por sua conta."}}]}
 </script>
-<style>
-/* ============ TOKENS ============ */
-:root{
-  --background:#08080a; --foreground:#f3f1ea; --surface:#111114; --surface-2:#17171b;
-  --muted:#8a8982; --line:rgba(243,241,234,0.1); --line-strong:rgba(243,241,234,0.22);
-  --accent:#ff3b1d; --accent-2:#ff6a3d;
-  --font-display:"Anton", "Arial Narrow", sans-serif; --font-sans:"Onest", "Helvetica Neue", Arial, sans-serif;
-  --gutter:2.5rem; --section:9rem;
-  --fs-hero:28rem; --fs-mega:13rem; --fs-display:7.5rem; --fs-h1:5rem; --fs-h2:3.25rem; --fs-h3:1.75rem;
-  --fs-lead:1.375rem; --fs-body:1.0625rem; --fs-eyebrow:0.8125rem;
-  --expo:cubic-bezier(0.16,1,0.3,1); --quart:cubic-bezier(0.165,0.84,0.44,1); --wipe:cubic-bezier(0.22,1,0.36,1);
-}
-
-/* ============ GRADE ADAPTATIVA (rem proporcional à largura) ============ */
-html{ font-size:16px; background:#08080a; }
-@media (max-width:1920px){ html{ font-size:0.833333vw; } }
-@media (max-width:1440px){ html{ font-size:1.111111vw; } }
-@media (max-width:1024px){ html{ font-size:1.5625vw; } }
-@media (max-width:640px){ html{ font-size:4.444444vw; } :root{ --gutter:16px; } }
-
-/* ============ RESET ============ */
-*{ margin:0; padding:0; box-sizing:border-box; }
-img,video{ display:block; max-width:100%; }
-ul,ol{ list-style:none; }
-a{ color:inherit; text-decoration:none; }
-button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; appearance:none; text-align:inherit; }
-address{ font-style:normal; }
-[hidden]{ display:none !important; }
-html.lenis, html.lenis body{ height:auto; }
-.lenis.lenis-smooth{ scroll-behavior:auto !important; }
-.lenis.lenis-smooth [data-lenis-prevent]{ overscroll-behavior:contain; }
-.lenis.lenis-stopped{ overflow:hidden; }
-body{ background:#08080a; color:var(--foreground); font-family:var(--font-sans); font-size:var(--fs-body); line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden; }
-::selection{ background:#ff3b1d; color:#08080a; }
-:focus-visible{ outline:2px solid var(--accent); outline-offset:4px; border-radius:2px; }
-main{ position:relative; width:100%; overflow-x:hidden; }
-.sr{ position:absolute !important; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
-.skip{ position:fixed; left:12px; top:12px; z-index:200; padding:.7rem 1rem; background:var(--accent); color:#08080a; font-weight:600; transform:translateY(-160%); transition:transform .2s; }
-.skip:focus{ transform:none; }
-
-/* ============ UTILITÁRIOS ============ */
-.display{ font-family:var(--font-display); font-weight:400; text-transform:uppercase; letter-spacing:-0.01em; }
-.eyebrow{ display:flex; align-items:center; gap:0.75rem; font-size:var(--fs-eyebrow); line-height:1.2; font-weight:500; text-transform:uppercase; letter-spacing:0.22em; color:var(--muted); }
-.eyebrow::before{ content:""; width:0.5rem; height:0.5rem; border-radius:9999px; background:var(--accent); flex:none; }
-.muted{ color:var(--muted); }
-.h-section{ margin-top:1.5rem; font-family:var(--font-display); font-weight:400; text-transform:uppercase; line-height:0.95; letter-spacing:-0.01em; font-size:var(--fs-h2); }
-@media (min-width:640px){ .h-section{ font-size:var(--fs-h1); } }
-
-/* revelação de texto: letra / linha / palavra */
-.ln{ display:block; overflow:hidden; padding-top:0.16em; margin-top:-0.16em; }
-.ln > .lni{ display:block; transform:translateY(110%); opacity:0; transition:transform var(--ln-d,900ms) var(--expo), opacity var(--ln-d,900ms) var(--expo); transition-delay:var(--ln-delay,0ms); }
-.is-revealed .ln > .lni, .ln.is-revealed > .lni{ transform:none; opacity:1; }
-.ch{ display:inline-block; transform:translateY(100%); opacity:0; transition:transform 900ms var(--expo), opacity 900ms var(--expo); }
-.is-revealed .ch{ transform:none; opacity:1; }
-.wd{ display:inline-block; transform:translateY(18px); opacity:0; transition:transform 520ms var(--quart), opacity 520ms var(--quart); }
-.is-revealed .wd{ transform:none; opacity:1; }
-
-/* bloco que entra ao rolar */
-.rv{ opacity:0; transform:translateY(var(--rv-y,16px)); transition:opacity var(--rv-d,520ms) var(--expo), transform var(--rv-d,520ms) var(--expo); transition-delay:var(--rv-delay,0ms); }
-.rv.in{ opacity:1; transform:none; }
-html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .wd{ opacity:1; transform:none; }
-
-/* ============ ABERTURA ============ */
-.preloader{ display:none; }
-.js:not(.intro-seen) .preloader{ position:fixed; inset:0; z-index:100; display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end; gap:0.75rem; padding:var(--gutter); transition:transform 650ms var(--wipe); }
-.preloader::before{ content:""; position:absolute; inset:0; z-index:-10; background:var(--background); }
-.preloader.is-wipe{ transform:translateY(-100%); }
-.preloader.is-done{ pointer-events:none; }
-.pre__brand{ font-family:var(--font-display); font-size:var(--fs-h3); text-transform:uppercase; line-height:1; letter-spacing:-0.01em; transition:opacity 300ms ease-out; }
-.pre__brand small{ display:block; margin-top:.6rem; font-family:var(--font-sans); font-size:var(--fs-eyebrow); letter-spacing:.22em; color:var(--muted); }
-.pre__count{ font-family:var(--font-display); font-size:var(--fs-display); line-height:1; font-variant-numeric:tabular-nums; transition:opacity 300ms ease-out; }
-.pre__count i{ font-style:normal; color:var(--accent); }
-.pre__note{ font-size:var(--fs-eyebrow); letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
-.pre__skip{ position:absolute; top:var(--gutter); right:var(--gutter); font-size:var(--fs-eyebrow); letter-spacing:.22em; text-transform:uppercase; color:var(--muted); padding:.6rem 0; transition:color .3s; }
-.pre__skip:hover{ color:var(--foreground); }
-.preloader.is-fade .pre__brand, .preloader.is-fade .pre__count, .preloader.is-fade .pre__skip{ opacity:0; }
-@media (min-width:640px){ .js:not(.intro-seen) .preloader{ flex-direction:row; align-items:flex-end; justify-content:space-between; gap:1rem; } }
-
-/* ============ NAV ============ */
-.site-nav{ position:fixed; inset-inline:0; top:0; z-index:50; pointer-events:none; transition:background-color .4s, transform .5s var(--expo); }
-.site-nav.is-solid{ background:linear-gradient(rgba(8,8,10,.92), rgba(8,8,10,.72)); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); }
-.site-nav.is-hidden{ transform:translateY(-100%); }
-.site-nav nav{ pointer-events:auto; display:flex; align-items:center; justify-content:space-between; gap:2rem; padding:1.5rem var(--gutter); }
-.logo{ display:flex; align-items:center; gap:0.75rem; }
-.logo__mono{ display:grid; place-items:center; width:2.5rem; height:2.5rem; border-radius:9999px; border:1px solid var(--line-strong); font-weight:600; letter-spacing:-0.01em; font-size:0.875rem; }
-.logo__name{ display:none; font-size:var(--fs-eyebrow); font-weight:500; text-transform:uppercase; letter-spacing:0.22em; color:var(--muted); }
-@media (min-width:640px){ .logo__name{ display:block; } }
-.nav__links{ display:none; align-items:center; gap:2.5rem; }
-.nav__links a{ white-space:nowrap; position:relative; font-size:var(--fs-eyebrow); font-weight:500; text-transform:uppercase; letter-spacing:0.18em; color:var(--muted); transition:color 300ms ease; }
-.nav__links a::after{ content:""; position:absolute; bottom:-0.25rem; left:0; height:1px; width:0; background:var(--accent); transition:width 340ms var(--expo); }
-.nav__links a:hover, .nav__links a[aria-current="true"]{ color:var(--foreground); }
-.nav__links a:hover::after, .nav__links a[aria-current="true"]::after{ width:100%; }
-.nav__links .nav__cta{ color:var(--foreground); padding:.7rem 1.1rem; border:1px solid var(--accent); border-radius:9999px; transition:background-color .35s, color .35s; }
-.nav__links .nav__cta::after{ display:none; }
-.nav__links .nav__cta:hover{ background:var(--accent); color:#08080a; }
-.burger{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.375rem; width:2.5rem; height:2.5rem; position:relative; z-index:60; }
-.burger span{ display:block; height:0.125rem; width:1.5rem; background:var(--foreground); transition:transform 420ms var(--expo), opacity 300ms ease; }
-.burger[aria-expanded="true"] span:nth-child(1){ transform:translateY(0.5rem) rotate(45deg); }
-.burger[aria-expanded="true"] span:nth-child(2){ opacity:0; }
-.burger[aria-expanded="true"] span:nth-child(3){ transform:translateY(-0.5rem) rotate(-45deg); }
-@media (min-width:768px){ .nav__links{ display:flex; } .burger{ display:none; } }
-@media (min-width:768px) and (max-width:1279.98px){ .nav__links{ gap:1.25rem; } .logo__name{ display:none; } }
-.menu{ position:fixed; inset:0; z-index:50; background:var(--background); display:flex; flex-direction:column; justify-content:center; padding-inline:var(--gutter); opacity:0; pointer-events:none; transition:opacity 450ms ease-out; }
-.menu.is-open{ opacity:1; pointer-events:auto; }
-.menu li{ overflow:hidden; }
-.menu a{ display:block; padding:.35rem 0; font-family:var(--font-display); font-size:var(--fs-h2); text-transform:uppercase; line-height:1; letter-spacing:-0.01em; transform:translateY(48px); opacity:0; transition:transform 420ms var(--expo), opacity 420ms ease-out; }
-.menu.is-open a{ transform:none; opacity:1; }
-.menu .menu__cta{ color:var(--accent); }
-@media (min-width:768px){ .menu{ display:none; } }
-
-/* ============ HERO ============ */
-.hero{ position:relative; display:flex; flex-direction:column; min-height:100svh; overflow:hidden; }
-.hero__top{ position:relative; z-index:30; display:flex; flex-direction:column; gap:2rem; padding:7rem var(--gutter) 0; }
-@media (min-width:640px){ .hero__top{ flex-direction:row; align-items:flex-start; justify-content:space-between; padding-top:8rem; } }
-.hero__roles{ font-family:var(--font-display); font-weight:400; text-transform:uppercase; line-height:1.05; letter-spacing:-0.01em; font-size:var(--fs-h3); }
-@media (min-width:640px){ .hero__roles{ font-size:var(--fs-h2); } }
-.hero__side{ max-width:26rem; }
-.hero__desc{ font-size:var(--fs-body); color:var(--muted); }
-.hero__plan{ display:inline-flex; align-items:center; gap:.75rem; margin-top:1.5rem; padding:.85rem 1.2rem; border:1px solid var(--accent); border-radius:9999px; font-size:var(--fs-eyebrow); font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--foreground); background:#1a0c0a; transition:background-color .35s, color .35s; pointer-events:auto; position:relative; z-index:31; }
-.hero__plan:hover{ background:var(--accent); color:#08080a; }
-.hero__plan span{ color:var(--accent); transition:color .35s; }
-.hero__plan:hover span{ color:#08080a; }
-@media (min-width:640px){ .hero__side{ text-align:right; } }
-.hero__portrait{ position:absolute; z-index:20; bottom:0; left:50%; transform:translateX(-50%); height:72vh; width:92vw; pointer-events:none; }
-@media (max-width:639.98px){
-  .hero{ min-height:auto; }
-  .hero__portrait{ position:relative; left:auto; bottom:auto; transform:none; width:100%; height:60svh; margin-top:1.5rem; }
-  .hero__name{ font-size:6.6rem; line-height:.84; }
-  .hero__cue{ display:none; }
-}
-@media (min-width:640px){ .hero__portrait{ width:62vw; height:min(78vh, calc(100svh - 11rem)); } }
-@media (min-width:1024px){ .hero__portrait{ width:48vw; height:min(80vh, calc(100svh - 11rem)); } }
-.hero__portrait .liquid{ position:absolute; inset:0; pointer-events:auto; background:none; }
-.hero__portrait .liquid img{ object-fit:contain; object-position:center bottom; } /* foto inteira, nunca cortada */
-.hero__fade{ position:absolute; inset-inline:0; bottom:0; z-index:20; height:6vh; background:linear-gradient(to bottom, transparent, rgba(8,8,10,.85)); pointer-events:none; }
-.hero__name{ position:absolute; inset-inline:0; bottom:0; z-index:10; transform:translateY(6%); display:flex; flex-direction:column; align-items:center; font-family:var(--font-display); font-weight:400; text-transform:uppercase; line-height:0.86; letter-spacing:-0.01em; color:var(--foreground); font-size:var(--fs-mega); }
-@media (min-width:640px){ .hero__name{ font-size:min(var(--fs-hero), 30vw, 50svh); line-height:0.78; } }
-.hero__name .ln{ white-space:nowrap; padding-top:0.14em; margin-top:-0.14em; }
-.hero__cue{ position:absolute; z-index:30; bottom:2rem; left:var(--gutter); display:flex; align-items:center; gap:0.75rem; font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:0.22em; color:var(--muted); }
-.hero__cue::before{ content:""; width:2.5rem; height:1px; background:var(--accent); }
-@media (max-width:1023.98px){ .hero .hero__cue{ display:none; } }
-.js .hero [data-hero-fade]{ opacity:0; transform:translateY(16px); transition:opacity 520ms var(--expo), transform 520ms var(--expo); }
-.js .hero [data-hero-fade].in{ opacity:1; transform:none; }
-
-/* ============ LIQUID IMAGE ============ */
-.liquid{ position:relative; overflow:hidden; background:var(--surface); }
-.liquid__fx{ position:absolute; width:0; height:0; }
-.liquid img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.liquid__ph{ position:absolute; inset:0; background:radial-gradient(130% 130% at 30% 15%, var(--surface-2), var(--background)); display:grid; place-items:center; font-size:var(--fs-eyebrow); letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
-.liquid.is-missing img{ display:none; }
-.liquid:not(.is-missing) .liquid__ph{ display:none; }
-.liquid__vig{ position:absolute; inset:0; background:radial-gradient(120% 120% at 50% 120%, color-mix(in srgb, #08080a 70%, transparent), transparent 60%); pointer-events:none; }
-.liquid--bare{ background:none; }
-
-/* ============ MARQUEE ============ */
-.marquee{ overflow:hidden; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:2rem 0; }
-.marquee__track{ display:flex; width:max-content; flex-wrap:nowrap; animation:marquee 22s linear infinite; }
-.marquee__item{ display:flex; align-items:center; font-family:var(--font-display); font-size:var(--fs-h2); text-transform:uppercase; letter-spacing:-0.01em; line-height:1; white-space:nowrap; }
-.marquee__item::after{ content:""; margin-inline:2rem; width:0.625rem; height:0.625rem; border-radius:9999px; background:var(--accent); }
-@keyframes marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
-
-/* ============ SEÇÕES ============ */
-.section{ padding:var(--section) var(--gutter); }
-.grid-12{ display:grid; grid-template-columns:1fr; gap:3rem; }
-@media (min-width:1024px){ .grid-12{ grid-template-columns:repeat(12, minmax(0,1fr)); gap:var(--gutter); } }
-.sec-head{ display:flex; flex-direction:column; gap:1.5rem; }
-@media (min-width:640px){ .sec-head{ flex-direction:row; align-items:flex-end; justify-content:space-between; } }
-.sec-head__label{ font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:0.22em; color:var(--muted); }
-
-/* Método (Story) */
-.story__left{ grid-column:span 6; }
-.story__left .h-section{ max-width:16ch; }
-.story__lead{ margin-top:2rem; max-width:46ch; font-size:var(--fs-lead); line-height:1.45; color:var(--muted); }
-.story__lead strong{ color:var(--foreground); font-weight:500; }
-.story__right{ grid-column:span 6; }
-@media (min-width:1024px){ .story__right{ padding-top:.5rem; } }
-.principle{ display:grid; grid-template-columns:auto 1fr; column-gap:1.5rem; border-top:1px solid var(--line); padding:2rem 0; }
-.principle:last-child{ border-bottom:1px solid var(--line); }
-.principle__n{ font-size:var(--fs-h3); font-weight:600; font-variant-numeric:tabular-nums; color:var(--accent); line-height:1.15; }
-.principle h3{ font-size:var(--fs-h3); font-weight:600; letter-spacing:-0.01em; line-height:1.15; }
-.principle p{ margin-top:.75rem; max-width:44ch; font-size:var(--fs-body); color:var(--muted); }
-
-/* Especialidades */
-.specs{ margin-top:4rem; display:grid; grid-template-columns:1fr; column-gap:var(--gutter); }
-@media (min-width:1024px){ .specs{ grid-template-columns:1fr 1fr; } }
-.spec button{ width:100%; display:grid; grid-template-columns:3rem 1fr auto; column-gap:1.25rem; align-items:baseline; border-top:1px solid var(--line); padding:1.6rem 0; }
-.spec__n{ font-size:var(--fs-eyebrow); letter-spacing:.18em; font-variant-numeric:tabular-nums; color:var(--muted); transition:color .34s ease-out; }
-.spec__t{ font-size:var(--fs-h3); font-weight:600; letter-spacing:-0.01em; line-height:1.15; transition:color .34s ease-out; }
-.spec__d{ grid-column:2; margin-top:.5rem; font-size:var(--fs-body); color:var(--muted); max-width:46ch; }
-.spec__go{ grid-column:3; grid-row:1; position:relative; width:1.2rem; height:1.2rem; color:var(--accent); }
-.spec__go::before, .spec__go::after{ content:""; position:absolute; left:50%; top:50%; width:100%; height:1.5px; background:currentColor; transform:translate(-50%,-50%); transition:transform .45s var(--expo); }
-.spec__go::after{ transform:translate(-50%,-50%) rotate(90deg); }
-.spec button:hover .spec__t, .spec button:focus-visible .spec__t{ color:var(--accent); }
-.spec button:hover .spec__n{ color:var(--accent); }
-.spec button:hover .spec__go::after{ transform:translate(-50%,-50%) rotate(180deg); }
-.specs > li:nth-last-child(-n+2) button{ border-bottom:1px solid var(--line); }
-@media (max-width:1023.98px){ .specs > li:nth-last-child(2) button{ border-bottom:0; } }
-
-/* Painel da especialidade */
-.sheet{ margin:0 0 0 auto; height:100dvh; max-height:100dvh; width:min(46rem, 100vw); max-width:100vw; padding:0; border:0; border-left:1px solid var(--line); background:var(--surface); color:var(--foreground); overflow:auto; overscroll-behavior:contain; }
-.sheet::backdrop{ background:rgba(0,0,0,.7); }
-.sheet[open]{ animation:sheet-in 650ms var(--expo); }
-.sheet.is-closing{ animation:sheet-out 420ms var(--wipe) forwards; }
-@keyframes sheet-in{ from{ transform:translateX(100%); } }
-@keyframes sheet-out{ to{ transform:translateX(100%); } }
-.sheet__inner{ padding:3rem var(--gutter) 4rem; }
-.sheet__close{ position:sticky; top:0; float:right; display:grid; place-items:center; width:3rem; height:3rem; border-radius:9999px; border:1px solid var(--line-strong); background:var(--surface); margin:-1rem -.5rem 0 1rem; z-index:2; }
-.sheet__close svg{ width:1.1rem; height:1.1rem; stroke:currentColor; stroke-width:1.5; fill:none; }
-.sheet .eyebrow{ margin-bottom:1.5rem; }
-.sheet__t{ font-family:var(--font-display); font-weight:400; text-transform:uppercase; font-size:var(--fs-h2); line-height:.95; letter-spacing:-0.01em; }
-.sheet__lead{ margin:1.5rem 0 2rem; padding-bottom:2rem; border-bottom:1px solid var(--line); font-size:var(--fs-lead); line-height:1.45; color:var(--accent-2); }
-.sheet__body{ display:grid; gap:1.1rem; color:#cfcdc6; }
-.sheet__label{ margin:2.5rem 0 1rem; font-size:var(--fs-eyebrow); letter-spacing:.22em; text-transform:uppercase; color:var(--muted); }
-.sheet__incl li{ position:relative; padding:.8rem 0 .8rem 1.6rem; border-top:1px solid var(--line); }
-.sheet__incl li::before{ content:""; position:absolute; left:0; top:1.45rem; width:.5rem; height:.5rem; border-radius:9999px; background:var(--accent); }
-.sheet__actions{ display:flex; flex-wrap:wrap; align-items:center; gap:1rem 2rem; margin-top:2.5rem; }
-.btn{ display:inline-flex; align-items:center; gap:.75rem; min-height:3.25rem; padding:.9rem 1.6rem; border-radius:9999px; background:var(--accent); color:#08080a; font-weight:600; font-size:1rem; transition:background-color .3s; }
-.btn:hover{ background:var(--accent-2); }
-.lnk{ font-size:var(--fs-eyebrow); letter-spacing:.18em; text-transform:uppercase; color:var(--muted); padding:.6rem 0; transition:color .3s; }
-.lnk:hover{ color:var(--foreground); }
-@media (max-width:640px){
-  .sheet{ margin:auto 0 0; height:92dvh; width:100vw; border-left:0; border-top:1px solid var(--line); border-radius:14px 14px 0 0; }
-  @keyframes sheet-in{ from{ transform:translateY(100%); } }
-  @keyframes sheet-out{ to{ transform:translateY(100%); } }
-}
-
-/* Espaço & obras (Ventures) */
-.works{ margin-top:4rem; display:grid; grid-template-columns:1fr; column-gap:var(--gutter); row-gap:4rem; }
-@media (min-width:768px){ .works{ grid-template-columns:1fr 1fr; } .works > li:nth-child(even){ margin-top:6rem; } }
-.work .liquid{ aspect-ratio:16/11; width:100%; border-radius:0.125rem; }
-.work__row{ margin-top:1.5rem; border-top:1px solid var(--line); padding-top:1.25rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1.5rem; }
-.work__name{ font-size:var(--fs-h3); font-weight:600; letter-spacing:-0.01em; line-height:1.15; transition:color 340ms ease-out; }
-.work:hover .work__name{ color:var(--accent); }
-.work__blurb{ margin-top:.5rem; max-width:42ch; font-size:var(--fs-body); color:var(--muted); }
-.work__meta{ flex:none; text-align:right; }
-.work__year{ font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:.18em; color:var(--muted); }
-.work__out{ margin-top:.5rem; font-size:var(--fs-eyebrow); font-weight:500; text-transform:uppercase; letter-spacing:.18em; color:var(--accent); }
-.work__cat{ margin-top:.75rem; font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:.22em; color:var(--muted); }
-.work__links{ display:flex; flex-wrap:wrap; gap:.25rem 1.5rem; margin-top:.75rem; }
-.work__links a{ font-size:var(--fs-eyebrow); font-weight:500; text-transform:uppercase; letter-spacing:.18em; color:var(--foreground); padding:.5rem 0; border-bottom:1px solid var(--accent); transition:color .3s; }
-.work__links a:hover{ color:var(--accent); }
-
-/* Números (Impact) */
-.stats{ margin-top:4rem; display:grid; grid-template-columns:1fr; border-top:1px solid var(--line); }
-@media (min-width:640px){ .stats{ grid-template-columns:1fr 1fr; } }
-@media (min-width:1024px){ .stats{ grid-template-columns:repeat(4,1fr); } }
-.stat{ display:flex; flex-direction:column; gap:1rem; }
-.stat dd{ order:-1; }
-.stat{ border-bottom:1px solid var(--line); padding:2.5rem 0; }
-@media (min-width:640px) and (max-width:1023.98px){ .stat:nth-child(even){ border-left:1px solid var(--line); padding-left:2rem; } }
-@media (min-width:1024px){ .stat{ padding:3rem 0; } .stat:not(:first-child){ border-left:1px solid var(--line); padding-left:2rem; } }
-.stat dd{ font-family:var(--font-display); font-size:var(--fs-display); line-height:1; letter-spacing:-0.01em; transition:color 340ms ease-out; }
-.stat:hover dd{ color:var(--accent); }
-.stat dt{ max-width:20ch; font-size:var(--fs-body); text-transform:uppercase; letter-spacing:.14em; color:var(--muted); }
-.stats__note{ margin-top:1.5rem; font-size:var(--fs-eyebrow); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
-
-/* Depoimentos (Voices) */
-.voices{ margin-top:4rem; display:grid; grid-template-columns:1fr; gap:3rem; }
-@media (min-width:1024px){ .voices{ grid-template-columns:repeat(12,minmax(0,1fr)); gap:var(--gutter); } .voices__list{ grid-column:span 5; } .voices__panel{ grid-column:span 7; } }
-.voice{ width:100%; display:flex; align-items:baseline; gap:1.25rem; border-top:1px solid var(--line); padding:1.75rem 0; }
-.voices__list li:last-child .voice{ border-bottom:1px solid var(--line); }
-.voice__n{ font-size:var(--fs-eyebrow); font-variant-numeric:tabular-nums; letter-spacing:.18em; color:var(--muted); transition:color .3s; }
-.voice__who{ flex:1; }
-.voice__name{ display:block; font-size:var(--fs-h3); font-weight:600; letter-spacing:-0.01em; line-height:1.15; color:var(--muted); transition:color .3s; }
-.voice__role{ display:block; margin-top:.25rem; font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:.18em; color:var(--muted); }
-.voice__rule{ align-self:center; width:0; height:1px; background:var(--accent); transition:width .45s var(--expo); }
-.voice[aria-pressed="true"] .voice__n{ color:var(--accent); }
-.voice[aria-pressed="true"] .voice__name{ color:var(--foreground); }
-.voice[aria-pressed="true"] .voice__rule{ width:2.5rem; }
-.voices__panel{ display:grid; grid-template-columns:1fr; gap:2rem; align-items:flex-start; }
-@media (min-width:640px){ .voices__panel{ grid-template-columns:1fr auto; } }
-.voices__quote{ order:2; }
-@media (min-width:640px){ .voices__quote{ order:1; } }
-.voices__text{ max-width:34ch; font-size:var(--fs-h3); font-weight:500; line-height:1.32; letter-spacing:-0.01em; }
-.voices__quote footer{ margin-top:2rem; font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:.18em; color:var(--muted); }
-.voices__note{ margin-top:1.25rem; font-size:var(--fs-eyebrow); letter-spacing:.06em; color:var(--muted); max-width:44ch; }
-.voices__mark{ order:1; position:relative; width:100%; aspect-ratio:4/5; border-radius:.125rem; overflow:hidden; background:radial-gradient(130% 130% at 30% 15%, var(--surface-2), var(--background)); display:grid; place-items:center; }
-@media (min-width:640px){ .voices__mark{ order:2; width:16rem; } }
-.voices__mark span{ font-family:var(--font-display); font-size:var(--fs-display); line-height:1; color:var(--accent); letter-spacing:-0.01em; transition:opacity .3s; }
-.voices__mark small{ position:absolute; left:1rem; bottom:1rem; font-size:var(--fs-eyebrow); letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
-.voices__mark.is-swap span{ opacity:0; }
-
-/* Dúvidas */
-.faq{ margin-top:4rem; }
-.qa{ border-top:1px solid var(--line); }
-.qa:last-child{ border-bottom:1px solid var(--line); }
-.qa summary{ list-style:none; display:grid; grid-template-columns:3rem 1fr 1.5rem; column-gap:1.25rem; align-items:baseline; padding:1.6rem 0; cursor:pointer; }
-.qa summary::-webkit-details-marker{ display:none; }
-.qa__n{ font-size:var(--fs-eyebrow); letter-spacing:.18em; color:var(--accent); }
-.qa__q{ font-size:var(--fs-h3); font-weight:600; letter-spacing:-0.01em; line-height:1.2; transition:color .3s; }
-.qa summary:hover .qa__q{ color:var(--accent); }
-.qa__i{ position:relative; width:1.2rem; height:1.2rem; align-self:center; color:var(--accent); }
-.qa__i::before, .qa__i::after{ content:""; position:absolute; left:50%; top:50%; width:100%; height:1.5px; background:currentColor; transform:translate(-50%,-50%); transition:transform .45s var(--expo); }
-.qa__i::after{ transform:translate(-50%,-50%) rotate(90deg); }
-.qa[open] .qa__i::after{ transform:translate(-50%,-50%); }
-.qa__a{ padding:0 0 2rem 4.25rem; max-width:70ch; color:var(--muted); }
-.qa::details-content{ block-size:0; overflow:clip; transition:block-size .5s var(--expo), content-visibility .5s allow-discrete; }
-.qa[open]::details-content{ block-size:auto; }
-:root{ interpolate-size:allow-keywords; }
-
-/* Contato + rodapé */
-.contact{ padding:var(--section) var(--gutter) 0; }
-.contact .h-section{ max-width:18ch; font-size:var(--fs-h1); }
-@media (min-width:640px){ .contact .h-section{ font-size:var(--fs-display); } }
-.contact__lead{ margin-top:2rem; max-width:44ch; font-size:var(--fs-lead); line-height:1.45; color:var(--muted); }
-.mailto{ display:inline-flex; align-items:baseline; gap:.75rem; margin-top:3rem; font-size:var(--fs-h3); font-weight:600; letter-spacing:-0.01em; line-height:1.1; transition:transform 340ms ease-out, color 340ms ease-out; }
-@media (min-width:640px){ .mailto{ gap:1rem; font-size:var(--fs-h1); } }
-.mailto span{ color:var(--accent); }
-.mailto:hover{ transform:translateX(14px); color:var(--accent); }
-.contact__alt{ display:flex; flex-wrap:wrap; gap:.5rem 2.5rem; margin-top:2rem; }
-.contact__alt a{ font-size:var(--fs-body); color:var(--muted); padding:.4rem 0; border-bottom:1px solid var(--line-strong); transition:color .3s, border-color .3s; }
-.contact__alt a:hover{ color:var(--foreground); border-color:var(--accent); }
-.foot{ margin-top:var(--section); border-top:1px solid var(--line); padding:3rem 0; display:grid; grid-template-columns:1fr; gap:2.5rem; }
-@media (min-width:1024px){ .foot{ grid-template-columns:repeat(12,minmax(0,1fr)); } .foot__a{ grid-column:span 6; } .foot__b{ grid-column:span 3; } .foot__c{ grid-column:span 3; text-align:right; } }
-.foot__sig{ font-family:var(--font-display); font-size:var(--fs-h2); text-transform:uppercase; line-height:1; letter-spacing:-0.01em; }
-.foot__tag{ margin-top:1rem; font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:.22em; color:var(--muted); }
-.foot__addr{ margin-top:1.5rem; font-size:var(--fs-body); color:var(--muted); }
-.pending{ display:inline-block; margin-top:1rem; padding:.3rem .6rem; border:1px dashed var(--accent); color:var(--accent); font-size:var(--fs-eyebrow); letter-spacing:.1em; }
-.foot__b ul{ display:grid; gap:.4rem; }
-.foot__b a{ display:inline-flex; align-items:center; gap:0; font-size:var(--fs-body); color:var(--muted); padding:.25rem 0; transition:color .3s, gap .34s var(--expo); }
-.foot__b a::before{ content:""; width:0; height:1px; background:var(--accent); transition:width .34s var(--expo); }
-.foot__b a:hover{ color:var(--foreground); gap:.6rem; }
-.foot__b a:hover::before{ width:1.5rem; }
-.foot__c p{ font-size:var(--fs-eyebrow); text-transform:uppercase; letter-spacing:.18em; color:var(--muted); }
-
-/* Barra fixa de aplicação (celular) */
-.dock{ position:fixed; left:12px; right:12px; bottom:calc(12px + env(safe-area-inset-bottom)); z-index:40; display:flex; justify-content:space-between; align-items:center; gap:1rem; min-height:3.5rem; padding:.6rem 1.2rem; border-radius:9999px; background:var(--accent); color:#08080a; font-weight:600; font-size:.95rem; transform:translateY(160%); transition:transform .6s var(--expo); }
-.dock.is-visible{ transform:none; }
-.dock small{ font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; white-space:nowrap; }
-@media (min-width:768px){ .dock{ display:none; } }
-
-/* ============ MOVIMENTO REDUZIDO ============ */
-@media (prefers-reduced-motion: reduce){
-  .preloader{ display:none !important; }
-  .marquee__track{ animation:none; }
-  .rv, .ln > .lni, .ch, .wd, .js .hero [data-hero-fade]{ opacity:1 !important; transform:none !important; transition:none !important; }
-  .menu, .menu a, .sheet[open], .sheet.is-closing{ transition:none; animation:none; }
-  .mailto:hover{ transform:none; }
-}
-</style>
+<!--/FAQ-LD-->
+<script>
+  /* Prévia (qualquer domínio que não seja o oficial): não indexar no Google. */
+  if (!/(^|\.)nitiomendes\.com\.br$/.test(location.hostname)) { var m = document.createElement('meta'); m.name = 'robots'; m.content = 'noindex, nofollow'; document.head.appendChild(m); }
+</script>
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<!-- ============ ABERTURA ============ -->
-<div class="preloader" data-intro aria-hidden="true">
-  <p class="pre__brand">Nítio Mendes<small>Nutrição Avançada</small></p>
-  <p class="pre__count"><span data-count>0</span><i>%</i></p>
-  <button type="button" class="pre__skip" data-intro-skip tabindex="-1">Pular</button>
+<!-- ============ ÍCONES ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFEB99"/><stop offset=".3" stop-color="#E2B955"/><stop offset=".6" stop-color="#C69A3E"/><stop offset="1" stop-color="#8A5A12"/>
+    </linearGradient>
+  </defs>
+  <!-- Monograma N. TODO: substituir pelo arquivo oficial (SVG) do logo; este é o desenho da placa do consultório. -->
+  <symbol id="mono" viewBox="0 0 100 100">
+    <path fill="var(--mono-a, url(#g-gold))" d="M0 0H23V100H0Z"/>
+    <path fill="var(--mono-a, url(#g-gold))" d="M0 0H25L100 74V100H77Z"/>
+    <path fill="var(--mono-a, url(#g-gold))" d="M77 30L100 22V100H77Z"/>
+    <path fill="var(--mono-b, #fff)" d="M54 40L100 0V22L77 30L66 41Z"/>
+    <path fill="var(--mono-b, #fff)" d="M23 60L46 82L23 100Z"/>
+  </symbol>
+  <symbol id="chk" viewBox="0 0 24 24"><rect x="1" y="1" width="22" height="22" rx="4" fill="var(--chk-bg, url(#g-gold))"/><path fill="none" stroke="var(--chk-fg, #111)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M6.5 12.5l3.6 3.6 7.4-8"/></symbol>
+  <symbol id="seal" viewBox="0 0 24 24">
+    <path fill="var(--seal-fill, url(#g-gold))" d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12z"/>
+    <path fill="var(--seal-check, #111)" d="M10.1 16.3l-3.9-3.9 1.4-1.4 2.5 2.5 6.2-6.2 1.4 1.4z"/>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.29A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 2.5h10A4.5 4.5 0 0 1 21.5 7v10a4.5 4.5 0 0 1-4.5 4.5H7A4.5 4.5 0 0 1 2.5 17V7A4.5 4.5 0 0 1 7 2.5z"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+  <symbol id="play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+
+<!-- ============ BARRA DO TOPO (como no modelo: fina, com poucos links) ============ -->
+<header class="top" data-top>
+  <div class="wrap top__in">
+    <a class="brand" href="#inicio" aria-label="Nítio Mendes, início">
+      <svg class="brand__mono" aria-hidden="true"><use href="#mono"/></svg>
+      <span class="brand__word" aria-hidden="true"><b>N</b>ITIO<b>M</b>ENDES</span>
+    </a>
+    <nav class="top__nav" aria-label="Principal">
+      <ul>
+        <li><a href="#diferencial">Diferencial</a></li>
+        <li><a href="#programa">O programa</a></li>
+        <li><a href="#equipe">Quem é</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" data-menu hidden>
+  <ul>
+    <li><a href="#dores">Você se reconhece?</a></li>
+    <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#diferencial">O diferencial</a></li>
+    <li><a href="#programa">O programa</a></li>
+    <li><a href="#beneficios">Os 6 benefícios</a></li>
+    <li><a href="#equipe">Quem é Nítio</a></li>
+    <li><a href="#planos">Planos</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#faq">Dúvidas</a></li>
+  </ul>
+  <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=menu" data-apply>Aplicar ao Planejamento</a>
 </div>
 
-<!-- ============ NAV ============ -->
-<header class="site-nav" data-nav>
-  <nav aria-label="Principal">
-    <a class="logo" href="#top" aria-label="Nítio Mendes, início">
-      <span class="logo__mono" aria-hidden="true">NM</span>
-      <span class="logo__name">Nítio Mendes</span>
-    </a>
-    <ul class="nav__links">
-      <li><a href="#metodo">Método</a></li>
-      <li><a href="#especialidades">Especialidades</a></li>
-      <li><a href="#obras">Espaço &amp; obras</a></li>
-      <li><a href="#depoimentos">Depoimentos</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a class="nav__cta" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=header">Aplicar ↗</a></li>
-    </ul>
-    <button type="button" class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span><span></span></button>
-  </nav>
-</header>
-<div class="menu" id="menu" data-menu>
-  <ul>
-    <li><a href="#metodo">Método</a></li>
-    <li><a href="#especialidades">Especialidades</a></li>
-    <li><a href="#obras">Espaço &amp; obras</a></li>
-    <li><a href="#depoimentos">Depoimentos</a></li>
-    <li><a href="#contato">Contato</a></li>
-    <li><a class="menu__cta" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=menu">Aplicar ↗</a></li>
-  </ul>
+<!-- ============ BARRA DE AÇÃO FIXA (WhatsApp + Aplicar) ============
+     Celular: sempre visível no rodapé da tela. Computador: aparece no topo depois do hero. -->
+<div class="actbar" data-actbar>
+  <div class="actbar__in">
+    <a class="btn btn--wa" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20acompanhamento." target="_blank" rel="noopener" data-wa="barra"><svg aria-hidden="true"><use href="#wa"/></svg> WhatsApp</a>
+    <a class="btn btn--gold" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=barra" data-apply>Aplicar<span class="hide-sm"> ao Planejamento</span></a>
+  </div>
 </div>
+
+<!-- WhatsApp sempre à mão (computador) -->
+<a class="wafab" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20acompanhamento." target="_blank" rel="noopener" aria-label="Falar com a equipe no WhatsApp" data-wa="flutuante"><svg aria-hidden="true"><use href="#wa"/></svg><span class="wafab__tip" aria-hidden="true">Fale com a equipe</span></a>
 
 <main id="conteudo">
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="top" data-hero>
-  <div class="hero__top">
-    <h2 class="hero__roles" data-roles aria-label="Nutrição clínica, avançada e humanizada">
-      <span class="ln" aria-hidden="true"><span class="lni">Nutrição</span></span>
-      <span class="ln" aria-hidden="true"><span class="lni">Clínica</span></span>
-      <span class="ln" aria-hidden="true"><span class="lni">Avançada</span></span>
-      <span class="ln" aria-hidden="true"><span class="lni">Humanizada</span></span>
-    </h2>
-    <div class="hero__side" data-hero-fade>
-      <p class="hero__desc">Acompanhamento nutricional próximo, personalizado e humanizado, do primeiro dia até o seu resultado. Presencial em Contagem, MG, e online para o Brasil e o exterior.</p>
-      <a class="hero__plan" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=hero_destaque">Planejamento Nutricional Estratégico <span>↗</span></a>
-    </div>
-  </div>
-
-  <div class="hero__portrait">
-    <figure class="liquid liquid--bare" data-liquid="30" data-bare>
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-t">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__media">
+      <!-- Nome gigante atrás do retrato: as letras sobem na abertura -->
+      <p class="hero__name" aria-hidden="true">
+        <span class="hn" data-letters>Nítio</span>
+        <span class="hn" data-letters>Mendes</span>
+      </p>
+      <div class="hero__band" aria-hidden="true"></div>
       <picture>
         <source type="image/webp" srcset="assets/images/nitio-recorte.webp">
-        <img src="assets/images/nitio-recorte.png" width="780" height="745" alt="Nítio Mendes, de terno azul-marinho, sentado à mesa do consultório" fetchpriority="high" data-hero-img>
+        <img class="hero__img" src="assets/images/nitio-recorte.png" width="780" height="745" alt="Nítio Mendes, nutricionista, de terno azul-marinho, sentado à mesa do consultório em Contagem" fetchpriority="high" decoding="async">
       </picture>
-    </figure>
-  </div>
-  
-  <h1 class="hero__name" aria-label="Nítio Mendes">
-    <span class="ln" aria-hidden="true" data-letters>Nítio</span>
-    <span class="ln" aria-hidden="true" data-letters>Mendes</span>
-  </h1>
-  <a class="hero__cue" href="#metodo" data-hero-fade>Role para conhecer</a>
-</section>
-
-<!-- ============ MARQUEE ============ -->
-<section class="marquee" aria-label="Pilares do acompanhamento">
-  <div class="marquee__track">
-    <span class="marquee__item">Escuta ativa</span><span class="marquee__item">Leitura clínica</span><span class="marquee__item">Plano personalizado</span><span class="marquee__item">Suporte diário</span><span class="marquee__item">Checkpoints quinzenais</span><span class="marquee__item">Resultado com constância</span>
-    <span class="marquee__item" aria-hidden="true">Escuta ativa</span><span class="marquee__item" aria-hidden="true">Leitura clínica</span><span class="marquee__item" aria-hidden="true">Plano personalizado</span><span class="marquee__item" aria-hidden="true">Suporte diário</span><span class="marquee__item" aria-hidden="true">Checkpoints quinzenais</span><span class="marquee__item" aria-hidden="true">Resultado com constância</span>
-  </div>
-</section>
-
-<!-- ============ MÉTODO (Story) ============ -->
-<section class="section" id="metodo" aria-labelledby="metodo-t">
-  <div class="grid-12">
-    <div class="story__left">
-      <p class="eyebrow">O método</p>
-      <h2 class="h-section" id="metodo-t" data-split>O resultado mora na constância.</h2>
-      <p class="story__lead rv">A maioria das pessoas já passou por uma consulta nutricional, saiu empolgada e não conseguiu continuar depois, porque se sentiu sozinha no processo. <strong>Aqui é diferente:</strong> o acompanhamento é próximo, personalizado e humanizado, do primeiro dia até o seu resultado.</p>
+      <!-- CONFIRMAR COM O CLIENTE: +2.500 / +13 (apresentação) x +2.000 / +11 (site anterior). -->
+      <p class="hero__side"><span>+2.500 pessoas</span><b>em +13 países</b></p>
+      <p class="hero__motto" aria-hidden="true">O resultado mora na constância.</p>
     </div>
-    <ul class="story__right">
-      <li class="principle rv" style="--rv-d:560ms;--rv-delay:0ms"><span class="principle__n">01</span><div><h3>Escuta ativa real</h3><p>Cada plano começa com uma escuta profunda da sua história, rotina, tentativas anteriores e o que travou seus resultados.</p></div></li>
-      <li class="principle rv" style="--rv-d:560ms;--rv-delay:90ms"><span class="principle__n">02</span><div><h3>Leitura clínica dos exames</h3><p>Vitaminas, minerais, hormônios, marcadores inflamatórios e outros indicadores que influenciam o resultado, integrados ao plano nutricional.</p></div></li>
-      <li class="principle rv" style="--rv-d:560ms;--rv-delay:180ms"><span class="principle__n">03</span><div><h3>Plano 100% personalizado</h3><p>Construído para a sua vida real, não para uma rotina idealizada. Suplementação e manipulados quando necessário, sempre individualizados.</p></div></li>
-      <li class="principle rv" style="--rv-d:560ms;--rv-delay:270ms"><span class="principle__n">04</span><div><h3>Suporte diário e checkpoints</h3><p>Acesso direto ao Nítio e à equipe multidisciplinar, e a cada quinze dias uma avaliação de sono, intestino, fome, treinos e rotina.</p></div></li>
+    <div class="hero__copy">
+      <p class="kicker hero__in" style="--d:0ms">Estética · Performance · Qualidade de vida</p>
+      <h1 class="hero__t hero__in" id="hero-t" style="--d:60ms" data-hero-h1>Emagreça, defina e mantenha</h1>
+      <p class="hero__sub hero__in" style="--d:120ms" data-hero-sub>Sem dieta engessada e sem abrir mão da sua vida!</p>
+      <p class="hero__p hero__in" style="--d:180ms">O diferencial: <strong>nutricionista, personal trainer e médico</strong> trabalhando juntos no seu plano. Sem cardápio engessado, sem abrir mão da vida social e sem efeito sanfona.</p>
+      <p class="hero__note hero__in" style="--d:220ms"><svg aria-hidden="true"><use href="#seal"/></svg>Não é consulta avulsa: são 12 meses com a equipe ao seu lado.</p>
+            <div class="ctas hero__in" style="--d:300ms">
+        <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=hero" data-apply>Aplicar ao Planejamento <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+      <p class="nohealth hero__in" style="--d:330ms"><svg aria-hidden="true"><use href="#seal"/></svg><span><strong>Atendimento particular.</strong> Não atendemos por plano de saúde ou convênio.</span></p>
+      <ul class="hero__proof hero__in" style="--d:360ms" aria-label="Números do acompanhamento">
+        <li><b>+2.500</b> pessoas</li><li><b>+13</b> países</li><li><b>5,0</b> no Google</li><li><b>Contagem</b> e online</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. DORES ============ -->
+<section class="sec pains" id="dores" aria-labelledby="dores-t">
+  <div class="pains__arc" aria-hidden="true"></div>
+  <div class="wrap narrow">
+    <p class="kicker center">Antes de tudo</p>
+    <h2 class="h2 center" id="dores-t">Você já começou de novo <em>quantas vezes?</em></h2>
+    <ul class="pains__list">
+      <li class="rv"><span>01</span>Segunda-feira de dieta nova, sexta-feira de culpa, e o ciclo recomeça.</li>
+      <li class="rv"><span>02</span>Um cardápio bonito no papel, que não sobrevive à primeira semana de trabalho.</li>
+      <li class="rv"><span>03</span>Os quilos vão embora e, alguns meses depois, voltam todos.</li>
+      <li class="rv"><span>04</span>O treino vai por um lado, a dieta por outro, e ninguém junta as duas coisas.</li>
+      <li class="rv"><span>05</span>A dúvida aparece no meio da semana e não tem a quem perguntar.</li>
+      <li class="rv"><span>06</span>O medo de usar Mounjaro ou Ozempic, perder músculo e recuperar tudo depois.</li>
     </ul>
+    <p class="pains__close">Se você se reconheceu em alguma dessas, saiba que <strong>é a história mais comum que chega ao consultório</strong>. E ela quase nunca é sobre falta de força de vontade.</p>
+    <div class="center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=dores" data-apply>Quero sair desse ciclo</a>
+    </div>
   </div>
 </section>
 
-<!-- ============ ESPECIALIDADES ============ -->
-<section class="section" id="especialidades" aria-labelledby="esp-t">
-  <div class="sec-head">
-    <div>
-      <p class="eyebrow">Especialidades clínicas</p>
-      <h2 class="h-section" id="esp-t" data-split>Doze frentes, uma leitura clínica.</h2>
-    </div>
-    <p class="sec-head__label">12 / Áreas de atuação</p>
+<!-- ============ 3. DEPOIMENTOS EM VÍDEO ============
+     Os vídeos vêm de js/config.js → TESTIMONIALS (só carregam no clique).
+     Com SHOW_BEFORE_AFTER: true, o antes/depois aparece logo abaixo (TODO: validar compliance CFN).
+     TODO: autorização por escrito de cada pessoa antes de publicar. -->
+<section class="sec sec--tight" id="resultados" aria-labelledby="res-t">
+  <div class="wrap">
+    <p class="kicker center">Depoimentos</p>
+    <h2 class="h2 center" id="res-t">Quem viveu o processo <em>conta como foi</em></h2>
+    <p class="center stars-line"><span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span> <b>5,0</b> no Google</p>
+    <ul class="vids vids--proof" data-videos aria-label="Depoimentos em vídeo"></ul>
+    <div class="rail" data-res-rail hidden></div>
+    <p class="fine center">Os resultados variam de pessoa para pessoa. Depoimentos publicados com autorização. <a href="#depoimentos">Ler os relatos no Google</a></p>
   </div>
-  <ul class="specs">
-    <li class="spec rv" id="especialidade-performance-esportiva-nutricao-atletas" style="--rv-d:560ms;--rv-delay:0ms">
-      <button type="button" data-spec-open="performance-esportiva-nutricao-atletas" aria-haspopup="dialog">
+</section>
+
+<!-- ============ 4. CAUSA RAIZ + DOR → RESOLUÇÃO ============ -->
+<section class="sec" id="solucao" aria-labelledby="sol-t">
+  <div class="wrap narrow center">
+    <p class="kicker">O diagnóstico</p>
+    <h2 class="h2" id="sol-t">O problema nunca foi você. <em>Foi o plano fora da sua vida.</em></h2>
+    <p class="lead">Dieta pronta, treino copiado e meta sem acompanhamento funcionam por algumas semanas. Depois a rotina real aparece, e o plano não estava preparado para ela.</p>
+    <p class="lead">Aqui o caminho é o inverso: primeiro entender <strong>sua rotina, seu histórico, seu metabolismo e seu objetivo</strong>. Depois montar a estratégia e ajustá-la a cada quinze dias, com a equipe por perto. Para cada dor, uma resposta concreta:</p>
+  </div>
+  <div class="wrap pairs-wrap">
+    <div class="pairs__legend" aria-hidden="true"><span>O que você sente</span><span>O que fazemos</span></div>
+    <ol class="pairs">
+      <li class="pair rv"><p class="pair__pain"><span class="pair__lbl">O que você sente</span>“Já tentei dieta, treino, medicamento e nada se sustenta.”</p><p class="pair__fix"><span class="pair__lbl">O que fazemos</span>A falha não foi sua: foi a estratégia fora do seu contexto. <strong>Começamos entendendo o que travou.</strong></p></li>
+      <li class="pair rv"><p class="pair__pain"><span class="pair__lbl">O que você sente</span>“Meu cardápio é impossível de seguir na minha rotina.”</p><p class="pair__fix"><span class="pair__lbl">O que fazemos</span>Plano feito para a <strong>sua rotina real</strong>, com lista de substituição para você não enjoar.</p></li>
+      <li class="pair rv"><p class="pair__pain"><span class="pair__lbl">O que você sente</span>“Perco peso e recupero tudo. Vivo no efeito sanfona.”</p><p class="pair__fix"><span class="pair__lbl">O que fazemos</span><strong>Checkpoints quinzenais</strong> e ajustes constantes para sustentar o resultado.</p></li>
+      <li class="pair rv"><p class="pair__pain"><span class="pair__lbl">O que você sente</span>“Treino e dieta andam separados e não conversam.”</p><p class="pair__fix"><span class="pair__lbl">O que fazemos</span><strong>Nutricionista, personal e médico</strong> no mesmo plano, no mesmo grupo.</p></li>
+      <li class="pair rv"><p class="pair__pain"><span class="pair__lbl">O que você sente</span>“Estou sozinho(a). Ninguém me responde quando eu travo.”</p><p class="pair__fix"><span class="pair__lbl">O que fazemos</span><strong>Grupo exclusivo com a equipe</strong> e suporte diário no WhatsApp.</p></li>
+      <li class="pair rv"><p class="pair__pain"><span class="pair__lbl">O que você sente</span>“Uso (ou quero usar) Mounjaro ou Ozempic e tenho medo de perder músculo e recuperar o peso.”</p><p class="pair__fix"><span class="pair__lbl">O que fazemos</span>Acompanhamento específico para <strong>preservar massa magra</strong> e planejar a saída da medicação, junto com a equipe médica.</p></li>
+    </ol>
+    <div class="center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=solucao" data-apply>Quero uma estratégia para a minha rotina</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4b. O DIFERENCIAL: EQUIPE MULTIDISCIPLINAR ============ -->
+<section class="sec diff" id="diferencial" aria-labelledby="dif-t">
+  <div class="wrap">
+    <p class="kicker center">O diferencial</p>
+    <h2 class="h2 center" id="dif-t">Nutricionista, personal e médico <em>no mesmo plano</em></h2>
+    <p class="lead center">Na maioria dos acompanhamentos, cada profissional trabalha sozinho e você é quem tenta juntar as peças. Aqui os três olham para o mesmo objetivo, conversam no mesmo grupo e ajustam juntos a sua estratégia.</p>
+    <div class="pros">
+      <article class="pro rv" style="--rv-delay:0ms">
+        <span class="pro__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 7c-1.5-2.5-5-2.4-6.2.4-1.4 3.2.6 9.4 3.2 11.3 1 .7 2 .3 3 .3s2 .4 3-.3c2.6-1.9 4.6-8.1 3.2-11.3C17 4.6 13.5 4.5 12 7zM12 7c0-2 .8-3.4 2.5-4"/></svg></span>
+        <p class="pro__tag">Nutrição</p>
+        <h3 class="pro__t">Nutricionistas</h3>
+        <p class="pro__txt">Montam o seu plano alimentar, conduzem as 6 consultas e ajustam tudo a cada checkpoint quinzenal.</p>
+      </article>
+      <span class="pros__plus" aria-hidden="true">+</span>
+      <article class="pro rv" style="--rv-delay:90ms">
+        <span class="pro__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></svg></span>
+        <p class="pro__tag">Treino</p>
+        <h3 class="pro__t">Personal trainer</h3>
+        <p class="pro__txt">Prescreve o seu treino no aplicativo, alinhado à alimentação, à rotina e ao seu objetivo.</p>
+      </article>
+      <span class="pros__plus" aria-hidden="true">+</span>
+      <article class="pro rv" style="--rv-delay:180ms">
+        <span class="pro__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M6 3v5a4 4 0 0 0 8 0V3M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <p class="pro__tag">Saúde</p>
+        <h3 class="pro__t">Médico</h3>
+        <p class="pro__txt">Acompanha a parte clínica quando necessário: exames e o uso de medicamentos como Mounjaro e Ozempic.</p>
+      </article>
+    </div>
+    <p class="pros__result"><svg aria-hidden="true"><use href="#seal"/></svg><span>Treino, dieta e saúde finalmente conversando, <strong>no mesmo grupo de WhatsApp com você</strong>.</span></p>
+    <div class="center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=diferencial" data-apply>Quero a equipe completa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. O PROGRAMA (três pilares) ============ -->
+<section class="sec sec--panel" id="programa" aria-labelledby="prog-t">
+  <div class="wrap">
+    <p class="kicker center">O programa · 12 meses</p>
+    <h2 class="h2 center" id="prog-t">Não é uma dieta. <em>É um processo completo.</em></h2>
+    <p class="lead center">Uma estratégia individual, construída a partir da sua rotina, do seu histórico, metabolismo e objetivo, com ajustes constantes e uma equipe ao seu lado em cada etapa.</p>
+    <div class="pillars">
+      <article class="pillar rv" style="--rv-delay:0ms">
+        <span class="pillar__n" aria-hidden="true">1</span>
+        <h3 class="pillar__t">Quem cuida de você</h3>
+        <ul class="pillar__list">
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>6 consultas com os nutricionistas</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Médico na equipe</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Personal trainer</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Customer Success do início ao fim</li>
+        </ul>
+      </article>
+      <article class="pillar rv" style="--rv-delay:90ms">
+        <span class="pillar__n" aria-hidden="true">2</span>
+        <h3 class="pillar__t">O que fica na sua mão</h3>
+        <ul class="pillar__list">
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Plano alimentar individualizado</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>App exclusivo de dieta</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>App de treino</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Exames, suplementos e manipulados</li>
+        </ul>
+      </article>
+      <article class="pillar rv" style="--rv-delay:180ms">
+        <span class="pillar__n" aria-hidden="true">3</span>
+        <h3 class="pillar__t">Como acompanhamos</h3>
+        <ul class="pillar__list">
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>24 checkpoints quinzenais</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Suporte diário no WhatsApp</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Grupo exclusivo com a equipe</li>
+          <li class="nm-pill"><svg aria-hidden="true"><use href="#seal"/></svg>Grupo VIP do Time do Nítio</li>
+        </ul>
+      </article>
+    </div>
+    <p class="pillars__note"><span class="nm-pill nm-pill--gold"><svg aria-hidden="true"><use href="#seal"/></svg>Avaliação corporal no consultório ou bioimpedância por IA no online</span></p>
+    <p class="fine center">Também existe a versão semestral (6 meses). <a href="#planos">Ver planos</a></p>
+    <div class="center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=programa" data-apply>Aplicar ao Planejamento</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. OS 6 BENEFÍCIOS ============ -->
+<section class="sec" id="beneficios" aria-labelledby="bens-t">
+  <div class="wrap">
+    <h2 class="h2 center" id="bens-t">Você terá acesso a <em>6 benefícios</em></h2>
+    <ol class="bens">
+      <li class="ben rv"><span class="ben__n" aria-hidden="true">1</span><div><h3 class="ben__t"><span class="sr">1. </span>6 consultas com os nutricionistas da equipe</h3><p>Onde iremos explorar juntos todas as suas dificuldades para que você mantenha uma <strong>evolução constante</strong>.</p></div></li>
+      <li class="ben rv" style="--rv-delay:60ms"><span class="ben__n" aria-hidden="true">2</span><div><h3 class="ben__t"><span class="sr">2. </span>Planejamento nutricional</h3><p>Protocolo alimentar <strong>fácil de seguir</strong> e totalmente individualizado, alinhado às suas necessidades, possibilidades e objetivos. Alterações sempre que necessário.</p></div></li>
+      <li class="ben rv" style="--rv-delay:120ms"><span class="ben__n" aria-hidden="true">3</span><div><h3 class="ben__t"><span class="sr">3. </span>Aplicativo exclusivo de dieta</h3><p>Seu planejamento na mão, com <strong>lista de compras, metas, alerta de hidratação</strong> e lista de substituição de alimentos, para não enjoar e garantir os nutrientes.</p></div></li>
+      <li class="ben rv"><span class="ben__n" aria-hidden="true">4</span><div><h3 class="ben__t"><span class="sr">4. </span>24 checkpoints e ajustes quinzenais</h3><p>Formulário dinâmico com <strong>fotos, peso, mudança de rotina, fome, sono, digestão e performance</strong>. A cada check-in, o plano é ajustado.</p></div></li>
+      <li class="ben rv" style="--rv-delay:60ms"><span class="ben__n" aria-hidden="true">5</span><div><h3 class="ben__t"><span class="sr">5. </span>Grupo exclusivo com a equipe</h3><p>WhatsApp com <strong>todos os profissionais envolvidos</strong> no seu caso. Seus problemas serão resolvidos com uma mensagem à nossa equipe.</p></div></li>
+      <li class="ben rv" style="--rv-delay:120ms"><span class="ben__n" aria-hidden="true">6</span><div><h3 class="ben__t"><span class="sr">6. </span>Grupo VIP do Time do Nítio</h3><p>Grupo fechado em que alunos e pacientes compartilham <strong>experiências, resultados, conquistas e desafios</strong>, novidades e treinos.</p></div></li>
+    </ol>
+    <div class="center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=beneficios" data-apply>Começar minha aplicação</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. QUEM É + ÁREAS DE ATUAÇÃO + EQUIPE ============ -->
+<section class="sec sec--panel" id="equipe" aria-labelledby="eq-t">
+  <div class="wrap">
+    <div class="about">
+      <div class="about__media rv">
+        <div class="about__band" aria-hidden="true"></div>
+        <picture>
+          <source type="image/webp" srcset="assets/images/nitio-retrato-640.webp 640w, assets/images/nitio-retrato-1100.webp 1100w" sizes="(min-width: 900px) 40vw, 90vw">
+          <img src="assets/images/nitio-retrato-1100.jpg" srcset="assets/images/nitio-retrato-640.jpg 640w, assets/images/nitio-retrato-1100.jpg 1100w" sizes="(min-width: 900px) 40vw, 90vw" width="1100" height="1651" alt="Nítio Mendes de terno, em pé à mesa de mármore do consultório em Contagem" loading="lazy" decoding="async">
+        </picture>
+        <p class="about__sig">Nítio Mendes<small>Nutricionista</small></p>
+      </div>
+      <div class="about__copy">
+        <p class="kicker">Quem conduz</p>
+        <h2 class="h2" id="eq-t">Quem é <em>Nítio Mendes?</em></h2>
+        <p>Nutricionista à frente de um modelo de acompanhamento <strong>validado na prática</strong> em emagrecimento, definição corporal, hipertrofia, longevidade e performance.</p>
+        <p>Não trabalhamos com planos genéricos ou fórmulas prontas, mas sim com estratégias personalizadas e um acompanhamento de verdade.</p>
+        <!-- CONFIRMAR COM O CLIENTE: 2.500 / 13 (apresentação) x 2.000 / 11 (site anterior). -->
+        <dl class="about__nums">
+          <div><dd>+2.500</dd><dt>pessoas acompanhadas</dt></div>
+          <div><dd>+13</dd><dt>países</dt></div>
+          <div><dd>5,0</dd><dt>no Google</dt></div>
+        </dl>
+        <ul class="about__books">
+          <li><img src="assets/images/livro-neuroemocional-640.webp" width="576" height="770" alt="" loading="lazy" decoding="async"><p>Coautor de <a href="https://www.amazon.com.br/Neuroemocional-Descobertas-daNeuroci%C3%AAncia-Gerenciar-Emo%C3%A7%C3%B5es/dp/6583212439" target="_blank" rel="noopener"><em>Neuroemocional</em></a><small>Editora Lisboa</small></p></li>
+          <li><img src="assets/images/ebook-emagreca-640.webp" width="577" height="770" alt="" loading="lazy" decoding="async"><p>Autor de <a href="https://chk.eduzz.com/1708595" target="_blank" rel="noopener"><em>Emagreça de Verdade e Evite o Reganho de Peso</em></a><small>Ebook</small></p></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="areas" id="especialidades">
+      <h3 class="h3 center">Áreas de <em class="gold">atuação</em></h3>
+      <p class="fine center">Toque em uma área para ler como o acompanhamento funciona nela.</p>
+      <ul class="specs">
+<!--SPECS-->
+      <li class="spec rv" id="especialidade-performance-esportiva-nutricao-atletas"><button type="button" data-spec-open="performance-esportiva-nutricao-atletas" aria-haspopup="dialog">
         <span class="spec__n">01</span><span class="spec__t">Performance esportiva e nutrição para atletas</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Estratégia nutricional clínica para atletas amadores e profissionais, focada em performance, recuperação e composição corporal.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-emagrecimento-metabolico-hormonal" style="--rv-d:560ms;--rv-delay:90ms">
-      <button type="button" data-spec-open="emagrecimento-metabolico-hormonal" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-emagrecimento-metabolico-hormonal"><button type="button" data-spec-open="emagrecimento-metabolico-hormonal" aria-haspopup="dialog">
         <span class="spec__n">02</span><span class="spec__t">Emagrecimento com enfoque metabólico e hormonal</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Emagrecimento clínico com leitura metabólica e hormonal, sem dietas restritivas e sem efeito sanfona.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-hipertrofia-ganho-massa-muscular" style="--rv-d:560ms;--rv-delay:0ms">
-      <button type="button" data-spec-open="hipertrofia-ganho-massa-muscular" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-hipertrofia-ganho-massa-muscular"><button type="button" data-spec-open="hipertrofia-ganho-massa-muscular" aria-haspopup="dialog">
         <span class="spec__n">03</span><span class="spec__t">Ganho de massa muscular</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Estratégia nutricional para hipertrofia com leitura clínica, ajuste calórico e periodização integrada ao treino.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-glp1-gip-tirzepatida-semaglutida" style="--rv-d:560ms;--rv-delay:90ms">
-      <button type="button" data-spec-open="nutricao-glp1-gip-tirzepatida-semaglutida" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-glp1-gip-tirzepatida-semaglutida"><button type="button" data-spec-open="nutricao-glp1-gip-tirzepatida-semaglutida" aria-haspopup="dialog">
         <span class="spec__n">04</span><span class="spec__t">Nutrição para quem usa Mounjaro, Ozempic ou Wegovy</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Acompanhamento nutricional clínico para quem usa GLP-1 ou GIP como tirzepatida e semaglutida, preservando massa magra e saúde metabólica.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-saude-hormonal-masculina-feminina" style="--rv-d:560ms;--rv-delay:0ms">
-      <button type="button" data-spec-open="saude-hormonal-masculina-feminina" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-saude-hormonal-masculina-feminina"><button type="button" data-spec-open="saude-hormonal-masculina-feminina" aria-haspopup="dialog">
         <span class="spec__n">05</span><span class="spec__t">Saúde hormonal masculina e feminina</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Nutrição integrada à saúde hormonal, considerando testosterona, estrogênio, tireoide, cortisol e ciclo menstrual.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-longevidade-qualidade-vida" style="--rv-d:560ms;--rv-delay:90ms">
-      <button type="button" data-spec-open="nutricao-longevidade-qualidade-vida" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-longevidade-qualidade-vida"><button type="button" data-spec-open="nutricao-longevidade-qualidade-vida" aria-haspopup="dialog">
         <span class="spec__n">06</span><span class="spec__t">Nutrição para longevidade e qualidade de vida</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Estratégia nutricional voltada para envelhecimento saudável, prevenção clínica e qualidade de vida a longo prazo.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-pos-bariatrica" style="--rv-d:560ms;--rv-delay:0ms">
-      <button type="button" data-spec-open="nutricao-pos-bariatrica" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-pos-bariatrica"><button type="button" data-spec-open="nutricao-pos-bariatrica" aria-haspopup="dialog">
         <span class="spec__n">07</span><span class="spec__t">Nutrição pós-bariátrica</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Acompanhamento clínico pós-cirurgia bariátrica para preservar massa muscular, prevenir deficiências e sustentar o resultado a longo prazo.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-feminina-saude-da-mulher" style="--rv-d:560ms;--rv-delay:90ms">
-      <button type="button" data-spec-open="nutricao-feminina-saude-da-mulher" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-feminina-saude-da-mulher"><button type="button" data-spec-open="nutricao-feminina-saude-da-mulher" aria-haspopup="dialog">
         <span class="spec__n">08</span><span class="spec__t">Nutrição feminina e saúde da mulher</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Estratégia nutricional individualizada para cada fase do ciclo menstrual, gestação, pós-parto e menopausa, com leitura clínica dos seus marcadores.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-saude-mental-equilibrio-emocional" style="--rv-d:560ms;--rv-delay:0ms">
-      <button type="button" data-spec-open="nutricao-saude-mental-equilibrio-emocional" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-saude-mental-equilibrio-emocional"><button type="button" data-spec-open="nutricao-saude-mental-equilibrio-emocional" aria-haspopup="dialog">
         <span class="spec__n">09</span><span class="spec__t">Nutrição para saúde mental e equilíbrio emocional</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Abordagem clínica integrada do eixo intestino-cérebro, inflamação e micronutrientes para ansiedade, foco, humor e saúde mental.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-executivos-alta-performance-cognitiva" style="--rv-d:560ms;--rv-delay:90ms">
-      <button type="button" data-spec-open="nutricao-executivos-alta-performance-cognitiva" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-executivos-alta-performance-cognitiva"><button type="button" data-spec-open="nutricao-executivos-alta-performance-cognitiva" aria-haspopup="dialog">
         <span class="spec__n">10</span><span class="spec__t">Nutrição para empresários e alta performance cognitiva</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Estratégia nutricional para empresários e executivos com rotina intensa, focada em energia constante, clareza mental e produtividade sustentável.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-pre-concepcao" style="--rv-d:560ms;--rv-delay:0ms">
-      <button type="button" data-spec-open="nutricao-pre-concepcao" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-pre-concepcao"><button type="button" data-spec-open="nutricao-pre-concepcao" aria-haspopup="dialog">
         <span class="spec__n">11</span><span class="spec__t">Nutrição Pré-Concepção</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Preparo nutricional do corpo para a gestação, com foco em fertilidade, equilíbrio hormonal e qualidade dos óvulos.</span>
-      </button>
-    </li>
-    <li class="spec rv" id="especialidade-nutricao-na-gestacao" style="--rv-d:560ms;--rv-delay:90ms">
-      <button type="button" data-spec-open="nutricao-na-gestacao" aria-haspopup="dialog">
+      </button></li>
+      <li class="spec rv" id="especialidade-nutricao-na-gestacao"><button type="button" data-spec-open="nutricao-na-gestacao" aria-haspopup="dialog">
         <span class="spec__n">12</span><span class="spec__t">Nutrição na Gestação</span><span class="spec__go" aria-hidden="true"></span>
         <span class="spec__d">Acompanhamento nutricional clínico durante a gravidez, garantindo o desenvolvimento saudável do bebê e a saúde da mãe em cada etapa.</span>
-      </button>
-    </li>
-  </ul>
-</section>
+      </button></li>
+<!--/SPECS-->
+    </ul>
+    </div>
+  </div>
 
+  <div class="wrap">
+    <h2 class="h2 center team__t">Você não vai caminhar <em>sozinho(a)</em></h2>
+    <p class="lead center">Cada profissional entra no seu processo com uma função clara, e todos conversam no mesmo grupo.</p>
+    <!-- TODO: nome, registro (CRN/CRM/CREF) e foto de cada profissional. Exibir o registro é obrigatório. -->
+    <ul class="team">
+      <li class="member rv"><span class="member__ph" aria-hidden="true"><svg><use href="#mono"/></svg></span><p class="member__role">Nutricionista responsável</p><h3 class="member__name">Nítio Mendes</h3><p class="member__how">Conduz a estratégia, lidera a equipe e acompanha a sua evolução de perto.</p><p class="pending">CRN-9: a confirmar</p></li>
+      <li class="member rv" style="--rv-delay:60ms"><span class="member__ph" aria-hidden="true">NT</span><p class="member__role">Nutricionistas da equipe</p><h3 class="member__name" data-todo>Nomes a confirmar</h3><p class="member__how">Conduzem as consultas, montam o plano alimentar e ajustam cada checkpoint.</p><p class="pending">CRN: a confirmar</p></li>
+      <li class="member rv" style="--rv-delay:120ms"><span class="member__ph" aria-hidden="true">MD</span><p class="member__role">Médico(a)</p><h3 class="member__name" data-todo>Nome a confirmar</h3><p class="member__how">Avalia a parte clínica quando necessário, incluindo exames e o uso de medicamentos como GLP-1.</p><p class="pending">CRM: a confirmar</p></li>
+      <li class="member rv" style="--rv-delay:180ms"><span class="member__ph" aria-hidden="true">PT</span><p class="member__role">Personal trainer</p><h3 class="member__name" data-todo>Nome a confirmar</h3><p class="member__how">Prescreve o treino no aplicativo, alinhado ao plano alimentar e à sua rotina.</p><p class="pending">CREF: a confirmar</p></li>
+      <li class="member rv" style="--rv-delay:240ms"><span class="member__ph" aria-hidden="true">CS</span><p class="member__role">Customer Success</p><h3 class="member__name" data-todo>Nome a confirmar</h3><p class="member__how">Faz a reunião de boas-vindas, organiza seus grupos e agendas e cuida de você do início ao fim.</p></li>
+    </ul>
+    <div class="center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=equipe" data-apply>Quero essa equipe comigo</a>
+    </div>
+  </div>
+</section>
+<!--DIALOGS-->
 <dialog class="sheet" id="dlg-performance-esportiva-nutricao-atletas" aria-labelledby="dlg-performance-esportiva-nutricao-atletas-t" data-spec-dialog="performance-esportiva-nutricao-atletas">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 01</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 01</p>
     <h3 class="sheet__t" id="dlg-performance-esportiva-nutricao-atletas-t">Performance esportiva e nutrição para atletas</h3>
     <p class="sheet__lead">Estratégia nutricional clínica para atletas amadores e profissionais, focada em performance, recuperação e composição corporal.</p>
     <div class="sheet__body">
@@ -584,17 +511,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>Atendo atletas de força, endurance, esportes coletivos, lutas e modalidades estéticas. O acompanhamento é próximo, com suporte diário e ajustes constantes ao longo do ciclo. O objetivo não é apenas melhorar um número na balança, e sim entregar performance sustentável, com recuperação otimizada e menor risco de lesão ou overtraining ao longo da temporada.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Performance%20esportiva%20e%20nutri%C3%A7%C3%A3o%20para%20atletas." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_performance-esportiva-nutricao-atletas">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Performance%20esportiva%20e%20nutri%C3%A7%C3%A3o%20para%20atletas." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-emagrecimento-metabolico-hormonal" aria-labelledby="dlg-emagrecimento-metabolico-hormonal-t" data-spec-dialog="emagrecimento-metabolico-hormonal">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 02</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 02</p>
     <h3 class="sheet__t" id="dlg-emagrecimento-metabolico-hormonal-t">Emagrecimento com enfoque metabólico e hormonal</h3>
     <p class="sheet__lead">Emagrecimento clínico com leitura metabólica e hormonal, sem dietas restritivas e sem efeito sanfona.</p>
     <div class="sheet__body">
@@ -603,17 +530,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>O acompanhamento é próximo, com checkpoints quinzenais e suporte diário entre as consultas. O objetivo é entregar um emagrecimento saudável, sustentável, sem efeito sanfona e com preservação de massa muscular. É o tipo de trabalho para quem quer resultado real e quer manter esse resultado a longo prazo.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Emagrecimento%20com%20enfoque%20metab%C3%B3lico%20e%20hormonal." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_emagrecimento-metabolico-hormonal">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Emagrecimento%20com%20enfoque%20metab%C3%B3lico%20e%20hormonal." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-hipertrofia-ganho-massa-muscular" aria-labelledby="dlg-hipertrofia-ganho-massa-muscular-t" data-spec-dialog="hipertrofia-ganho-massa-muscular">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 03</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 03</p>
     <h3 class="sheet__t" id="dlg-hipertrofia-ganho-massa-muscular-t">Ganho de massa muscular</h3>
     <p class="sheet__lead">Estratégia nutricional para hipertrofia com leitura clínica, ajuste calórico e periodização integrada ao treino.</p>
     <div class="sheet__body">
@@ -622,17 +549,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>Trabalho tanto com iniciantes que estão começando o processo de forma estruturada quanto com praticantes avançados que já bateram platôs. O acompanhamento é próximo, com revisão de dados de forma frequente e ajuste fino da estratégia antes que o processo perca eficiência.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Ganho%20de%20massa%20muscular." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_hipertrofia-ganho-massa-muscular">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Ganho%20de%20massa%20muscular." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-glp1-gip-tirzepatida-semaglutida" aria-labelledby="dlg-nutricao-glp1-gip-tirzepatida-semaglutida-t" data-spec-dialog="nutricao-glp1-gip-tirzepatida-semaglutida">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 04</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 04</p>
     <h3 class="sheet__t" id="dlg-nutricao-glp1-gip-tirzepatida-semaglutida-t">Nutrição para quem usa Mounjaro, Ozempic ou Wegovy</h3>
     <p class="sheet__lead">Acompanhamento nutricional clínico para quem usa GLP-1 ou GIP como tirzepatida e semaglutida, preservando massa magra e saúde metabólica.</p>
     <div class="sheet__body">
@@ -641,17 +568,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>Também trabalho o plano de saída da medicação, para que o resultado se mantenha depois. Muitos pacientes retomam peso porque nunca aprenderam a se alimentar de forma sustentável durante o uso. Aqui, o processo é clínico, integrado e pensado desde o início para que a mudança seja permanente, com ou sem o medicamento.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20para%20quem%20usa%20Mounjaro%2C%20Ozempic%20ou%20Wegovy." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-glp1-gip-tirzepatida-semaglutida">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20para%20quem%20usa%20Mounjaro%2C%20Ozempic%20ou%20Wegovy." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-saude-hormonal-masculina-feminina" aria-labelledby="dlg-saude-hormonal-masculina-feminina-t" data-spec-dialog="saude-hormonal-masculina-feminina">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 05</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 05</p>
     <h3 class="sheet__t" id="dlg-saude-hormonal-masculina-feminina-t">Saúde hormonal masculina e feminina</h3>
     <p class="sheet__lead">Nutrição integrada à saúde hormonal, considerando testosterona, estrogênio, tireoide, cortisol e ciclo menstrual.</p>
     <div class="sheet__body">
@@ -660,17 +587,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>Trabalhamos tanto com homens em busca de otimização metabólica, quanto com mulheres em diferentes fases da vida, incluindo ciclo menstrual regular, TPM intensa, SOP, endometriose, adenomiose, perimenopausa e menopausa. A estratégia é sempre integrada, respeitando o momento hormonal atual e alinhada com médicos endocrinologistas e ginecologistas quando necessário.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Sa%C3%BAde%20hormonal%20masculina%20e%20feminina." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_saude-hormonal-masculina-feminina">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Sa%C3%BAde%20hormonal%20masculina%20e%20feminina." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-longevidade-qualidade-vida" aria-labelledby="dlg-nutricao-longevidade-qualidade-vida-t" data-spec-dialog="nutricao-longevidade-qualidade-vida">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 06</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 06</p>
     <h3 class="sheet__t" id="dlg-nutricao-longevidade-qualidade-vida-t">Nutrição para longevidade e qualidade de vida</h3>
     <p class="sheet__lead">Estratégia nutricional voltada para envelhecimento saudável, prevenção clínica e qualidade de vida a longo prazo.</p>
     <div class="sheet__body">
@@ -679,17 +606,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>O acompanhamento é indicado para quem quer envelhecer bem, prevenir doenças metabólicas e cardiovasculares, manter performance física e cognitiva, ou já foi diagnosticado com condições como pré-diabetes, dislipidemia, hipertensão ou esteatose hepática. A abordagem é clínica, contínua e integrada com o restante do cuidado médico.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20para%20longevidade%20e%20qualidade%20de%20vida." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-longevidade-qualidade-vida">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20para%20longevidade%20e%20qualidade%20de%20vida." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-pos-bariatrica" aria-labelledby="dlg-nutricao-pos-bariatrica-t" data-spec-dialog="nutricao-pos-bariatrica">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 07</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 07</p>
     <h3 class="sheet__t" id="dlg-nutricao-pos-bariatrica-t">Nutrição pós-bariátrica</h3>
     <p class="sheet__lead">Acompanhamento clínico pós-cirurgia bariátrica para preservar massa muscular, prevenir deficiências e sustentar o resultado a longo prazo.</p>
     <div class="sheet__body">
@@ -698,17 +625,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>O objetivo não é só emagrecer. É reconstruir a relação com a comida, manter o resultado cirúrgico com saúde metabólica real e garantir qualidade de vida sustentável nos anos seguintes à cirurgia.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20p%C3%B3s-bari%C3%A1trica." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-pos-bariatrica">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20p%C3%B3s-bari%C3%A1trica." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-feminina-saude-da-mulher" aria-labelledby="dlg-nutricao-feminina-saude-da-mulher-t" data-spec-dialog="nutricao-feminina-saude-da-mulher">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 08</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 08</p>
     <h3 class="sheet__t" id="dlg-nutricao-feminina-saude-da-mulher-t">Nutrição feminina e saúde da mulher</h3>
     <p class="sheet__lead">Estratégia nutricional individualizada para cada fase do ciclo menstrual, gestação, pós-parto e menopausa, com leitura clínica dos seus marcadores.</p>
     <div class="sheet__body">
@@ -717,17 +644,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>A proposta aqui não é uma dieta genérica para mulheres. É uma estratégia construída com base na biologia real do seu corpo, nos seus exames e na sua rotina, com suporte contínuo para adaptar o processo conforme seu ciclo e suas fases de vida.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20feminina%20e%20sa%C3%BAde%20da%20mulher." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-feminina-saude-da-mulher">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20feminina%20e%20sa%C3%BAde%20da%20mulher." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-saude-mental-equilibrio-emocional" aria-labelledby="dlg-nutricao-saude-mental-equilibrio-emocional-t" data-spec-dialog="nutricao-saude-mental-equilibrio-emocional">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 09</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 09</p>
     <h3 class="sheet__t" id="dlg-nutricao-saude-mental-equilibrio-emocional-t">Nutrição para saúde mental e equilíbrio emocional</h3>
     <p class="sheet__lead">Abordagem clínica integrada do eixo intestino-cérebro, inflamação e micronutrientes para ansiedade, foco, humor e saúde mental.</p>
     <div class="sheet__body">
@@ -736,17 +663,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>O acompanhamento é feito em integração com psicólogos, psiquiatras e médicos quando o caso pede, porque resultado real em saúde mental passa pela visão multidisciplinar do paciente como um todo.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20para%20sa%C3%BAde%20mental%20e%20equil%C3%ADbrio%20emocional." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-saude-mental-equilibrio-emocional">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20para%20sa%C3%BAde%20mental%20e%20equil%C3%ADbrio%20emocional." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-executivos-alta-performance-cognitiva" aria-labelledby="dlg-nutricao-executivos-alta-performance-cognitiva-t" data-spec-dialog="nutricao-executivos-alta-performance-cognitiva">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 10</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 10</p>
     <h3 class="sheet__t" id="dlg-nutricao-executivos-alta-performance-cognitiva-t">Nutrição para empresários e alta performance cognitiva</h3>
     <p class="sheet__lead">Estratégia nutricional para empresários e executivos com rotina intensa, focada em energia constante, clareza mental e produtividade sustentável.</p>
     <div class="sheet__body">
@@ -755,17 +682,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>O perfil de paciente que mais se beneficia desse acompanhamento é quem já se cuida em outras frentes, treina, investe em desenvolvimento pessoal, mas ainda sente que o rendimento não acompanha o esforço. A nutrição costuma ser o elo que faltava.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20para%20empres%C3%A1rios%20e%20alta%20performance%20cognitiva." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-executivos-alta-performance-cognitiva">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20para%20empres%C3%A1rios%20e%20alta%20performance%20cognitiva." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-pre-concepcao" aria-labelledby="dlg-nutricao-pre-concepcao-t" data-spec-dialog="nutricao-pre-concepcao">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 11</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 11</p>
     <h3 class="sheet__t" id="dlg-nutricao-pre-concepcao-t">Nutrição Pré-Concepção</h3>
     <p class="sheet__lead">Preparo nutricional do corpo para a gestação, com foco em fertilidade, equilíbrio hormonal e qualidade dos óvulos.</p>
     <div class="sheet__body">
@@ -774,17 +701,17 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>É um trabalho estratégico para mulheres que planejam engravidar nos próximos meses, casais em processo de tentativa natural ou em preparação para tratamentos de reprodução assistida, e pacientes com condições como SOP, endometriose ou histórico de perdas gestacionais que exigem preparo clínico mais cuidadoso.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20Pr%C3%A9-Concep%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-pre-concepcao">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20Pr%C3%A9-Concep%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
 <dialog class="sheet" id="dlg-nutricao-na-gestacao" aria-labelledby="dlg-nutricao-na-gestacao-t" data-spec-dialog="nutricao-na-gestacao">
   <div class="sheet__inner">
-    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Especialidade clínica · 12</p>
+    <button type="button" class="sheet__close" data-close aria-label="Fechar"><svg aria-hidden="true"><use href="#close"/></svg></button>
+    <p class="eyebrow">Especialidade · 12</p>
     <h3 class="sheet__t" id="dlg-nutricao-na-gestacao-t">Nutrição na Gestação</h3>
     <p class="sheet__lead">Acompanhamento nutricional clínico durante a gravidez, garantindo o desenvolvimento saudável do bebê e a saúde da mãe em cada etapa.</p>
     <div class="sheet__body">
@@ -793,453 +720,232 @@ html:not(.js) .rv, html:not(.js) .ln > .lni, html:not(.js) .ch, html:not(.js) .w
       <p>O objetivo é garantir o desenvolvimento saudável do bebê e preservar a saúde e a composição corporal da mãe ao longo de toda a gestação, com uma transição tranquila para o pós-parto.</p>
     </div>
     <p class="sheet__label">O que está incluso no acompanhamento</p>
-    <ul class="sheet__incl"><li>Escuta ativa e leitura clínica profunda</li><li>Plano alimentar 100% personalizado</li><li>Interpretação dos exames de sangue</li><li>Equipe multidisciplinar</li><li>Suporte diário direto entre consultas</li><li>Checkpoints quinzenais de progresso</li></ul>
+    <ul class="sheet__incl"><li>6 consultas com os nutricionistas da equipe</li><li>Plano alimentar individualizado</li><li>Aplicativo exclusivo de dieta</li><li>24 checkpoints com ajustes quinzenais</li><li>Grupo exclusivo com a equipe e Grupo VIP</li><li>Suporte diário via WhatsApp</li></ul>
     <div class="sheet__actions">
-      <a class="btn" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade">Aplicar ao Planejamento ↗</a>
-      <a class="lnk" href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Tenho%20interesse%20em%3A%20Nutri%C3%A7%C3%A3o%20na%20Gesta%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="btn btn--gold" data-apply href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=especialidade_nutricao-na-gestacao">Aplicar ao Planejamento ↗</a>
+      <a class="btn btn--line" data-wa="especialidade" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio%21%20Vim%20pelo%20site%20e%20tenho%20interesse%20no%20acompanhamento%20para%3A%20Nutri%C3%A7%C3%A3o%20na%20Gesta%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
     </div>
   </div>
 </dialog>
+<!--/DIALOGS-->
 
-<!-- ============ ESPAÇO & OBRAS (Ventures) ============ -->
-<section class="section" id="obras" aria-labelledby="obras-t">
-  <div class="sec-head">
-    <div>
-      <p class="eyebrow">Espaço &amp; obras</p>
-      <h2 class="h-section" id="obras-t" data-split>Onde o trabalho acontece.</h2>
-    </div>
-    <p class="sec-head__label">04 / Frentes</p>
-  </div>
-  <ul class="works">
-    <li class="rv" style="--rv-y:60px;--rv-d:620ms">
-      <article class="work">
-        <figure class="liquid" data-liquid="28" data-label="Consultório">
-          <img src="assets/images/consultorio-mesa-1100.webp" width="1080" height="1920" loading="lazy" decoding="async" alt="Sala de atendimento com mesa de mármore, iluminação linear e o monograma Nítio Mendes na parede" style="object-position:50% 58%">
-          <span class="liquid__ph">Consultório</span><span class="liquid__vig"></span>
-        </figure>
-        <div class="work__row">
-          <div><h3 class="work__name">Consultório em Contagem</h3><p class="work__blurb">Ambiente clínico pensado para acolher, com estrutura completa para avaliação clínica e de composição corporal.</p></div>
-          <div class="work__meta"><p class="work__year">Novo Eldorado · MG</p><p class="work__out">Também online</p></div>
+<!-- ============ 8. PRESENCIAL × ONLINE (referência local + avaliação) ============ -->
+<section class="sec" id="local" aria-labelledby="loc-t">
+  <div class="wrap">
+    <h2 class="h2 center" id="loc-t">Presencial em Contagem ou <em>online</em> no mundo todo</h2>
+    <p class="lead center">O mesmo padrão clínico nos dois formatos. A única diferença é a <strong>avaliação física</strong>.</p>
+    <div class="duo">
+      <article class="mode rv">
+        <div class="mode__img"><img src="assets/images/consultorio-mesa-640.webp" srcset="assets/images/consultorio-mesa-640.webp 640w, assets/images/consultorio-mesa-1100.webp 1100w" sizes="(min-width: 900px) 45vw, 92vw" width="1080" height="1920" alt="Sala de atendimento do consultório em Contagem, com mesa de mármore e o monograma N na parede" loading="lazy" decoding="async"></div>
+        <div class="mode__body">
+          <p class="mode__tag">Presencial · Contagem, MG</p>
+          <h3 class="h3">Nutricionista em Contagem, perto de BH</h3>
+          <p>No consultório do <strong>Novo Eldorado</strong>, com acesso fácil para quem vem de <strong>Belo Horizonte</strong>, Betim e de toda a região metropolitana. Aqui acontece a <strong>avaliação de composição corporal</strong>, que acompanha massa magra e gordura ao longo do processo.</p>
+          <address class="nap"><strong>Nítio Mendes Nutrição</strong><br>Av. Dr. João Augusto da Fonseca e Silva, 396, 2º andar<br>Novo Eldorado, Contagem, MG · <a href="https://wa.me/5531992748134" target="_blank" rel="noopener" data-wa="local">(31) 99274-8134</a></address>
+          <p class="pending">Horários de atendimento: a confirmar</p><!-- TODO: horários reais (iguais aos do Perfil da Empresa no Google). -->
+          <div class="ctas">
+            <!-- TODO: trocar pelo link do Perfil da Empresa no Google quando estiver verificado. -->
+            <a class="btn btn--gold" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Dr.+Jo%C3%A3o+Augusto+da+Fonseca+e+Silva%2C+396%2C+Novo+Eldorado%2C+Contagem+-+MG" target="_blank" rel="noopener" data-maps>Como chegar</a>
+            <button type="button" class="btn btn--line" data-map-load aria-controls="mapa">Ver mapa</button>
+          </div>
+          <div class="map" id="mapa" data-map hidden></div>
         </div>
-        <p class="work__cat">Atendimento presencial</p>
-        <div class="work__links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Dr.+Jo%C3%A3o+Augusto+da+Fonseca+e+Silva%2C+396%2C+Novo+Eldorado%2C+Contagem+-+MG" target="_blank" rel="noopener">Como chegar ↗</a></div>
       </article>
-    </li>
-    <li class="rv" style="--rv-y:60px;--rv-d:620ms;--rv-delay:120ms">
-      <article class="work">
-        <figure class="liquid" data-liquid="28" data-label="Avaliação">
-          <img src="assets/images/consultorio-detalhes-1100.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Adipômetro digital e modelos de um quilo de gordura e um quilo de músculo sobre a mesa de mármore" style="object-position:50% 40%">
-          <span class="liquid__ph">Avaliação</span><span class="liquid__vig"></span>
-        </figure>
-        <div class="work__row">
-          <div><h3 class="work__name">Composição corporal</h3><p class="work__blurb">A balança mede peso, não saúde. A avaliação acompanha massa magra e gordura ao longo de todo o processo.</p></div>
-          <div class="work__meta"><p class="work__year">Checkpoint</p><p class="work__out">A cada 15 dias</p></div>
+      <article class="mode rv" style="--rv-delay:100ms">
+        <div class="mode__img mode__img--ai" aria-hidden="true"><div class="scan"><span></span></div></div>
+        <div class="mode__body">
+          <p class="mode__tag">Online · Brasil e exterior</p>
+          <h3 class="h3">Bioimpedância por inteligência artificial</h3>
+          <p>No online, a composição corporal é <strong>estimada por inteligência artificial</strong> a partir de fotos e medidas que você envia. É uma estimativa para acompanhar a tendência da sua evolução nos checkpoints, não um exame clínico.</p>
+          <!-- TODO: confirmar com o cliente o nome da ferramenta e o que ela mede. -->
+          <p class="mode__lbl">Já acompanhamos pacientes em</p>
+          <ul class="countries"><li>Brasil</li><li>Canadá</li><li>EUA</li><li>Alemanha</li><li>Austrália</li><li>Portugal</li><li>Espanha</li><li>Inglaterra</li><li>e outros</li></ul>
+          <div class="ctas"><a class="btn btn--line" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=online" data-apply>Aplicar para o online</a></div>
         </div>
-        <p class="work__cat">Estrutura clínica</p>
       </article>
-    </li>
-    <li class="rv" style="--rv-y:60px;--rv-d:620ms">
-      <article class="work">
-        <figure class="liquid" data-liquid="28" data-label="Neuroemocional">
-          <img src="assets/images/livro-neuroemocional-640.webp" width="576" height="770" loading="lazy" decoding="async" alt="Nítio Mendes segurando o livro Neuroemocional diante do painel da Editora Lisboa" style="object-position:50% 30%">
-          <span class="liquid__ph">Neuroemocional</span><span class="liquid__vig"></span>
-        </figure>
-        <div class="work__row">
-          <div><h3 class="work__name">Neuroemocional</h3><p class="work__blurb">Como as novas descobertas da neurociência podem te ajudar a gerenciar as suas emoções.</p></div>
-          <div class="work__meta"><p class="work__year">Editora Lisboa</p><p class="work__out">Coautor</p></div>
-        </div>
-        <p class="work__cat">Obra publicada</p>
-        <div class="work__links"><a href="https://www.amazon.com.br/Neuroemocional-Descobertas-daNeuroci%C3%AAncia-Gerenciar-Emo%C3%A7%C3%B5es/dp/6583212439" target="_blank" rel="noopener">Comprar na Amazon ↗</a><a href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20quero%20adquirir%20o%20livro%20Neuroemocional%20com%20dedicat%C3%B3ria." target="_blank" rel="noopener">Com dedicatória ↗</a></div>
-      </article>
-    </li>
-    <li class="rv" style="--rv-y:60px;--rv-d:620ms;--rv-delay:120ms">
-      <article class="work">
-        <figure class="liquid" data-liquid="28" data-label="Ebook">
-          <img src="assets/images/ebook-emagreca-640.webp" width="577" height="770" loading="lazy" decoding="async" alt="Exemplar do ebook Emagreça de Verdade e Evite o Reganho de Peso" style="object-position:50% 50%">
-          <span class="liquid__ph">Ebook</span><span class="liquid__vig"></span>
-        </figure>
-        <div class="work__row">
-          <div><h3 class="work__name">Emagreça de Verdade</h3><p class="work__blurb">Guia clínico e prático para quem já tentou emagrecer e não conseguiu manter o resultado. Sem efeito sanfona.</p></div>
-          <div class="work__meta"><p class="work__year">Ebook clínico</p><p class="work__out">Disponível</p></div>
-        </div>
-        <p class="work__cat">Material autoral</p>
-        <div class="work__links"><a href="https://chk.eduzz.com/1708595" target="_blank" rel="noopener">Quero o ebook ↗</a></div>
-      </article>
-    </li>
-  </ul>
-</section>
-
-<!-- ============ NÚMEROS (Impact) ============ -->
-<section class="section" id="numeros" aria-labelledby="num-t">
-  <div class="sec-head">
-    <div>
-      <p class="eyebrow">Em números</p>
-      <h2 class="h-section" id="num-t" data-split>Constância, medida.</h2>
-    </div>
-  </div>
-  <dl class="stats">
-    <div class="stat rv" style="--rv-d:560ms;--rv-delay:0ms"><dt>Vidas transformadas</dt><dd>+2.000</dd></div>
-    <div class="stat rv" style="--rv-d:560ms;--rv-delay:110ms"><dt>Países com pacientes atendidos</dt><dd>+11</dd></div>
-    <div class="stat rv" style="--rv-d:560ms;--rv-delay:220ms"><dt>Avaliação no Google</dt><dd>5,0</dd></div>
-    <div class="stat rv" style="--rv-d:560ms;--rv-delay:330ms"><dt>Dias entre cada checkpoint</dt><dd>15</dd></div>
-  </dl>
-</section>
-
-<!-- ============ DEPOIMENTOS (Voices) ============ -->
-<section class="section" id="depoimentos" aria-labelledby="dep-t">
-  <div class="sec-head">
-    <div>
-      <p class="eyebrow">Depoimentos</p>
-      <h2 class="h-section" id="dep-t" data-split>Quem vive o processo conta.</h2>
-    </div>
-    <a class="sec-head__label" href="https://www.google.com/search?q=nutricionista+contagem+nitio+mendes#mpd=~10235512060178701282/customers/reviews" target="_blank" rel="noopener">Ver todas no Google ↗</a>
-  </div>
-  <div class="voices" data-voices>
-    <ul class="voices__list rv" style="--rv-d:560ms">
-      <li><button type="button" class="voice" data-voice aria-pressed="true" data-name="Aline Parreiras Lima" data-role="Paciente · avaliação no Google" data-initials="AP" data-quote="Minha experiência com o acompanhamento do Nítio foi excelente. Cheguei no consultório dele no meu auge do peso, triste e muito chateada pesando 82kg, hoje com 1 ano e 4 meses de acompanhamento consegui eliminar 15kg e sigo muito mais motivada a não voltar no que era antes. Obrigada pelo apoio e incentivo Nítio.">
-        <span class="voice__n">01</span>
-        <span class="voice__who"><span class="voice__name">Aline Parreiras Lima</span><span class="voice__role">Paciente · avaliação no Google</span></span>
-        <span class="voice__rule" aria-hidden="true"></span>
-      </button></li>
-      <li><button type="button" class="voice" data-voice aria-pressed="false" data-name="Matheus Vicente" data-role="Paciente · avaliação no Google" data-initials="MV" data-quote="Com Nítio ganhei não apenas melhores hábitos na alimentação, mas também melhora da minha ansiedade, melhora do sono, melhora na mentalidade e no estilo de vida e aprendi a comer do jeito certo sem perder o prazer de comer. O cara é muito bom no que faz e vai muito além de só montar dieta: você ganha um estilo de vida novo.">
-        <span class="voice__n">02</span>
-        <span class="voice__who"><span class="voice__name">Matheus Vicente</span><span class="voice__role">Paciente · avaliação no Google</span></span>
-        <span class="voice__rule" aria-hidden="true"></span>
-      </button></li>
-      <li><button type="button" class="voice" data-voice aria-pressed="false" data-name="Dr. Ewandro Marques" data-role="Paciente · avaliação no Google" data-initials="DE" data-quote="Quero deixar aqui minha recomendação ao Nítio, um profissional extremamente competente e dedicado. Desde o início do acompanhamento, demonstrou atenção aos detalhes, escuta ativa e uma abordagem totalmente personalizada, sempre respeitando minha rotina e objetivos. Um dos grandes diferenciais é o acompanhamento diário, que realmente faz a diferença no processo. E claro, não posso deixar de mencionar os famosos check-ins quinzenais, porque a cada 15 dias é como avançar de fase: você consolida uma evolução real e já parte desse novo patamar para buscar resultados ainda melhores.">
-        <span class="voice__n">03</span>
-        <span class="voice__who"><span class="voice__name">Dr. Ewandro Marques</span><span class="voice__role">Paciente · avaliação no Google</span></span>
-        <span class="voice__rule" aria-hidden="true"></span>
-      </button></li>
-      <li><button type="button" class="voice" data-voice aria-pressed="false" data-name="Vania Rodrigues" data-role="Paciente · avaliação no Google" data-initials="VR" data-quote="Sou de Itapecerica da Serra/SP e conheci o trabalho dele pelo Instagram, fui acompanhando, fiz uma avaliação e gostei muito do tratamento humanizado. Iniciei o acompanhamento em novembro de 2025 e, desde então, já eliminei 12 kg, sem sofrimento e com qualidade de vida. Mais do que emagrecer, aprendi a me alimentar melhor e passei por uma verdadeira reeducação alimentar. É um profissional extremamente competente, atencioso, com uma equipe maravilhosa onde você tem todo o suporte necessário e, acima de tudo, um grande incentivador.">
-        <span class="voice__n">04</span>
-        <span class="voice__who"><span class="voice__name">Vania Rodrigues</span><span class="voice__role">Paciente · avaliação no Google</span></span>
-        <span class="voice__rule" aria-hidden="true"></span>
-      </button></li>
-    </ul>
-    <div class="voices__panel rv" style="--rv-d:640ms;--rv-delay:120ms">
-      <blockquote class="voices__quote">
-        <p class="voices__text" data-quote-text aria-live="polite"></p>
-        <footer data-who>Aline Parreiras Lima — Paciente · avaliação no Google</footer>
-        <p class="voices__note">Relatos publicados pelos próprios pacientes no Google, reproduzidos sem edição. Os resultados variam de pessoa para pessoa.</p>
-      </blockquote>
-      <div class="voices__mark" data-mark aria-hidden="true"><span>AP</span><small>5,0 · Google</small></div>
     </div>
   </div>
 </section>
 
-<!-- ============ DÚVIDAS ============ -->
-<section class="section" id="duvidas" aria-labelledby="faq-t">
-  <div class="sec-head">
-    <div>
-      <p class="eyebrow">Perguntas frequentes</p>
-      <h2 class="h-section" id="faq-t" data-split>Antes de começar.</h2>
+<!-- ============ 9. PLANOS ============
+     Preços em js/config.js. SHOW_PRICES false = "Investimento sob aplicação". -->
+<section class="sec sec--panel" id="planos" aria-labelledby="pl-t">
+  <div class="wrap">
+    <h2 class="h2 center" id="pl-t">Escolha o tempo do seu <em>acompanhamento</em></h2>
+    <p class="lead center">Os dois planos têm o mesmo padrão. O que muda é o tempo e, com ele, o número de consultas e checkpoints.</p>
+    <p class="private"><svg aria-hidden="true"><use href="#seal"/></svg><span><strong>Não atendemos por plano de saúde ou convênio.</strong> O atendimento é exclusivamente particular, e você pode pedir reembolso ao seu plano com o recibo.</span></p>
+    <div class="plans">
+      <article class="plan plan--main rv" data-plan="anual" aria-labelledby="pl-anual">
+        <span class="plan__badge">Mais completo</span>
+        <p class="plan__dur">12 meses</p>
+        <h3 class="plan__name" id="pl-anual">Premium Anual</h3>
+        <p class="plan__meta"><b>6</b> consultas · <b>24</b> checkpoints</p>
+        <div class="plan__price" data-price="anual"><p class="plan__ask">Investimento apresentado após a aplicação</p></div>
+        <ul class="checks checks--sm">
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Plano alimentar individualizado</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>App exclusivo de dieta</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Análise e prescrição de exames</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Suplementos e manipulados</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Suporte diário via WhatsApp (horário comercial)</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Grupo exclusivo com a equipe e Grupo VIP</li>
+          <!-- PERGUNTAR AO CLIENTE: o anual inclui "Área de Membros"? A apresentação só lista no semestral. -->
+        </ul>
+        <div class="plan__cta">
+          <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=plano_anual&amp;plano=anual" data-apply>Aplicar para o Anual</a>
+          <a class="plan__checkout" data-checkout="anual" hidden target="_blank" rel="noopener">Pagar no cartão em 12×</a>
+        </div>
+      </article>
+      <article class="plan rv" style="--rv-delay:90ms" data-plan="semestral" aria-labelledby="pl-sem">
+        <p class="plan__dur">6 meses</p>
+        <h3 class="plan__name" id="pl-sem">Premium Semestral</h3>
+        <p class="plan__meta"><b>4</b> consultas · <b>12</b> checkpoints</p>
+        <div class="plan__price" data-price="semestral"><p class="plan__ask">Investimento apresentado após a aplicação</p></div>
+        <ul class="checks checks--sm">
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Plano alimentar e app de dieta</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Exames, suplementos e manipulados</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Suporte diário e grupos</li>
+          <li><svg aria-hidden="true"><use href="#chk"/></svg>Área de Membros</li>
+        </ul>
+        <div class="plan__cta">
+          <a class="btn btn--line" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=plano_semestral&amp;plano=semestral" data-apply>Aplicar para o Semestral</a>
+          <a class="plan__checkout" data-checkout="semestral" hidden target="_blank" rel="noopener">Pagar no cartão em 12×</a>
+        </div>
+      </article>
+    </div>
+    <p class="fine center" data-price-note>Cada aplicação é analisada pessoalmente. Na conversa de boas-vindas você recebe os valores e as formas de pagamento.</p>
+  </div>
+</section>
+
+<!-- ============ 10. COMO FUNCIONA ============ -->
+<section class="sec light" id="como-funciona" aria-labelledby="cf-t">
+  <div class="wrap">
+    <h2 class="h2 center h2--ink" id="cf-t">Como funciona a partir da sua aplicação</h2>
+    <ol class="steps">
+      <li class="step rv"><span class="step__n" aria-hidden="true">1</span><h3>Reunião de boas-vindas</h3><p>Com a nossa Customer Success.</p></li>
+      <li class="step rv" style="--rv-delay:60ms"><span class="step__n" aria-hidden="true">2</span><h3>Grupos no WhatsApp</h3><p>Boas-vindas no Grupo VIP e criação do seu Grupo Exclusivo com a equipe.</p></li>
+      <li class="step rv" style="--rv-delay:120ms"><span class="step__n" aria-hidden="true">3</span><h3>Anamnese</h3><p>Você preenche o formulário com sua rotina, histórico e objetivos.</p></li>
+      <li class="step rv" style="--rv-delay:180ms"><span class="step__n" aria-hidden="true">4</span><h3>Contrato</h3><p>Preenchimento do contrato do acompanhamento.</p></li>
+      <li class="step rv" style="--rv-delay:240ms"><span class="step__n" aria-hidden="true">5</span><h3>Agenda</h3><p>Agendamento das consultas iniciais.</p></li>
+      <li class="step rv" style="--rv-delay:300ms"><span class="step__n" aria-hidden="true">6</span><h3>Consulta inicial</h3><p>Primeira consulta com o nutricionista. Começa o seu processo.</p></li>
+    </ol>
+    <div class="center">
+      <a class="btn btn--dark btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=como_funciona" data-apply>Começar pela aplicação</a>
     </div>
   </div>
-  <div class="faq">
-    <details class="qa">
-      <summary><span class="qa__n">01</span><span class="qa__q">Aceita plano de saúde?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Trabalho exclusivamente com atendimento particular. Nessa modalidade, você investe diretamente no acompanhamento e, com o recibo que emito, pode solicitar reembolso ao seu plano de saúde. É um direito seu escolher por quem quer ser acompanhado, e aqui o processo é ilimitado e personalizado, sem restrições de número de consultas como acontece em muitos convênios. Para saber o valor do reembolso disponível, entre em contato com a central do seu plano e pergunte sobre cobertura para nutricionista particular.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">02</span><span class="qa__q">Em quanto tempo começo a ver resultados?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Os primeiros sinais costumam aparecer nas primeiras semanas, como melhora de disposição, aumento da performance, mais controle alimentar e sensação de organização. Resultados visuais ficam mais evidentes entre 20 e 30 dias. O ponto central aqui não é só o resultado rápido, e sim conseguir sustentar esse resultado sem efeito sanfona. O processo é construído para evoluir de forma contínua, respeitando seu ponto de partida, sua rotina e sua adesão.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">03</span><span class="qa__q">E se eu já tentei de tudo e não funcionou?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">A maioria das pessoas que entra no acompanhamento já tentou dieta, treino, aplicativo ou acompanhamento anterior. O que normalmente falhou não foi a pessoa, foi a estratégia aplicada fora do contexto real dela. Aqui o trabalho começa entendendo o que já foi tentado, o que travou seus resultados e o que precisa ser ajustado para que o processo funcione na sua vida, não em uma rotina idealizada.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">04</span><span class="qa__q">Preciso seguir tudo à risca? Tenho uma rotina corrida.</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">O acompanhamento não é pensado para uma rotina perfeita, e sim para a sua rotina real. O plano é ajustado à sua agenda, compromissos, vida social e contexto atual. O foco não é perfeição, é constância bem orientada. Por isso o acompanhamento e os ajustes são parte central do processo.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">05</span><span class="qa__q">E se minha rotina mudar no meio do processo?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Mudanças de rotina são esperadas, não exceção. Viagens, trabalho, eventos e imprevistos fazem parte da vida. O acompanhamento existe justamente para adaptar a estratégia quando isso acontece, e não para te cobrar perfeição.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">06</span><span class="qa__q">Como funciona o suporte entre as sessões?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">O suporte é diário e direto. Você tem acesso a mim e à equipe para dúvidas, ajustes e alinhamentos sem precisar esperar pela próxima consulta. Além disso, os checkpoints quinzenais garantem que o processo nunca fique à deriva.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">07</span><span class="qa__q">O atendimento online funciona tão bem quanto o presencial?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Sim. O acompanhamento online segue exatamente o mesmo padrão clínico do presencial. Temos pacientes em mais de 11 países e o resultado é equivalente quando existe comprometimento dos dois lados. A única diferença é a avaliação física, que no online é feita por fotos e medidas enviadas pelo paciente.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">08</span><span class="qa__q">Preciso levar exames na primeira conversa?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Não é obrigatório, mas se você já tiver exames recentes, eles ajudam a personalizar ainda mais o processo desde o início. Caso não tenha, orientamos quais solicitar com base no seu perfil clínico.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">09</span><span class="qa__q">Atende fora do Brasil?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Sim. Atendimento online para qualquer país. Já acompanhamos pacientes em Canadá, EUA, Alemanha, Austrália, Portugal, Espanha e Inglaterra, entre outros.</p>
-    </details>
-    <details class="qa">
-      <summary><span class="qa__n">10</span><span class="qa__q">Tenho uma condição de saúde específica, como diabetes, hipotireoidismo ou uso de medicamentos como tirzepatida. Consigo ser atendido?</span><span class="qa__i" aria-hidden="true"></span></summary>
-      <p class="qa__a">Sim. O acompanhamento é clínico e integrado, com equipe multidisciplinar que inclui equipe médica, educador físico e nutricionistas especializados. Condições de saúde específicas são consideradas desde o início do processo e a estratégia é adaptada para cada caso.</p>
-    </details>
+</section>
+
+<!-- ============ 11. DEPOIMENTOS ============
+     Vídeos, antes/depois e prints vêm de js/config.js (TESTIMONIALS, BEFORE_AFTER, MESSAGES).
+     TODO: autorização por escrito de cada pessoa antes de publicar. -->
+<section class="sec" id="depoimentos" aria-labelledby="dep-t">
+  <div class="wrap">
+    <h2 class="h2 center" id="dep-t">Mais relatos de <em>quem está no processo</em></h2>
+    <div class="tabs" role="tablist" aria-label="Tipos de depoimento" data-tabs>
+      <button type="button" role="tab" id="tab-resultados" aria-controls="pan-resultados" aria-selected="false" tabindex="-1" data-ba-only hidden>Resultados</button>
+      <button type="button" role="tab" id="tab-mensagens" aria-controls="pan-mensagens" aria-selected="false" tabindex="-1">Mensagens</button>
+      <button type="button" role="tab" id="tab-google" aria-controls="pan-google" aria-selected="true">Google</button>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="pan-resultados" aria-labelledby="tab-resultados" hidden tabindex="0"><ul class="bas" data-ba></ul></div>
+    <div class="tabpanel" role="tabpanel" id="pan-mensagens" aria-labelledby="tab-mensagens" hidden tabindex="0"><ul class="rail msgs" data-msgs></ul></div>
+    <div class="tabpanel" role="tabpanel" id="pan-google" aria-labelledby="tab-google" tabindex="0">
+      <ul class="reviews">
+        <li class="review"><span class="stars" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>Minha experiência com o acompanhamento do Nítio foi excelente. Cheguei no consultório dele no meu auge do peso, triste e muito chateada pesando 82kg, hoje com 1 ano e 4 meses de acompanhamento consegui eliminar 15kg e sigo muito mais motivada a não voltar no que era antes. Obrigada pelo apoio e incentivo Nítio.</blockquote><p class="review__who">Aline Parreiras Lima</p></li>
+        <li class="review"><span class="stars" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>Com Nítio ganhei não apenas melhores hábitos na alimentação, mas também melhora da minha ansiedade, melhora do sono, melhora na mentalidade e no estilo de vida e aprendi a comer do jeito certo sem perder o prazer de comer. O cara é muito bom no que faz e vai muito além de só montar dieta: você ganha um estilo de vida novo.</blockquote><p class="review__who">Matheus Vicente</p></li>
+        <li class="review"><span class="stars" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>Quero deixar aqui minha recomendação ao Nítio, um profissional extremamente competente e dedicado. Desde o início do acompanhamento, demonstrou atenção aos detalhes, escuta ativa e uma abordagem totalmente personalizada, sempre respeitando minha rotina e objetivos. Um dos grandes diferenciais é o acompanhamento diário, que realmente faz a diferença no processo. E claro, não posso deixar de mencionar os famosos check-ins quinzenais, porque a cada 15 dias é como avançar de fase: você consolida uma evolução real e já parte desse novo patamar para buscar resultados ainda melhores.</blockquote><p class="review__who">Dr. Ewandro Marques</p></li>
+        <li class="review"><span class="stars" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>Sou de Itapecerica da Serra/SP e conheci o trabalho dele pelo Instagram, fui acompanhando, fiz uma avaliação e gostei muito do tratamento humanizado. Iniciei o acompanhamento em novembro de 2025 e, desde então, já eliminei 12 kg, sem sofrimento e com qualidade de vida. Mais do que emagrecer, aprendi a me alimentar melhor e passei por uma verdadeira reeducação alimentar. É um profissional extremamente competente, atencioso, com uma equipe maravilhosa onde você tem todo o suporte necessário e, acima de tudo, um grande incentivador.</blockquote><p class="review__who">Vania Rodrigues</p></li>
+      </ul>
+      <div class="center"><a class="btn btn--line" href="https://www.google.com/search?q=nutricionista+contagem+nitio+mendes#mpd=~10235512060178701282/customers/reviews" target="_blank" rel="noopener">Ver todas no Google</a></div>
+    </div>
+    <div class="disclaim center">
+      <p>Os resultados variam de pessoa para pessoa.</p>
+      <p>Imagens e relatos publicados com autorização.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. FAQ ============ -->
+<section class="sec sec--panel" id="faq" aria-labelledby="faq-t">
+  <div class="wrap narrow">
+    <h2 class="h2 center" id="faq-t">Perguntas <em>frequentes</em></h2>
+    <div class="faq" data-faq>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Atende por convênio ou plano de saúde?</span></summary>
+        <div class="qa__a"><p><strong>Não. O atendimento é exclusivamente particular: não atendemos por convênio nem por plano de saúde.</strong></p><p>Você investe diretamente no acompanhamento e, com o recibo que emito, pode solicitar reembolso ao seu plano de saúde, se ele tiver essa cobertura. É um direito seu escolher por quem quer ser acompanhado, e aqui o processo é contínuo e personalizado, sem as restrições de número de consultas que acontecem em muitos convênios. Para saber o valor do reembolso disponível, entre em contato com a central do seu plano e pergunte sobre cobertura para nutricionista particular.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Em quanto tempo começo a ver resultados?</span></summary>
+        <div class="qa__a"><p>Os primeiros sinais costumam aparecer nas primeiras semanas, como melhora de disposição, aumento da performance, mais controle alimentar e sensação de organização. Resultados visuais ficam mais evidentes entre 20 e 30 dias. O ponto central aqui não é só o resultado rápido, e sim conseguir sustentar esse resultado sem efeito sanfona. O processo é construído para evoluir de forma contínua, respeitando seu ponto de partida, sua rotina e sua adesão.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">E se eu já tentei de tudo e não funcionou?</span></summary>
+        <div class="qa__a"><p>A maioria das pessoas que entra no acompanhamento já tentou dieta, treino, aplicativo ou acompanhamento anterior. O que normalmente falhou não foi a pessoa, foi a estratégia aplicada fora do contexto real dela. Aqui o trabalho começa entendendo o que já foi tentado, o que travou seus resultados e o que precisa ser ajustado para que o processo funcione na sua vida, não em uma rotina idealizada.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Preciso seguir tudo à risca? Tenho uma rotina corrida.</span></summary>
+        <div class="qa__a"><p>O acompanhamento não é pensado para uma rotina perfeita, e sim para a sua rotina real. O plano é ajustado à sua agenda, compromissos, vida social e contexto atual. O foco não é perfeição, é constância bem orientada. Por isso o acompanhamento e os ajustes são parte central do processo.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">E se minha rotina mudar no meio do processo?</span></summary>
+        <div class="qa__a"><p>Mudanças de rotina são esperadas, não exceção. Viagens, trabalho, eventos e imprevistos fazem parte da vida. O acompanhamento existe justamente para adaptar a estratégia quando isso acontece, e não para te cobrar perfeição.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Como funciona o suporte entre as sessões?</span></summary>
+        <div class="qa__a"><p>O suporte é diário e direto. Você tem acesso a mim e à equipe para dúvidas, ajustes e alinhamentos sem precisar esperar pela próxima consulta. Além disso, os checkpoints quinzenais garantem que o processo nunca fique à deriva.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">O atendimento online funciona tão bem quanto o presencial?</span></summary>
+        <div class="qa__a"><p>Sim. O acompanhamento online segue exatamente o mesmo padrão clínico do presencial. Temos pacientes em mais de 13 países e o resultado é equivalente quando existe comprometimento dos dois lados. A única diferença é a avaliação física, que no online é feita por fotos e medidas enviadas pelo paciente, com estimativa de composição corporal por inteligência artificial.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Preciso levar exames na primeira conversa?</span></summary>
+        <div class="qa__a"><p>Não é obrigatório, mas se você já tiver exames recentes, eles ajudam a personalizar ainda mais o processo desde o início. Caso não tenha, orientamos quais solicitar com base no seu perfil clínico.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Atende fora do Brasil?</span></summary>
+        <div class="qa__a"><p>Sim. Atendimento online para qualquer país. Já acompanhamos pacientes em Canadá, EUA, Alemanha, Austrália, Portugal, Espanha e Inglaterra, entre outros.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Tenho uma condição de saúde específica, como diabetes, hipotireoidismo ou uso de medicamentos como tirzepatida. Consigo ser atendido?</span></summary>
+        <div class="qa__a"><p>Sim. O acompanhamento é clínico e integrado, com equipe multidisciplinar que inclui equipe médica, educador físico e nutricionistas especializados. Condições de saúde específicas são avaliadas individualmente desde o início do processo, com acompanhamento médico quando necessário, e a estratégia é adaptada para cada caso.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">Vocês atendem só quem quer estética?</span></summary>
+        <div class="qa__a"><p>Não. A estética é um dos objetivos possíveis, ao lado de performance e qualidade de vida. Acompanhamos emagrecimento, definição corporal e hipertrofia, mas também longevidade, saúde hormonal, saúde da mulher, gestação, pós-bariátrica, saúde mental e performance esportiva e cognitiva. O ponto de partida é sempre o seu objetivo e o seu momento de saúde.</p></div></details>
+      <details class="qa"><summary><span class="qa__i" aria-hidden="true"></span><span class="qa__q">O que está incluso e o que não está?</span></summary>
+        <!-- CONFIRMAR COM O CLIENTE: itens não inclusos. -->
+        <div class="qa__a"><p>No plano anual estão inclusos 6 consultas com os nutricionistas da equipe, 24 checkpoints com ajustes quinzenais, plano alimentar individualizado, aplicativo exclusivo de dieta, análise e prescrição de exames, prescrição de suplementos e manipulados, suporte diário via WhatsApp em horário comercial, o grupo exclusivo com a equipe e o Grupo VIP. O plano semestral tem o mesmo padrão, com 4 consultas e 12 checkpoints.</p><p>Não estão inclusos os custos de terceiros: a realização dos exames laboratoriais e a compra de suplementos e manipulados. A prescrição está inclusa; a compra fica por sua conta.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. CTA FINAL ============ -->
+<section class="sec final" id="aplicar" aria-labelledby="fin-t">
+  <div class="wrap narrow center">
+    <svg class="final__mono" aria-hidden="true"><use href="#mono"/></svg>
+    <h2 class="h2 h2--xl" id="fin-t">Faça sua <em>aplicação</em></h2>
+    <p class="lead">Leva cerca de 3 minutos. Cada aplicação é analisada pessoalmente e, se for o seu momento, a equipe chama você no WhatsApp.</p>
+    <div class="ctas ctas--center">
+      <a class="btn btn--gold btn--lg" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=cta_final" data-apply>Aplicar ao Planejamento</a>
+      <a class="btn btn--wa btn--lg" href="https://wa.me/5531992748134?text=Ol%C3%A1%2C%20N%C3%ADtio!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20acompanhamento." target="_blank" rel="noopener" data-wa="cta_final"><svg aria-hidden="true"><use href="#wa"/></svg> Falar no WhatsApp</a>
+    </div>
   </div>
 </section>
 
 </main>
 
-<!-- ============ CONTATO + RODAPÉ ============ -->
-<footer class="contact" id="contato">
-  <p class="eyebrow">Próximo passo</p>
-  <h2 class="h-section" data-split>Planejamento Nutricional Estratégico.</h2>
-  <p class="contact__lead rv">Cada aplicação é analisada pessoalmente. Presencial em Contagem, MG, e online para todo o Brasil e o exterior.</p>
-  <a class="mailto" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=contato">Fazer minha aplicação <span>↗</span></a>
-  <div class="contact__alt">
-    <a href="https://wa.me/5531992748134?text=Ol%C3%A1%20N%C3%ADtio%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">WhatsApp (31) 99274-8134</a>
-    <a href="mailto:nitiomendes@gmail.com">nitiomendes@gmail.com</a>
-  </div>
-  <div class="foot">
-    <div class="foot__a">
-      <p class="foot__sig">Nítio Mendes</p>
-      <p class="foot__tag">Nutrição Avançada · O resultado mora na constância.</p>
-      <address class="foot__addr">Av. Dr. João Augusto da Fonseca e Silva, 396, 2º andar<br>Novo Eldorado, Contagem, MG</address>
-      <p class="pending" title="Registro profissional ainda não informado">CRN: a confirmar</p>
-    </div>
-    <nav class="foot__b" aria-label="Redes e contato">
-      <ul>
-        <li><a href="https://instagram.com/nitiomendes" target="_blank" rel="noreferrer noopener">Instagram</a></li>
-        <li><a href="https://wa.me/5531992748134" target="_blank" rel="noreferrer noopener">WhatsApp</a></li>
-        <li><a href="mailto:nitiomendes@gmail.com">E-mail</a></li>
-        <li><a href="https://nitiomendes.com.br/blog">Blog</a></li>
-      </ul>
-    </nav>
-    <div class="foot__c"><p>© <span data-year>2026</span> Nítio Mendes. Todos os direitos reservados.</p></div>
+<!-- ============ RODAPÉ ============ -->
+<footer class="foot">
+  <div class="wrap narrow center">
+    <ul class="foot__social">
+      <li><a class="foot__ic" href="https://wa.me/5531992748134" target="_blank" rel="noopener" aria-label="WhatsApp" data-wa="rodape"><svg aria-hidden="true"><use href="#wa"/></svg></a></li>
+      <li><a class="foot__ic" href="https://instagram.com/nitiomendes" target="_blank" rel="noopener" aria-label="Instagram @nitiomendes"><svg aria-hidden="true"><use href="#ig"/></svg></a></li>
+    </ul>
+    <p class="foot__brand"><svg aria-hidden="true"><use href="#mono"/></svg><span><b>N</b>ITIO<b>M</b>ENDES</span></p>
+    <p class="foot__tag">Estética · Performance · Qualidade de vida</p>
+    <address class="foot__addr">Av. Dr. João Augusto da Fonseca e Silva, 396, 2º andar · Novo Eldorado, Contagem, MG<br><a href="mailto:nitiomendes@gmail.com">nitiomendes@gmail.com</a> · (31) 99274-8134</address>
+    <ul class="foot__links">
+      <li><a href="https://nitiomendes.com.br/blog">Blog</a></li>
+      <li><a href="privacidade.html">Política de privacidade</a></li>
+      <li><button type="button" class="linkbtn" data-cookie-prefs>Preferências de cookies</button></li>
+    </ul>
+    <p class="foot__copy">Todos os direitos reservados © <span data-year>2026</span></p>
+    <!-- TODO OBRIGATÓRIO: número do CRN-9 (Res. CFN 856/2026, Art. 24). Não publicar sem ele. -->
+    <p class="foot__legal">Nítio Mendes, Nutricionista <span class="pending" data-crn>CRN-9: a confirmar</span></p>
+    <p class="foot__legal">Atendimento exclusivamente particular: não atendemos por convênio.</p>
+    <p class="foot__legal">Condições de saúde específicas são avaliadas individualmente, com acompanhamento médico quando necessário. Este site não faz prescrição.</p>
+    <!-- TODO: confirmar com o cliente que os textos foram revisados por ele (Res. CFN 856/2026, Art. 37). -->
+    <p class="foot__legal">Textos produzidos com apoio de ferramentas de inteligência artificial e revisados pelo nutricionista responsável.</p>
   </div>
 </footer>
 
-<a class="dock" href="aplicacao.html?utm_source=site&amp;utm_medium=organic&amp;utm_campaign=site&amp;utm_content=barra_mobile" data-dock>Planejamento Nutricional Estratégico <small>Aplicar ↗</small></a>
+<!-- Player de vídeo (depoimentos) -->
+<dialog class="player" data-player aria-label="Depoimento em vídeo">
+  <button type="button" class="player__close" data-player-close aria-label="Fechar vídeo"><svg aria-hidden="true"><use href="#close"/></svg></button>
+  <div class="player__frame" data-player-frame></div>
+  <span tabindex="0" data-trap class="sr">Voltar ao botão de fechar</span>
+</dialog>
 
-<!-- ============ SCRIPTS ============ -->
-<script>
-/* Grade adaptativa: acima de 1920px a fonte raiz cresce de forma amortecida */
-(function(){
-  var FONT_BASE = 16, BASE_W = 1920, COEF = 0.6666;
-  function applyAdaptiveGrid(){
-    var w = window.innerWidth;
-    var reduction = ((BASE_W - w) / BASE_W) * 100 * COEF;
-    var size = FONT_BASE - (FONT_BASE * reduction) / 100;
-    if (size > FONT_BASE) document.documentElement.style.fontSize = size + 'px';
-    else document.documentElement.style.removeProperty('font-size');
-  }
-  applyAdaptiveGrid();
-  addEventListener('resize', applyAdaptiveGrid);
-})();
-</script>
-<script type="importmap">
-{ "imports": { "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.3.19/dist/lenis.mjs" } }
-</script>
-<script type="module">
-const $ = (s, el = document) => el.querySelector(s);
-const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
-const doc = document.documentElement;
-const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const finePointer = matchMedia('(hover: hover) and (pointer: fine) and (min-width: 769px)').matches;
-const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-
-/* ---------- Lenis (se o CDN falhar, a rolagem nativa continua) ---------- */
-let lenis = null;
-try {
-  const { default: Lenis } = await import('lenis');
-  if (!reduced) {
-    lenis = new Lenis({ smoothWheel: true });
-    window.lenis = lenis;
-    const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
-    requestAnimationFrame(raf);
-    $$('dialog, [data-menu]').forEach((el) => el.setAttribute('data-lenis-prevent', ''));
-  }
-} catch (e) { /* segue sem rolagem suave */ }
-const lock = (on) => { if (lenis) (on ? lenis.stop() : lenis.start()); };
-
-document.addEventListener('click', (e) => {
-  const a = e.target.closest('a[href^="#"]');
-  if (!a) return;
-  const id = a.getAttribute('href');
-  const el = id === '#top' ? 0 : (id.length > 1 ? document.querySelector(id) : null);
-  if (el === null) return;
-  e.preventDefault();
-  closeMenu();
-  if (lenis) lenis.scrollTo(el, { duration: 1.4 }); else (el === 0 ? scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }) : el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' }));
-});
-
-/* ---------- Divisão de texto ---------- */
-// letras: cada letra sobe de baixo (nome do hero)
-$$('[data-letters]').forEach((ln) => {
-  const t = ln.textContent.trim();
-  ln.textContent = '';
-  const inner = document.createElement('span'); inner.className = 'lni'; inner.style.cssText = 'transform:none;opacity:1';
-  [...t].forEach((c, i) => { const s = document.createElement('span'); s.className = 'ch'; s.textContent = c; s.style.transitionDelay = (i * 52) + 'ms'; inner.appendChild(s); });
-  ln.appendChild(inner);
-});
-// linhas: agrupa as palavras pela posição real depois que a fonte carrega
-const splitLines = (el) => {
-  const text = el.textContent.trim().replace(/\s+/g, ' ');
-  el.setAttribute('aria-label', text);
-  el.innerHTML = text.split(' ').map((w) => `<span class="w">${w}</span>`).join(' ');
-  const words = $$('.w', el); const lines = []; let top = null;
-  words.forEach((w) => { const y = w.offsetTop; if (top === null || Math.abs(y - top) > 4) { lines.push([]); top = y; } lines[lines.length - 1].push(w.textContent); });
-  el.innerHTML = lines.map((l, i) => `<span class="ln" aria-hidden="true" style="--ln-delay:${i * 90}ms"><span class="lni">${l.join(' ')}</span></span>`).join('');
-};
-// palavras: citação dos depoimentos
-const splitWords = (el, text) => {
-  el.innerHTML = '“' + text.split(' ').map((w, i) => `<span class="wd" style="transition-delay:${i * 22}ms">${w}</span>`).join(' ') + '”';
-};
-
-/* ---------- Revelações ao entrar na tela (uma vez) ---------- */
-const io = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
-  entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add(en.target.classList.contains('rv') ? 'in' : 'is-revealed'); io.unobserve(en.target); } });
-}, { threshold: 0 }) : null;
-const watch = (el) => { if (reduced || !io) { el.classList.add(el.classList.contains('rv') ? 'in' : 'is-revealed'); } else io.observe(el); };
-
-/* ---------- Abertura: 0→100 ligado ao carregamento real ---------- */
-const pre = $('[data-intro]');
-const heroImg = $('[data-hero-img]');
-const startHero = async () => {
-  const base = 120;
-  $$('.hero__name .ln').forEach((ln, i) => setTimeout(() => ln.classList.add('is-revealed'), base + i * 240));
-  $$('.hero__roles .ln').forEach((ln, i) => { ln.style.setProperty('--ln-d', '760ms'); setTimeout(() => ln.classList.add('is-revealed'), base + 200 + i * 80); });
-  setTimeout(() => $$('.hero [data-hero-fade]').forEach((el) => el.classList.add('in')), base + 400);
-  setTimeout(() => $$('.hero__cue').forEach((el) => el.classList.add('in')), base + 900);
-};
-const runIntro = async () => {
-  if (!pre || getComputedStyle(pre).display === 'none') { startHero(); return; }
-  lock(true); scrollTo(0, 0); doc.style.overflow = 'hidden';
-  const count = $('[data-count]');
-  const tasks = [document.fonts ? document.fonts.ready : null, heroImg && heroImg.decode ? heroImg.decode().catch(() => {}) : null, new Promise((r) => (document.readyState === 'complete' ? r() : addEventListener('load', r, { once: true })))];
-  let done = 0; tasks.forEach((t) => Promise.resolve(t).finally(() => done++));
-  const MIN = 2000, MAX = 4500, t0 = performance.now();
-  let shown = 0, finished = false;
-  const finish = async (complete) => {
-    if (finished) return; finished = true;
-    if (complete) count.textContent = '100';
-    try { sessionStorage.setItem('nm-intro', '1'); } catch (e) {}
-    pre.classList.add('is-fade');
-    await wait(300 + 200);
-    pre.classList.add('is-wipe');
-    startHero();
-    await wait(650);
-    pre.classList.add('is-done'); pre.remove();
-    doc.style.overflow = ''; lock(false);
-  };
-  const tick = (now) => {
-    if (finished) return;
-    const el = now - t0;
-    const timeP = Math.min(1, el / MIN);
-    const realP = done / tasks.length;
-    const target = Math.min(timeP, realP);   // nunca mostra mais do que já carregou
-    shown = Math.max(shown, shown + (target - shown) * 0.18);
-    count.textContent = String(Math.round(shown * 100));
-    if (target >= 1 && shown > 0.995) return finish(true);
-    if (el > MAX) return finish(false);
-    requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-  $('[data-intro-skip]').addEventListener('click', () => finish(false));
-  addEventListener('keydown', (e) => { if (e.key === 'Escape') finish(false); });
-};
-(document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
-  $$('[data-split]').forEach((el) => { splitLines(el); watch(el); });
-});
-$$('.rv').forEach(watch);
-runIntro();
-
-/* ---------- Nav: fundo ao rolar, esconde ao descer, link ativo ---------- */
-const nav = $('[data-nav]');
-const secs = $$('main > section[id], footer#contato');
-const links = $$('.nav__links a[href^="#"]');
-const dock = $('[data-dock]');
-let lastY = 0;
-const onScroll = () => {
-  const y = scrollY;
-  // fundo do menu só depois do hero, para não cobrir o retrato
-  nav.classList.toggle('is-solid', y > $('#top').offsetHeight - 80);
-  nav.classList.toggle('is-hidden', y > lastY && y > innerHeight * .8 && !menu.classList.contains('is-open'));
-  lastY = y;
-  let cur = '';
-  secs.forEach((s) => { if (s.getBoundingClientRect().top < innerHeight * .4) cur = '#' + s.id; });
-  links.forEach((a) => a.getAttribute('href') === cur ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
-  const c = $('#contato').getBoundingClientRect();
-  dock.classList.toggle('is-visible', y > innerHeight * .8 && c.top > innerHeight);
-};
-addEventListener('scroll', onScroll, { passive: true });
-
-/* ---------- Menu mobile ---------- */
-const burger = $('[data-burger]'), menu = $('[data-menu]');
-const menuLinks = $$('a', menu);
-function closeMenu(){
-  if (!menu.classList.contains('is-open')) return;
-  menu.classList.remove('is-open'); burger.setAttribute('aria-expanded', 'false'); burger.setAttribute('aria-label', 'Abrir menu');
-  menuLinks.forEach((a) => a.style.transitionDelay = '0ms');
-  doc.style.overflow = ''; lock(false);
-}
-burger.addEventListener('click', () => {
-  if (menu.classList.contains('is-open')) return closeMenu();
-  menuLinks.forEach((a, i) => a.style.transitionDelay = (120 + i * 60) + 'ms');
-  menu.classList.add('is-open'); burger.setAttribute('aria-expanded', 'true'); burger.setAttribute('aria-label', 'Fechar menu');
-  doc.style.overflow = 'hidden'; lock(true);
-});
-menu.addEventListener('click', (e) => { if (e.target.closest('a') && !e.target.closest('a[href^="#"]')) closeMenu(); });
-addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
-
-/* ---------- Imagens: placeholder se alguma faltar ---------- */
-$$('[data-liquid]').forEach((fig) => {
-  const img = $('img', fig);
-  if (img) { const miss = () => fig.classList.add('is-missing'); img.addEventListener('error', miss); if (img.complete && img.naturalWidth === 0 && img.currentSrc) miss(); }
-});
-
-/* ---------- Especialidades: painel com o texto completo ---------- */
-let opener = null;
-const openSpec = (slug, btn) => {
-  const d = $(`[data-spec-dialog="${slug}"]`);
-  if (!d || d.open) return;
-  opener = btn || null;
-  d.showModal(); lock(true);
-  history.replaceState(null, '', '#especialidade-' + slug);
-};
-const closeSpec = (d) => {
-  if (!d.open || d.classList.contains('is-closing')) return;
-  const end = () => { d.classList.remove('is-closing'); d.close(); lock(false); history.replaceState(null, '', location.pathname + location.search); if (opener) opener.focus(); };
-  if (reduced) return end();
-  d.classList.add('is-closing'); setTimeout(end, 400);
-};
-$$('[data-spec-open]').forEach((b) => b.addEventListener('click', () => openSpec(b.dataset.specOpen, b)));
-$$('[data-spec-dialog]').forEach((d) => {
-  d.addEventListener('cancel', (e) => { e.preventDefault(); closeSpec(d); });
-  d.addEventListener('click', (e) => { if (e.target === d || e.target.closest('[data-close]')) closeSpec(d); });
-});
-const fromHash = (delay) => {
-  const m = location.hash.match(/^#especialidade-([\w-]+)$/);
-  if (m) setTimeout(() => { const b = $(`[data-spec-open="${m[1]}"]`); if (b) b.scrollIntoView({ block: 'center' }); openSpec(m[1], b); }, delay);
-};
-fromHash(pre && getComputedStyle(pre).display !== 'none' ? 2900 : 300);
-addEventListener('hashchange', () => fromHash(0));
-
-/* ---------- Depoimentos: troca com revelação palavra a palavra ---------- */
-const voices = $$('[data-voice]');
-const quoteEl = $('[data-quote-text]'), whoEl = $('[data-who]'), mark = $('[data-mark]');
-const setVoice = (btn) => {
-  if (btn.getAttribute('aria-pressed') === 'true' && quoteEl.childNodes.length) return;
-  voices.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
-  quoteEl.classList.remove('is-revealed');
-  splitWords(quoteEl, btn.dataset.quote);
-  quoteEl.setAttribute('aria-label', btn.dataset.quote);
-  whoEl.textContent = btn.dataset.name + ' — ' + btn.dataset.role;
-  mark.classList.add('is-swap');
-  setTimeout(() => { $('span', mark).textContent = btn.dataset.initials; mark.classList.remove('is-swap'); }, 180);
-  requestAnimationFrame(() => requestAnimationFrame(() => quoteEl.classList.add('is-revealed')));
-};
-voices.forEach((b) => { b.addEventListener('click', () => setVoice(b)); b.addEventListener('mouseenter', () => finePointer && setVoice(b)); b.addEventListener('focus', () => setVoice(b)); });
-if (voices[0]) {
-  splitWords(quoteEl, voices[0].dataset.quote);
-  quoteEl.setAttribute('aria-label', voices[0].dataset.quote);
-  watch(quoteEl);
-}
-
-const yEl = $('[data-year]'); if (yEl) yEl.textContent = new Date().getFullYear();
-onScroll();
-</script>
+<script src="js/config.js"></script>
+<script src="js/consent.js"></script>
+<script src="js/site.js" defer></script>
 </body>
 </html>

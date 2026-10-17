@@ -1,58 +1,76 @@
-# Site — Nítio Mendes · Nutrição Avançada
+# Site · Nítio Mendes (v5, preto + ouro)
 
-One-pager cinematográfico, escuro e imponente. O `index.html` é um arquivo único, com HTML, CSS e JavaScript juntos, sem framework e sem etapa de build. A rolagem suave usa o Lenis, carregado de CDN; se o CDN falhar, o site continua com a rolagem normal.
+Landing page longa de conversão para o **Programa de Acompanhamento de 12 meses**. O objetivo é levar o visitante a **aplicar** (`aplicacao.html`) ou a **falar no WhatsApp**. Ela é estática (HTML, CSS e JS, sem build) e pode ser hospedada em GitHub Pages, Netlify ou Hostinger.
 
-## Conceito
+A identidade segue a apresentação comercial **Estética · Performance · Qualidade de vida**: fundo preto, ouro metálico, **Barlow Condensed 800 em caixa-alta** nos títulos e Montserrat no corpo. A organização segue o modelo de referência (fabriciomoura.com): coluna central, blocos curtos, botões retangulares e CTA depois de cada bloco. Um botão de WhatsApp fica sempre à mão: flutuante no computador e, no celular, numa barra fixa junto com "Aplicar".
 
-- **Nome gigante:** "NÍTIO / MENDES" em vermelho (`#ff3b1d`, da família do vermelho do ebook), na fonte Anton, com o retrato recortado do Nítio na frente.
-- **Movimento:**
-  - abertura com contador de 0 a 100% ligado ao carregamento real;
-  - nome que sobe letra a letra, títulos que sobem linha a linha e depoimentos que aparecem palavra a palavra;
-  - letreiro contínuo com os pilares do acompanhamento;
-  - fotos em preto e branco que ganham cor e ondulam ao passar o mouse.
-- **Grade proporcional:** tudo é medido em `rem`, e a fonte raiz acompanha a largura da tela (base de 1920 px), então o layout escala igual em qualquer tamanho.
+## Blocos da página (cada um com âncora própria)
 
-## Seções
+| # | Âncora | Bloco |
+|---|--------|-------|
+| 1 | `#inicio` | Hero: "NÍTIO MENDES" gigante atrás do retrato (letras sobem na abertura), selo "Acompanhamento Premium", título com teste A/B, CTA |
+| — | barra fixa | WhatsApp + Aplicar (no topo depois do hero no computador; sempre no rodapé no celular) |
+| 2 | `#dores` | Faixa dourada: "Eu sei que você não está feliz com seus resultados…" + perguntas de dor |
+| 3 | `#resultados` | Prova: relatos do Google (ou antes/depois, se ligado) |
+| 4 | `#solucao` | "Eu sei o que impede os seus resultados" + 6 pares dor → resolução |
+| 5 | `#programa` | "Veja tudo que estará incluso": cartão Programa Premium com checklist e foto |
+| 6 | `#beneficios` | Os 6 benefícios com numerais dourados |
+| 7 | `#equipe` | "Quem é Nítio Mendes?" (foto P&B, curvas douradas, 12 especializações em `#especialidades`, cada uma abre o texto completo em `#especialidade-<slug>`) + equipe multidisciplinar |
+| 8 | `#local` | Presencial em Contagem (SEO local, mapa sob demanda) × online com bioimpedância por IA |
+| 9 | `#planos` | Anual (destaque) e semestral, aviso "não atendemos por convênio"; preços controlados por flag |
+| 10 | `#como-funciona` | 6 passos depois da aplicação (fundo claro) |
+| 11 | `#depoimentos` | Abas: Vídeos, Resultados, Mensagens e Google |
+| 12 | `#faq` | 12 perguntas em caixas (JSON-LD FAQPage gerado do próprio HTML) |
+| 13 | `#aplicar` | CTA final |
+| — | rodapé | Ícones WhatsApp/Instagram, endereço, CRN, privacidade, cookies, aviso de IA |
 
-1. **Abertura:** contador 0 → 100%, uma vez por sessão, com botão "Pular" e tecla Esc.
-2. **Hero:** "Nutrição / Clínica / Avançada / Humanizada", descrição, botão do Planejamento Nutricional Estratégico, nome gigante e retrato.
-3. **Letreiro:** escuta ativa, leitura clínica, plano personalizado, suporte diário, checkpoints quinzenais.
-4. **Método:** "O resultado mora na constância." e os quatro pilares.
-5. **Especialidades:** as 12 áreas. Cada uma abre um painel com o texto integral; os links antigos `#especialidade-<slug>` também funcionam.
-6. **Espaço & obras:** consultório, avaliação de composição corporal, o livro *Neuroemocional* e o ebook.
-7. **Em números:** +2.000 vidas, +11 países, 5,0 no Google, 15 dias entre checkpoints.
-8. **Depoimentos:** quatro relatos reais do Google, sem edição, com troca interativa.
-9. **Dúvidas:** as 10 perguntas do site original.
-10. **Contato e rodapé:** aplicação ao Planejamento, WhatsApp, e-mail, endereço e redes.
+## Onde editar
 
-O formulário próprio da aplicação continua em `aplicacao.html`, que usa `css/aplicacao.css`, `css/styles.css` e `js/aplicacao.js`.
+| O quê | Arquivo |
+|-------|---------|
+| Preços, antes/depois, checkout, GA4/Pixel/Ads, A/B do título, vídeos, prints | **`js/config.js`** |
+| Cores, fontes e componentes da marca | `css/tokens.css` (veja também `/identidade/`) |
+| Layout da página | `css/site.css` |
+| Textos | `index.html` |
+| Texto das 12 especialidades | `ferramentas/especialidades.html`, depois rode `python ferramentas/montar-index.py` |
+| Perguntas do FAQ | `index.html`, depois rode o mesmo script (atualiza o JSON-LD) |
+| Perguntas da aplicação e destino das respostas | `js/aplicacao.js` (`CONFIG.endpoint`) |
+
+Pré-visualização sem publicar: `?precos=1` mostra os preços e `?antesdepois=1` liga o antes/depois. Antes de publicar, mude `ALLOW_PREVIEW_PARAMS` para `false`.
 
 ## Arquivos
 
 ```
-index.html                 página principal (arquivo único)
-aplicacao.html             formulário de aplicação ao Planejamento
-assets/images/             fotos (.webp e .jpg) e o retrato recortado (nitio-recorte.webp/.png)
-assets/images/nitio-mesa-original.jpg   foto original do retrato (trocar por alta resolução)
-css/, js/aplicacao.js      estilos e lógica do formulário de aplicação
-qa/v4.js                   23 testes automáticos (Playwright)
-.htaccess, _redirects      redirecionamentos para Hostinger / Netlify
-CNAME, .nojekyll           publicação no GitHub Pages (site-nitio.felixdias.com)
+index.html               landing page
+aplicacao.html           formulário de aplicação (15 etapas, LGPD obrigatória)
+privacidade.html         política de privacidade (LGPD)
+identidade/              kit visual: paleta, tipografia, componentes, posts e imagem OG
+css/tokens.css           tokens da marca (compartilhados)
+css/site.css             estilos da landing
+css/aplicacao.css        estilos do formulário
+js/config.js             configuração editável
+js/consent.js            aviso de cookies + eventos (nmTrack)
+js/site.js               comportamento da landing
+js/aplicacao.js          lógica do formulário
+ferramentas/             script de montagem e fonte das especialidades
+qa/                      testes Playwright
+GUIA-SEO-LOCAL.md        checklist de SEO local para o cliente
+PENDENCIAS.md            o que falta o cliente enviar ou confirmar (fora do git)
 ```
 
-## Trocar o retrato
+## Eventos de conversão
 
-A foto atual tem só 453×545 px e aparece um pouco suave no hero. Para usar uma versão em alta resolução, recorte o fundo dela (ficando só a pessoa, com fundo transparente) e salve como `assets/images/nitio-recorte.webp` e `nitio-recorte.png`. Depois ajuste `width` e `height` da `<img data-hero-img>` no `index.html` para a nova proporção.
+`clique_aplicar`, `clique_whatsapp`, `inicio_formulario`, `envio_formulario`, `play_video`, além de `clique_como_chegar`, `clique_checkout`, `abrir_especialidade` e `ab_hero`. Todos vão para o `dataLayer`. Com o aceite de cookies e os IDs preenchidos, também vão para o GA4, o Meta Pixel e o Google Ads.
 
-## Executar e testar
+## Testar
 
 ```
 python -m http.server 8765
-PW=<caminho do pacote playwright> node qa/v4.js
+PW=<caminho do pacote playwright> node qa/site.js        # 48 verificações
+PW=<caminho do pacote playwright> node qa/aplicacao.js   # 16 verificações do formulário
+PW=<caminho do pacote playwright> node qa/sections.js 1440 390   # capturas por seção
 ```
 
-A abertura aparece uma vez por sessão do navegador. Para vê-la de novo, use uma aba anônima ou rode `sessionStorage.clear()` no console.
+## Versões anteriores
 
-## Versão anterior
-
-A versão com seções em folhas coloridas está na branch `versao-folhas-publicada` e na pasta `site-nitio-mendes-backup-2026-10-13-v2-publicado`.
+A v4 (carbono + vermelho) está na branch `main` e foi publicada em `site-nitio.felixdias.com`. A v2 (folhas) está na branch `versao-folhas-publicada`.

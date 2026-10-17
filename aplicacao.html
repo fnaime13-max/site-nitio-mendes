@@ -6,7 +6,8 @@
 <title>Aplicação · Planejamento Nutricional Estratégico · Nítio Mendes</title>
 <meta name="description" content="Aplicação para o Planejamento Nutricional Estratégico do nutricionista Nítio Mendes. Responda em cerca de 3 minutos.">
 <link rel="canonical" href="https://nitiomendes.com.br/aplicacao.html">
-<meta name="theme-color" content="#0f0f0f">
+<meta name="theme-color" content="#0F0F0F">
+<meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Aplicação #TeamNítio · Planejamento Nutricional Estratégico">
@@ -17,20 +18,26 @@
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/aplicacao.css">
 <script>document.documentElement.classList.add('js');</script>
+<script>
+  /* Prévia (qualquer domínio que não seja o oficial): não indexar no Google. */
+  if (!/(^|\.)nitiomendes\.com\.br$/.test(location.hostname)) { var m = document.createElement('meta'); m.name = 'robots'; m.content = 'noindex, nofollow'; document.head.appendChild(m); }
+</script>
 </head>
 <body class="app" data-theme="dark">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs><linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFEB99"/><stop offset=".3" stop-color="#E2B955"/><stop offset=".6" stop-color="#C69A3E"/><stop offset="1" stop-color="#8A5A12"/></linearGradient></defs>
+  <!-- TODO: substituir pelo logo oficial (SVG). -->
   <symbol id="mono" viewBox="0 0 100 100">
-    <path class="mono-a" d="M0 0H23V100H0Z"/>
-    <path class="mono-a" d="M0 0H25L100 74V100H77Z"/>
-    <path class="mono-a" d="M77 30L100 22V100H77Z"/>
-    <path class="mono-b" d="M54 40L100 0V22L77 30L66 41Z"/>
-    <path class="mono-b" d="M23 60L46 82L23 100Z"/>
+    <path fill="url(#g-gold)" d="M0 0H23V100H0Z"/>
+    <path fill="url(#g-gold)" d="M0 0H25L100 74V100H77Z"/>
+    <path fill="url(#g-gold)" d="M77 30L100 22V100H77Z"/>
+    <path fill="#fff" d="M54 40L100 0V22L77 30L66 41Z"/>
+    <path fill="#fff" d="M23 60L46 82L23 100Z"/>
   </symbol>
 </svg>
 
@@ -46,6 +53,7 @@
   <div class="app__aside-copy">
     <p class="app__tag">#TeamNítio</p>
     <p class="app__aside-title">Planejamento Nutricional <em>Estratégico</em></p>
+    <p class="app__aside-sub">Programa de acompanhamento de 12 meses com nutricionistas, médico e personal trainer.</p>
     <p class="app__aside-note">Cada aplicação é analisada pessoalmente.</p>
   </div>
 </aside>
@@ -53,7 +61,7 @@
 <header class="app__header">
   <a class="brand" href="index.html" aria-label="Nítio Mendes Nutrição Avançada, voltar ao site">
     <svg class="brand__mono" aria-hidden="true"><use href="#mono"/></svg>
-    <span class="brand__name">Nítio Mendes<small>Nutrição Avançada</small></span>
+    <span class="brand__name"><b>N</b>ITIO<b>M</b>ENDES<small>Estética · Performance · Qualidade de vida</small></span>
   </a>
   <p class="app__count" aria-hidden="true"><span data-count-current>00</span> / <span data-count-total>13</span></p>
   <a class="app__exit" href="index.html">Voltar ao site</a>
@@ -69,6 +77,7 @@
     <div class="screen__text">
       <p><strong>Seja bem-vindo(a)</strong> ao formulário de aplicação para o nosso time!</p>
       <p><strong>Esse é um serviço de extrema exclusividade.</strong> Por isso o preenchimento desse formulário será fundamental para eu avaliar se será a solução ideal para a sua situação.</p>
+      <p><strong>Atendimento exclusivamente particular:</strong> não atendemos por plano de saúde ou convênio.</p>
       <p>Preste muita atenção em cada item do formulário. Após a análise das suas respostas, poderemos entrar em contato com você.</p>
     </div>
     <div class="screen__actions">
@@ -102,6 +111,8 @@
 
 <noscript><p class="app__noscript">Para preencher a aplicação, ative o JavaScript ou fale com a equipe pelo <a href="https://wa.me/5531992748134">WhatsApp</a>.</p></noscript>
 
+<script src="js/config.js"></script>
+<script src="js/consent.js"></script>
 <script src="js/aplicacao.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 /* Aplicação · Planejamento Nutricional Estratégico
-   Recria as 13 perguntas do formulário da Leadix com a estética do site.
+   Recria as 13 perguntas do formulário da Leadix com a estética do site,
+   mais o interesse por plano e o consentimento LGPD (15 etapas).
 
    ENVIO DAS RESPOSTAS
    - CONFIG.endpoint vazio: abre o WhatsApp do Nítio com todas as respostas.
@@ -56,9 +57,16 @@
     { id: 'tentativas', type: 'choice', required: true,
       title: 'Quantas vezes você já tentou alcançar seus objetivos e não conseguiu?',
       options: ['Uma vez', 'Duas a quatro vezes', 'Mais de quatro vezes'] },
+    { id: 'plano', type: 'choice', required: true,
+      title: 'Qual formato de acompanhamento mais te interessa hoje?',
+      note: 'O atendimento é exclusivamente particular (não atendemos por convênio). Os valores e as formas de pagamento são apresentados depois da análise da sua aplicação.',
+      options: ['Anual (12 meses)', 'Semestral (6 meses)', 'Ainda não sei'] },
     { id: 'motivo', type: 'long', required: true,
       title: 'Por que você considera que fazer parte do nosso time é a oportunidade ideal neste momento?',
       note: 'Como você acha que nosso acompanhamento pode ajudar a transformar seus resultados?' },
+    { id: 'lgpd', type: 'consent', required: true,
+      title: 'Para finalizar, precisamos do seu consentimento.',
+      label: 'Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o uso dos meus dados para a análise desta aplicação e o contato da equipe pelo WhatsApp.' },
   ];
 
   const COUNTRIES = [['Brasil', '55'], ['Portugal', '351'], ['Estados Unidos', '1'], ['Canadá', '1'], ['Reino Unido', '44'], ['Alemanha', '49'], ['Espanha', '34'], ['Austrália', '61'], ['Chile', '56'], ['Outro país', '']];
@@ -78,11 +86,14 @@
 
   // origem do lead (UTM) — preservada para o envio
   const params = new URLSearchParams(location.search);
-  const origem = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].reduce((o, k) => { if (params.get(k)) o[k] = params.get(k); return o; }, {});
+  const origem = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'plano'].reduce((o, k) => { if (params.get(k)) o[k] = params.get(k); return o; }, {});
 
   // rascunho salvo na sessão (sobrevive a recarregar a página)
   let answers = {};
   try { answers = JSON.parse(sessionStorage.getItem(CONFIG.draftKey) || '{}'); } catch (e) { answers = {}; }
+  const PLANO = { anual: 'Anual (12 meses)', semestral: 'Semestral (6 meses)' };
+  if (PLANO[params.get('plano')] && !answers.plano) answers.plano = PLANO[params.get('plano')];
+  const track = (n, d) => window.nmTrack && window.nmTrack(n, d);
   const save = () => { try { sessionStorage.setItem(CONFIG.draftKey, JSON.stringify(answers)); } catch (e) {} };
 
   /* ---------- Montagem das etapas ---------- */
@@ -104,6 +115,12 @@
     } else if (q.type === 'long') {
       field = `<textarea class="q__input q__input--long" id="${q.id}" name="${q.id}" rows="3" placeholder="Sua resposta…" aria-describedby="${desc}" aria-required="true"></textarea>
         <p class="q__hint q__hint--long"><kbd>Shift</kbd> + <kbd>Enter</kbd> para quebrar a linha</p>`;
+    } else if (q.type === 'consent') {
+      field = `<label class="consent-box">
+          <input type="checkbox" id="${q.id}" name="${q.id}" aria-describedby="${desc}" aria-required="true">
+          <span class="consent-box__mark" aria-hidden="true"></span>
+          <span class="consent-box__txt">${q.label}</span>
+        </label>`;
     } else {
       const multi = q.type === 'multi';
       field = `<div class="q__choices" role="${multi ? 'group' : 'radiogroup'}" aria-labelledby="${q.id}-t" aria-describedby="${desc}">
@@ -139,6 +156,7 @@
     if (v == null) return;
     if (q.type === 'choice') $$(`input[name="${q.id}"]`).forEach((r) => { r.checked = r.value === v; });
     else if (q.type === 'multi') $$(`input[name="${q.id}"]`).forEach((c) => { c.checked = Array.isArray(v) && v.includes(c.value); });
+    else if (q.type === 'consent') $(`#${q.id}`).checked = v === true;
     else if (q.type === 'phone') { $(`#${q.id}`).value = v.numero || ''; $(`#${q.id}-ddi`).value = v.ddi ?? '55'; }
     else $(`#${q.id}`).value = v;
   });
@@ -147,12 +165,14 @@
   const read = (q) => {
     if (q.type === 'choice') { const r = $(`input[name="${q.id}"]:checked`); return r ? r.value : ''; }
     if (q.type === 'multi') return $$(`input[name="${q.id}"]:checked`).map((c) => c.value);
+    if (q.type === 'consent') return $(`#${q.id}`).checked;
     if (q.type === 'phone') return { ddi: $(`#${q.id}-ddi`).value, numero: $(`#${q.id}`).value.trim() };
     return $(`#${q.id}`).value.trim();
   };
   const validate = (q, v) => {
     if (!q.required) return '';
     if (q.type === 'choice') return v ? '' : 'Selecione uma opção para continuar.';
+    if (q.type === 'consent') return v ? '' : 'Para enviar, marque o consentimento acima.';
     if (q.type === 'phone') {
       const d = v.numero.replace(/\D/g, '');
       if (!d) return 'Informe seu WhatsApp para continuar.';
@@ -232,7 +252,7 @@
       answers[Q[i].id] = r.value; save();
       setTimeout(() => { if (cur === i) advance(); }, reduced ? 0 : 380);
     }));
-    $$('input[type=checkbox]', el).forEach((c) => c.addEventListener('change', () => { answers[Q[i].id] = read(Q[i]); save(); }));
+    $$('input[type=checkbox]', el).forEach((c) => c.addEventListener('change', () => { answers[Q[i].id] = read(Q[i]); save(); if (Q[i].type === 'consent' && c.checked) showErr(Q[i], ''); }));
     $$('input[type=text], input[type=tel], textarea', el).forEach((t) => t.addEventListener('input', () => { if ($(`#${Q[i].id}-err`).textContent) showErr(Q[i], ''); }));
   });
 
@@ -254,6 +274,7 @@
   /* ---------- Início ---------- */
   const welcome = $('[data-screen="welcome"]');
   $('[data-start]').addEventListener('click', () => {
+    track('inicio_formulario', { origem: origem.utm_content || '' });
     welcome.classList.remove('is-active');
     welcome.classList.add('is-leaving-up');
     setTimeout(() => {
@@ -271,12 +292,12 @@
   const toText = () => {
     const lines = ['*Aplicação · Planejamento Nutricional Estratégico*', ''];
     Q.forEach((q, i) => {
-      if (q.id === 'acordo') return;
+      if (q.id === 'acordo' || q.id === 'lgpd') return;
       const v = answers[q.id];
       const val = q.type === 'phone' ? fmtPhone(v) : Array.isArray(v) ? (v.length ? v.map((x) => '• ' + x).join('\n') : 'Nenhum') : v;
       lines.push(`*${i + 1}. ${q.title}*`, val, '');
     });
-    lines.push('Aceite: Sim, estou de acordo.');
+    lines.push('Aceite: Sim, estou de acordo.', 'Consentimento LGPD: sim (' + new Date().toLocaleString('pt-BR') + ')');
     if (Object.keys(origem).length) lines.push('Origem: ' + Object.values(origem).join(' / '));
     return lines.join('\n');
   };
@@ -301,7 +322,8 @@
     if (sending) return; sending = true;
     const btn = $('[data-ok]', qs[cur]);
     btn.disabled = true; btn.firstChild.textContent = 'Enviando… ';
-    const payload = { formulario: 'Planejamento Nutricional Estratégico', enviado_em: new Date().toISOString(), origem, respostas: Q.map((q) => ({ pergunta: q.title, resposta: q.type === 'phone' ? fmtPhone(answers[q.id]) : answers[q.id] })) };
+    const payload = { formulario: 'Planejamento Nutricional Estratégico', enviado_em: new Date().toISOString(), origem, consentimento_lgpd: answers.lgpd === true, respostas: Q.filter((q) => q.id !== 'lgpd').map((q) => ({ pergunta: q.title, resposta: q.type === 'phone' ? fmtPhone(answers[q.id]) : answers[q.id] })) };
+    track('envio_formulario', { plano: answers.plano || '', modalidade: answers.modalidade || '' });
     if (CONFIG.endpoint) {
       try {
         const r = await fetch(CONFIG.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });

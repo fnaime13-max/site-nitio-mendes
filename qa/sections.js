@@ -1,24 +1,26 @@
-// Captura cada seção na altura da tela, pulando a abertura.
-// Uso: PW=<playwright> node qa/sections.js [largura...]
+// Captura cada seção (e o hero) em várias larguras para revisão visual.
+// Uso: PW=<playwright> node qa/sections.js [largura...] [--q=precos=1]
 const path = require('path');
 const { chromium } = require(process.env.PW || 'playwright');
-const URL = 'http://127.0.0.1:8765/';
-const widths = process.argv.slice(2).map(Number).filter(Boolean);
+const args = process.argv.slice(2);
+const q = (args.find((a) => a.startsWith('--q=')) || '').slice(4);
+const URL = 'http://127.0.0.1:8765/' + (q ? '?' + q : '');
+const widths = args.map(Number).filter(Boolean);
 (async () => {
   const b = await chromium.launch();
   for (const w of widths.length ? widths : [1440, 390]) {
-    const ctx = await b.newContext({ viewport: { width: w, height: w < 768 ? 844 : 900 }, hasTouch: w < 1024, isMobile: w < 768 });
-    await ctx.addInitScript(() => { try { sessionStorage.setItem('nm-intro', '1'); } catch (e) {} });
+    const ctx = await b.newContext({ viewport: { width: w, height: w < 768 ? 844 : 900 }, hasTouch: w < 1024, isMobile: w < 768, reducedMotion: 'reduce' });
     const pg = await ctx.newPage();
-    await pg.goto(URL); await pg.waitForTimeout(1800);
-    const ids = await pg.evaluate(() => [...document.querySelectorAll('main > section, body > footer')].map((s, i) => { s.dataset.qa = i; return i; }));
-    for (const i of ids) {
-      await pg.evaluate((i) => { document.documentElement.style.scrollBehavior = 'auto'; const s = document.querySelector(`[data-qa="${i}"]`); window.scrollTo(0, s.offsetTop - 1); }, i);
-      await pg.waitForTimeout(250);
-      await pg.evaluate(() => window.scrollBy(0, 1));
-      await pg.waitForTimeout(1100);
-      await pg.screenshot({ path: path.resolve(__dirname, 'shots', `sec-${w}-${String(i).padStart(2, '0')}.png`) });
+    pg.on('pageerror', (e) => console.log('ERRO', e.message));
+    await pg.goto(URL, { waitUntil: 'networkidle' }); await pg.waitForTimeout(600);
+    const ids = await pg.evaluate(() => [...document.querySelectorAll('main > section, body > footer')].map((s) => s.id || s.className.split(' ')[0]));
+    for (const [i, id] of ids.entries()) {
+      const el = pg.locator('main > section, body > footer').nth(i);
+      await el.evaluate((s) => s.querySelectorAll('.rv').forEach((r) => r.classList.add('in')));
+      await el.screenshot({ path: path.resolve(__dirname, 'shots', `sec-${w}-${String(i).padStart(2, '0')}-${id}${q ? '-' + q.replace(/\W/g, '') : ''}.png`) });
     }
+    await pg.evaluate(() => scrollTo(0, 0)); await pg.waitForTimeout(300);
+    await pg.screenshot({ path: path.resolve(__dirname, 'shots', `fold-${w}.png`) });
     await ctx.close();
   }
   await b.close();
