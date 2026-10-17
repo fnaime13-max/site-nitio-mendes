@@ -49,7 +49,7 @@ window.NM_CONFIG = {
   HERO_AB: 'auto',
   HERO_H1: {   // [título, subtítulo]
     A: ['Emagreça, defina e mantenha', 'Sem dieta engessada e sem abrir mão da sua vida!'],
-    B: ['Resultado que dura', '12 meses com uma equipe inteira ao seu lado!'],
+    B: ['Resultado que dura', 'Com uma equipe inteira ao seu lado!'],
   },
 
   /* ---------- Rolagem suave (Lenis, ~15 KB via CDN) ---------- */

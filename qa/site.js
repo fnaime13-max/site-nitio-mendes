@@ -182,7 +182,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
       co: document.querySelector('[data-checkout="anual"]'), coSem: document.querySelector('[data-checkout="semestral"]').hidden,
       href: document.querySelector('.hero a[data-apply]').getAttribute('href'),
     }));
-    ok('Teste A/B: versão B troca o H1 e registra ab_hero', g.h1.startsWith('Resultado que dura') && g.sub.startsWith('12 meses') && g.ab && g.ab.variante === 'B');
+    ok('Teste A/B: versão B troca o H1 e registra ab_hero', g.h1.startsWith('Resultado que dura') && g.sub.startsWith('Com uma equipe') && g.ab && g.ab.variante === 'B');
     ok('Checkout aparece só no plano com URL configurada', g.co && !g.co.hidden && g.coSem);
     ok('UTM de entrada (Instagram) é repassada à aplicação', g.href.includes('utm_source=instagram') && g.href.includes('utm_campaign=outubro') && g.href.includes('utm_content=hero'), g.href);
     await c2.close();
