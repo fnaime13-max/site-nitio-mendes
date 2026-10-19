@@ -68,7 +68,7 @@ window.NM_CONFIG = {
      06 é horizontal: o card fica vertical e o player abre em 16:9. */
   TESTIMONIALS: [
     { type: 'mp4', src: 'assets/depoimentos/depoimento-06.mp4', poster: 'assets/depoimentos/depoimento-06.jpg', ratio: '16:9', name: 'Wilker, 34 anos', result: 'Time do Nítio' },
-    { type: 'mp4', src: 'assets/depoimentos/depoimento-05.mp4', poster: 'assets/depoimentos/depoimento-05.jpg', ratio: '9:16', name: 'Vandro', result: 'Time do Nítio' },
+    { type: 'mp4', src: 'assets/depoimentos/depoimento-05.mp4', poster: 'assets/depoimentos/depoimento-05.jpg', ratio: '9:16', name: 'Ewandro', result: 'Time do Nítio' },
     { type: 'mp4', src: 'assets/depoimentos/depoimento-07.mp4', poster: 'assets/depoimentos/depoimento-07.jpg', ratio: '9:16', name: 'Natália', result: 'Time do Nítio' },
     { type: 'mp4', src: 'assets/depoimentos/depoimento-04.mp4', poster: 'assets/depoimentos/depoimento-04.jpg', ratio: '9:16', name: 'Serlane', result: 'Time do Nítio' },
   ],

@@ -40,10 +40,10 @@ dialogs = re.findall(r'(<dialog class="sheet".*?</dialog>)', src, re.S)
 assert len(items) == 12 and len(dialogs) == 12, (len(items), len(dialogs))
 
 INCL = ('<ul class="sheet__incl">'
-        '<li>6 consultas com os nutricionistas da equipe</li>'
+        '<li>Consultas com o nutricionista Nítio Mendes</li>'
         '<li>Plano alimentar individualizado</li>'
         '<li>Aplicativo exclusivo de dieta</li>'
-        '<li>24 checkpoints com ajustes quinzenais</li>'
+        '<li>Checkpoints com ajustes quinzenais</li>'
         '<li>Grupo exclusivo com a equipe e Grupo VIP</li>'
         '<li>Suporte diário via WhatsApp</li></ul>')
 

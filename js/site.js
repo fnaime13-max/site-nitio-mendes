@@ -144,7 +144,7 @@
       if (!box) return;
       box.innerHTML = `<p class="plan__card">${esc(p.card)}<small>no cartão, em cobrança recorrente mensal</small></p><p class="plan__pix">ou <b>${esc(p.pix)}</b> à vista no Pix</p>`;
     });
-    $('[data-price-note]').textContent = 'Valores do programa completo. O parcelamento no cartão é feito em cobranças mensais recorrentes. Cada aplicação é analisada pessoalmente.';
+    $('[data-price-note]').textContent = 'Valores do programa completo. O parcelamento no cartão é feito em cobranças mensais recorrentes. Cada aplicação é analisada pessoalmente. Na pré-consulta você recebe os valores e as formas de pagamento.';
     [['anual', C.CHECKOUT_URL_ANUAL], ['semestral', C.CHECKOUT_URL_SEMESTRAL]].forEach(([k, url]) => {
       const a = $(`[data-checkout="${k}"]`);
       if (a && url) { a.href = url; a.hidden = false; }
