@@ -11,7 +11,7 @@ const watch = (pg, tag) => {
   pg.on('console', (m) => m.type() === 'error' && !/youtube|googletagmanager|ERR_|net::/i.test(m.text()) && errs.push(`${tag} ${m.text()}`));
 };
 // injeta valores no config.js sem editar o arquivo
-const withConfig = async (ctx, extra) => ctx.route('**/js/config.js', async (r) => {
+const withConfig = async (ctx, extra) => ctx.route('**/js/config.js*', async (r) => {
   const resp = await r.fetch(); const body = await resp.text();
   r.fulfill({ response: resp, body: body + `\nObject.assign(window.NM_CONFIG, ${JSON.stringify(extra)});` });
 });
