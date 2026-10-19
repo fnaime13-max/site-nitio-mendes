@@ -92,10 +92,10 @@ em { font-style: normal; }
   .app__main { grid-column: 2; }
   .app__header .brand { display: none; }
   .app__photo { position: absolute; inset: 14px; border-radius: var(--radius-l); overflow: hidden; }
-  .app__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 35% 40%; }
+  .app__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; }
   .app__photo { border: 1px solid var(--nm-gold-hair); }
-  .app__photo img { filter: grayscale(1) brightness(.7); }
-  .app__photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,10,.1) 25%, rgba(10,10,10,.92)); }
+  .app__photo img { filter: brightness(.92); }
+  .app__photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(10,10,10,.95)); }
   .app__aside-copy { position: absolute; left: 44px; right: 44px; bottom: 44px; color: var(--lume); }
   .app__tag { display: inline-block; font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: .35rem .7rem; border-radius: 999px; background: var(--nm-gold-grad-ui); color: #111; margin-bottom: 1rem; }
   .app__aside-title { text-transform: uppercase; font-family: var(--nm-serif); font-size: clamp(1.8rem, 1rem + 1.6vw, 2.6rem);  line-height: 1.08; font-weight: 800; }
