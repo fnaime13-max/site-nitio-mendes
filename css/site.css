@@ -171,7 +171,7 @@ div.center:has(> .btn) { margin-top: 2.4rem; }
 
 /* nome gigante atrás do retrato */
 .hero__name { position: absolute; z-index: 0; right: -.08em; top: .02em; display: flex; flex-direction: column; align-items: flex-end; font-family: var(--nm-display); font-weight: 800; font-style: italic; text-transform: uppercase; font-size: clamp(6rem, 33vw, 17rem); line-height: .8; letter-spacing: -.01em; pointer-events: none; -webkit-mask: linear-gradient(180deg, #000 55%, rgba(0,0,0,.25) 100%); mask: linear-gradient(180deg, #000 55%, rgba(0,0,0,.25) 100%); }
-.hn { display: block; overflow-x: visible; overflow-y: clip; padding: .04em .1em .02em; } /* corta só na vertical (letras sobem); o itálico do S passa livre */ /* .22em à direita: o itálico do S não corta */
+.hn { display: block; white-space: nowrap; overflow-x: visible; overflow-y: clip; padding: .04em .1em .02em; } /* corta só na vertical (letras sobem); o itálico do S passa livre */ /* .22em à direita: o itálico do S não corta */
 .hn .ch { display: inline-block; }
 .js .hn .ch { transform: translateY(110%); animation: rise .9s var(--nm-ease) forwards; animation-delay: calc(120ms + var(--i) * 55ms); }
 @keyframes rise { to { transform: none; } }
@@ -202,7 +202,7 @@ html:not(.js) .hero__in { opacity: 1; transform: none; animation: none; }
   .hero__copy .ctas, .hero__proof { justify-content: flex-start; }
   .hero__media { grid-area: media; align-self: stretch; min-height: 600px; margin: 0 calc(var(--gutter) * -1) 0 0; padding-top: 0; }
   .hero__img { width: min(100%, 600px); }
-  .hero__name { font-size: clamp(9rem, 14vw, 17rem); top: .1em; right: .06em; } /* o S termina dentro da tela */
+  .hero__name { font-size: clamp(9rem, 13vw, 14.5rem); top: .1em; right: .06em; } /* o S termina dentro da tela */
   .hero__side { left: 0; top: 58%; }
 }
 
