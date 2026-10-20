@@ -172,6 +172,12 @@
   });
 
   /* vídeos */
+  // capas em WebP responsivo (depoimento-NN-360/720.webp, geradas ao lado do .jpg)
+  const posterImg = (src) => {
+    const m = /^(assets\/depoimentos\/[\w-]+)\.jpg$/.exec(src);
+    const set = m ? `${m[1]}-360.webp 360w, ${m[1]}-720.webp 720w` : '';
+    return `<picture>${set ? `<source type="image/webp" srcset="${set}" sizes="(min-width: 900px) 240px, 60vw">` : ''}<img class="vid__poster" src="${esc(src)}" alt="" loading="lazy" decoding="async" width="540" height="960"></picture>`;
+  };
   const vids = $('[data-videos]');
   const list = C.TESTIMONIALS || [];
   if (list.length) {
@@ -179,7 +185,7 @@
       const wide = !!v.wide; // card largo só se pedido; vídeo horizontal abre em 16:9 no player
       const meta = `<span class="vid__meta"><b>${esc(v.name)}</b><span>${esc(v.result || '')}${v.months ? ` · ${esc(v.months)} meses de acompanhamento` : ''}</span></span>`;
       return `<li class="vid${wide ? ' vid--wide' : ''}"><button type="button" data-vid="${i}" aria-label="Assistir ao depoimento de ${esc(v.name)}">
-        ${v.poster ? `<img class="vid__poster" src="${esc(v.poster)}" alt="" loading="lazy" decoding="async" width="540" height="960">` : '<span class="vid__ph"></span>'}
+        ${v.poster ? posterImg(v.poster) : '<span class="vid__ph"></span>'}
         <span class="vid__play" aria-hidden="true"><svg><use href="#play"/></svg></span>${meta}</button></li>`;
     }).join('');
   } else {

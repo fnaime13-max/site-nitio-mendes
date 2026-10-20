@@ -542,3 +542,4 @@ small.note { display: block; margin-top: .2rem; font-size: .72em; font-weight: 5
 .light small.note { color: #555; }
 .plan-note { margin-top: -.4rem; margin-bottom: 1rem; }
 .hours { margin-top: .6rem; font-size: .9rem; color: rgba(255,255,255,.75); }
+.vid button picture { display: block; }
