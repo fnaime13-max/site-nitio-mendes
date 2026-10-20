@@ -67,12 +67,12 @@
   /* ---------- Barra de ação: no computador aparece no topo depois do hero ---------- */
   const actbar = $('[data-actbar]');
   const hero = $('#inicio');
-  let ticking = false;
-  const onScroll = () => {
-    ticking = false;
-    actbar.classList.toggle('is-visible', scrollY > hero.offsetTop + hero.offsetHeight - 120);
-  };
-  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  // IntersectionObserver em vez de medir o hero a cada rolagem (evita "reflow forçado")
+  if (actbar && hero && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      actbar.classList.toggle('is-visible', !e.isIntersecting && e.boundingClientRect.top < 0);
+    }, { rootMargin: '-120px 0px 0px 0px' }).observe(hero);
+  }
 
   /* ---------- Menu do celular ---------- */
   const burger = $('[data-burger]'), menu = $('[data-menu]');
@@ -175,8 +175,8 @@
   // capas em WebP responsivo (depoimento-NN-360/720.webp, geradas ao lado do .jpg)
   const posterImg = (src) => {
     const m = /^(assets\/depoimentos\/[\w-]+)\.jpg$/.exec(src);
-    const set = m ? `${m[1]}-360.webp 360w, ${m[1]}-720.webp 720w` : '';
-    return `<picture>${set ? `<source type="image/webp" srcset="${set}" sizes="(min-width: 900px) 240px, 60vw">` : ''}<img class="vid__poster" src="${esc(src)}" alt="" loading="lazy" decoding="async" width="540" height="960"></picture>`;
+    const set = m ? `${m[1]}-360.webp 360w, ${m[1]}-480.webp 480w, ${m[1]}-720.webp 720w` : '';
+    return `<picture>${set ? `<source type="image/webp" srcset="${set}" sizes="(min-width: 900px) 240px, 56vw">` : ''}<img class="vid__poster" src="${esc(src)}" alt="" loading="lazy" decoding="async" width="540" height="960"></picture>`;
   };
   const vids = $('[data-videos]');
   const list = C.TESTIMONIALS || [];
