@@ -273,5 +273,4 @@
   const prefs = $('[data-cookie-prefs]');
   if (prefs) prefs.addEventListener('click', () => { try { localStorage.removeItem('nm-consent-v1'); } catch (e) {} window.nmConsent && window.nmConsent.open(); });
 
-  onScroll();
 })();
