@@ -115,7 +115,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
     ok('Só dois planos: anual e semestral (nada de trimestral)', d.plans === 'anual,semestral' && d.noTri, d.plans);
     ok('Fica claro que não atende por convênio (planos, FAQ e rodapé)', d.convenio);
     ok('Aviso de convênio visível no topo, junto do botão principal', await pg.evaluate(() => { scrollTo(0, 0); const n = document.querySelector('#inicio .nohealth'); return !!n && /plano de saúde ou convênio/.test(n.textContent); }));
-    ok('Seção de diferencial com nutricionista, personal e médico', await pg.evaluate(() => [...document.querySelectorAll('#diferencial .pro__t')].map((e) => e.textContent.trim()).join('|') === 'Nutricionistas|Personal trainer|Médico'));
+    ok('Seção de diferencial com nutricionista, personal e médico', await pg.evaluate(() => [...document.querySelectorAll('#diferencial .pro__t')].map((e) => e.textContent.trim()).join('|') === 'Nutricionistas|Personal trainer|Médicos'));
 
     // fontes da marca realmente carregam (página e formulário)
     const fontsOk = async (url) => { const p = await ctx.newPage(); await p.goto(BASE + url, { waitUntil: 'networkidle' }); const r = await p.evaluate(async () => { await document.fonts.ready; const t = 'Ação NÍTIO ê'; return document.fonts.check('800 40px "Barlow Condensed"', t) && document.fonts.check(getComputedStyle(document.body).fontWeight + ' 16px Montserrat', t); }); await p.close(); return r; };
