@@ -553,4 +553,9 @@ small.note { display: block; margin-top: .2rem; font-size: .72em; font-weight: 5
 
 /* Registros profissionais da equipe */
 .member__reg { margin-top: .7rem; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--nm-gold-light); line-height: 1.5; }
-.member__reg span { white-space: nowrap; }
+
+/* Registros dos médicos: um por linha, nome e CRM alinhados */
+.member__regs { display: grid; gap: .45rem; margin: .8rem auto 0; padding: 0; list-style: none; width: 100%; max-width: 13rem; }
+.member__regs li { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; padding: .4rem .6rem; border: 1px solid var(--nm-gold-hair); border-radius: 6px; font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+.member__regs b { font-weight: 700; color: #fff; }
+.member__regs span { font-weight: 700; color: var(--nm-gold-light); }
