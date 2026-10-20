@@ -195,7 +195,7 @@
   /* prints de mensagens */
   const msgs = C.MESSAGES || [];
   $('[data-msgs]').innerHTML = (msgs.length ? msgs : Array.from({ length: 4 }, () => null)).map((m) =>
-    m ? `<li class="msg"><img src="${esc(m.src)}" alt="${esc(m.alt || 'Mensagem de paciente')}" loading="lazy" decoding="async"></li>`
+    m ? `<li class="msg"><img src="${esc(m.src)}" alt="${esc(m.alt || 'Mensagem de paciente')}"${m.w ? ` width="${m.w}" height="${m.h}"` : ''} loading="lazy" decoding="async"></li>`
       : `<li class="msg"><span class="msg__ph">Print de mensagem<br>aguardando arquivo autorizado</span></li>`).join('');
 
   /* player em modal: só carrega o vídeo no clique */
