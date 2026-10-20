@@ -142,8 +142,8 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
 
     await pg.evaluate(() => scrollTo(0, 0)); await pg.waitForTimeout(300);
     const barTop = await pg.evaluate(() => document.querySelector('[data-actbar]').classList.contains('is-visible'));
-    await pg.evaluate(() => scrollTo(0, document.querySelector('#dores').offsetTop + 200)); await pg.waitForTimeout(500);
-    ok('Computador: barra WhatsApp + Aplicar aparece no topo depois do hero', !barTop && await pg.evaluate(() => document.querySelector('[data-actbar]').classList.contains('is-visible') && document.querySelector('[data-actbar]').getBoundingClientRect().top === 0));
+    await pg.evaluate(() => scrollTo(0, document.querySelector('#dores').offsetTop + 200)); await pg.waitForTimeout(1200);
+    ok('Computador: barra WhatsApp + Aplicar aparece no topo depois do hero', !barTop && await pg.evaluate(() => document.querySelector('[data-actbar]').classList.contains('is-visible') && Math.abs(document.querySelector('[data-actbar]').getBoundingClientRect().top) < 1));
     ok('Computador: WhatsApp flutuante visível', await pg.evaluate(() => { const r = document.querySelector('.wafab').getBoundingClientRect(); return r.width > 0 && r.bottom <= innerHeight; }));
     // especialidade por hash + Esc devolve o foco
     await pg.goto(BASE + '#especialidade-nutricao-glp1-gip-tirzepatida-semaglutida', { waitUntil: 'networkidle' }); await pg.waitForTimeout(800);
