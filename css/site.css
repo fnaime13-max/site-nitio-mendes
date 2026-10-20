@@ -52,7 +52,7 @@ html.lenis, html.lenis body { height: auto; }
 .center { text-align: center; }
 
 /* ouro metálico em texto */
-.h2 em, .h3 em, .h2--gold, .hero__t, .ben__n, .offer__name, .hn .ch {
+.h2 em, .h3 em, .h2--gold, .hero__t, .ben__n, .offer__name {
   background: var(--nm-gold-grad); -webkit-background-clip: text; background-clip: text;
   color: var(--nm-gold-light); -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone; box-decoration-break: clone;
@@ -172,7 +172,7 @@ div.center:has(> .btn) { margin-top: 2.4rem; }
 /* nome gigante atrás do retrato */
 .hero__name { position: absolute; z-index: 0; right: -.08em; top: .02em; display: flex; flex-direction: column; align-items: flex-end; font-family: var(--nm-display); font-weight: 800; font-style: italic; text-transform: uppercase; font-size: clamp(6rem, 33vw, 17rem); line-height: .8; letter-spacing: -.01em; pointer-events: none; -webkit-mask: linear-gradient(180deg, #000 55%, rgba(0,0,0,.25) 100%); mask: linear-gradient(180deg, #000 55%, rgba(0,0,0,.25) 100%); }
 .hn { display: block; white-space: nowrap; overflow-x: visible; overflow-y: clip; padding: .04em .1em .02em; } /* corta só na vertical (letras sobem); o itálico do S passa livre */ /* .22em à direita: o itálico do S não corta */
-.hn .ch { display: inline-block; }
+.hn .ch { display: inline-block; color: #E8C062; -webkit-text-fill-color: #E8C062; } /* dourado liso: o degradê diagonal por letra criava faixas que pareciam cortes */
 .js .hn .ch { transform: translateY(110%); animation: rise .9s var(--nm-ease) forwards; animation-delay: calc(120ms + var(--i) * 55ms); }
 @keyframes rise { to { transform: none; } }
 .hero__band { position: absolute; z-index: 1; left: -10%; right: -10%; bottom: 18%; height: 18%; transform: rotate(-12deg); background: linear-gradient(180deg, transparent 0 4px, #050505 4px calc(100% - 4px), transparent calc(100% - 4px)), var(--nm-gold-grad); -webkit-mask: linear-gradient(90deg, transparent, #000 25% 75%, transparent); mask: linear-gradient(90deg, transparent, #000 25% 75%, transparent); opacity: .9; }
