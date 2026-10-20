@@ -460,8 +460,11 @@ html:not(.js) .hero__in { opacity: 1; transform: none; animation: none; }
 @media (min-width: 1100px) { .vids--proof { max-width: 1000px; margin-inline: auto; } .vids--proof .vid__play { width: 52px; height: 52px; } .vids--proof .vid__meta b { font-size: 1.05rem; } }
 .vids--proof + [data-res-rail]:not([hidden]) { margin-top: 1.5rem; }
 .bas { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
-.msgs { grid-auto-columns: min(70%, 260px); }
-@media (min-width: 1000px) { .msgs { grid-auto-flow: column; grid-template-columns: none; overflow-x: auto; } }
+.msgs { columns: 1; column-gap: 1rem; max-width: 1080px; margin-inline: auto; }
+@media (min-width: 640px) { .msgs { columns: 2; } }
+@media (min-width: 1000px) { .msgs { columns: 3; } }
+.msgs .msg { break-inside: avoid; margin-bottom: 1rem; }
+.msg img { display: block; width: 100%; height: auto; }
 .msg { border-radius: 10px; overflow: hidden; border: 1px solid #262626; background: #111; }
 .msg__ph { aspect-ratio: 9 / 16; display: grid; place-items: center; padding: 1.2rem; text-align: center; color: var(--nm-text-3); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; background: repeating-linear-gradient(135deg, #141414 0 14px, #181818 14px 28px); }
 .reviews { display: grid; gap: 1rem; text-align: left; }

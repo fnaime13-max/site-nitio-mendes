@@ -81,5 +81,15 @@ window.NM_CONFIG = {
 
   /* ---------- Prints de mensagens (WhatsApp) ----------
      { src: 'assets/depoimentos/print-01.webp', alt: 'Mensagem de paciente sobre…' }, */
-  MESSAGES: [],
+  MESSAGES: [
+    { src: 'assets/feedbacks/feedback-01.webp', alt: 'Paciente conta que a pressão arterial se regularizou e se manteve estável durante o acompanhamento' },
+    { src: 'assets/feedbacks/feedback-02.webp', alt: 'Paciente conta que eliminou 6,4 kg em 20 dias' },
+    { src: 'assets/feedbacks/feedback-03.webp', alt: 'Paciente comenta que precisou apertar todas as calças' },
+    { src: 'assets/feedbacks/feedback-04.webp', alt: 'Paciente conta que voltou a usar uma roupa que não usava fazia tempo' },
+    { src: 'assets/feedbacks/feedback-05.webp', alt: 'Paciente comemora 14,5 kg a menos e diz que perdeu 75% das roupas' },
+    { src: 'assets/feedbacks/feedback-06.webp', alt: 'Paciente conta que saiu da linha poucas vezes e passou a gastar menos com delivery' },
+    { src: 'assets/feedbacks/feedback-07.webp', alt: 'Paciente diz que a consultoria foi o melhor investimento dos últimos tempos e que se alimenta bem sem sofrer' },
+    { src: 'assets/feedbacks/feedback-08.webp', alt: 'Paciente conta que perdeu a vergonha de tirar a camiseta e se sentiu mais confiante' },
+    { src: 'assets/feedbacks/feedback-09.webp', alt: 'Paciente conta que um short que ficava apertado serviu quase perfeitamente' },
+  ],
 };
