@@ -559,3 +559,10 @@ small.note { display: block; margin-top: .2rem; font-size: .72em; font-weight: 5
 .member__regs li { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; padding: .4rem .6rem; border: 1px solid var(--nm-gold-hair); border-radius: 6px; font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
 .member__regs b { font-weight: 700; color: #fff; }
 .member__regs span { font-weight: 700; color: var(--nm-gold-light); }
+
+/* Celular: nada pode passar da largura da tela (evita a "sobrinha" lateral) */
+html, body { overflow-x: hidden; }
+@supports (overflow: clip) { html, body { overflow-x: clip; } }
+.actbar__in { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
+.actbar .btn { min-width: 0; padding-inline: .5rem; }
+.about__media { overflow-x: clip; }
