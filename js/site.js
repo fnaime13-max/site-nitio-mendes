@@ -13,24 +13,15 @@
   const SHOW_PRICES = !!C.SHOW_PRICES || preview('precos');
   const SHOW_BA = !!C.SHOW_BEFORE_AFTER || preview('antesdepois');
 
-  /* ---------- UTM: quem chegou por campanha leva a origem para a aplicação ---------- */
-  const inbound = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term'].filter((k) => params.get(k));
-  if (inbound.length) {
-    $$('a[href^="aplicacao.html"]').forEach((a) => {
-      const u = new URL(a.getAttribute('href'), location.href);
-      inbound.forEach((k) => u.searchParams.set(k, params.get(k)));
-      a.setAttribute('href', 'aplicacao.html' + u.search);
-    });
-  }
-
   /* ---------- Eventos de conversão ---------- */
   document.addEventListener('click', (e) => {
     const a = e.target.closest('a');
     if (!a) return;
     const href = a.getAttribute('href') || '';
-    if (href.startsWith('aplicacao.html')) {
-      const u = new URL(href, location.href);
-      track('clique_aplicar', { local: u.searchParams.get('utm_content') || '', plano: u.searchParams.get('plano') || '' });
+    if (a.hasAttribute('data-apply')) {
+      // "Aplicar" abre o WhatsApp da atendente; data-local diz de qual botão veio
+      const local = a.dataset.local || '';
+      track('clique_aplicar', { local, plano: local.startsWith('plano_') ? local.slice(6) : '' });
     } else if (href.includes('wa.me/')) {
       track('clique_whatsapp', { local: a.dataset.wa || '' });
     } else if (a.hasAttribute('data-maps')) {

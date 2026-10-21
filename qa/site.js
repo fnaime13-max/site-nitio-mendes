@@ -73,8 +73,9 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
         title: document.title, desc: document.querySelector('meta[name=description]').content,
         og: document.querySelector('meta[property="og:image"]').content,
         badAnchors: a.filter((x) => x.getAttribute('href').length > 1 && x.getAttribute('href').startsWith('#') && !document.querySelector(x.getAttribute('href'))).map((x) => x.getAttribute('href')),
-        applyNoUtm: a.filter((x) => x.getAttribute('href').startsWith('aplicacao.html') && !x.getAttribute('href').includes('utm_source=')).length,
-        applyN: a.filter((x) => x.getAttribute('href').startsWith('aplicacao.html')).length,
+        applyWrong: [...document.querySelectorAll('a[data-apply]')].filter((x) => !x.getAttribute('href').startsWith('https://wa.me/5531999670406?text=') || x.target !== '_blank' || !x.dataset.local).length,
+        applyN: document.querySelectorAll('a[data-apply]').length,
+        formLinks: a.filter((x) => x.getAttribute('href').startsWith('aplicacao.html')).length,
         blankNoRel: a.filter((x) => x.target === '_blank' && !/noopener/.test(x.rel)).length,
         waN: a.filter((x) => x.href.includes('wa.me/5531992748134')).length,
         agendeConsulta: /agende (uma )?consulta|agendar consulta/i.test(document.body.innerText),
@@ -102,7 +103,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
     ok('Botão de WhatsApp flutuante presente', d.fab);
     ok('Nome gigante "NÍTIO MENDES" dividido em letras para a abertura', d.nameLetters === 11, String(d.nameLetters));
     ok('Âncoras internas resolvem', !d.badAnchors.length, d.badAnchors.join(','));
-    ok('Todos os links de aplicação têm UTM', d.applyN >= 15 && d.applyNoUtm === 0, `${d.applyN} links`);
+    ok('Todos os botões Aplicar abrem o WhatsApp da atendente (sem formulário)', d.applyN >= 15 && d.applyWrong === 0 && d.formLinks === 0, `${d.applyN} botões`);
     ok('Links externos em nova aba com rel=noopener', d.blankNoRel === 0);
     ok('WhatsApp presente em vários pontos', d.waN >= 6, `${d.waN} links`);
     ok('Nenhum "agende uma consulta" como chamada', !d.agendeConsulta);
@@ -119,7 +120,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
 
     // fontes da marca realmente carregam (página e formulário)
     const fontsOk = async (url) => { const p = await ctx.newPage(); await p.goto(BASE + url, { waitUntil: 'networkidle' }); const r = await p.evaluate(async () => { await document.fonts.ready; const t = 'Ação NÍTIO ê'; return document.fonts.check('800 40px "Barlow Condensed"', t) && document.fonts.check(getComputedStyle(document.body).fontWeight + ' 16px Montserrat', t); }); await p.close(); return r; };
-    ok('Fontes Barlow Condensed e Montserrat carregam no site, no formulário e no kit', await fontsOk('') && await fontsOk('aplicacao.html') && await fontsOk('identidade/'));
+    ok('Fontes Barlow Condensed e Montserrat carregam no site e no kit', await fontsOk('') && await fontsOk('identidade/'));
     // recursos locais respondem 200
     const local = await pg.evaluate(() => [...new Set([
       ...[...document.querySelectorAll('[srcset]')].flatMap((e) => e.getAttribute('srcset').split(',').map((x) => x.trim().split(' ')[0])),
@@ -184,7 +185,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
     }));
     ok('Teste A/B: versão B troca o H1 e registra ab_hero', g.h1.startsWith('Resultado que dura') && g.sub.startsWith('Com uma equipe') && g.ab && g.ab.variante === 'B');
     ok('Checkout aparece só no plano com URL configurada', g.co && !g.co.hidden && g.coSem);
-    ok('UTM de entrada (Instagram) é repassada à aplicação', g.href.includes('utm_source=instagram') && g.href.includes('utm_campaign=outubro') && g.href.includes('utm_content=hero'), g.href);
+    ok('Mesmo com UTM de entrada, Aplicar vai para o WhatsApp da atendente', g.href.startsWith('https://wa.me/5531999670406?text='), g.href.slice(0, 60));
     await c2.close();
   }
 

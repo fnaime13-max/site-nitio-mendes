@@ -101,3 +101,7 @@ page = re.sub(r'<!--FAQ-LD-->(.*?<!--/FAQ-LD-->)?', lambda m: block, page, count
 
 INDEX.write_text(page, encoding='utf-8')
 print(f'especialidades: {len(items)} · perguntas no FAQPage: {len(qas)}')
+
+# os botões "Aplicar" das especialidades recém-geradas vão para o WhatsApp da atendente
+import runpy
+runpy.run_path(str(ROOT / 'ferramentas' / 'aplicar-whatsapp.py'), run_name='__main__')
