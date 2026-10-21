@@ -75,7 +75,7 @@ const ok = (n, c, x = '') => res.push(`${c ? 'PASSOU' : 'FALHOU'}  ${n}${x ? '  
     const [popup] = await Promise.all([ctx.waitForEvent('page'), pg.click('.q.is-active [data-ok]')]);
     const u = decodeURIComponent(popup.url().replace(/\+/g, ' ')); await popup.close();
     await pg.waitForTimeout(900);
-    ok(`[${tag}] Envio abre o WhatsApp do Nítio com as respostas`, u.includes('5531992748134') && u.includes('Maria Teste') && u.includes('@mariateste') && u.includes('+55 31 99999-8888') && u.includes('Medicações') && u.includes('teste') && u.includes('Anual (12 meses)') && u.includes('Consentimento LGPD: sim'), u.slice(0, 120));
+    ok(`[${tag}] Envio abre o WhatsApp da atendente com as respostas`, u.includes('5531999670406') && u.includes('Planejamento Nutricional Estratégico') && u.includes('Maria Teste') && u.includes('@mariateste') && u.includes('+55 31 99999-8888') && u.includes('Medicações') && u.includes('teste') && u.includes('Anual (12 meses)') && u.includes('Consentimento LGPD: sim'), u.slice(0, 120));
     if (tag === 'desk') ok('Eventos inicio_formulario e envio_formulario registrados', await pg.evaluate(() => ['inicio_formulario', 'envio_formulario'].every((n) => window.dataLayer.some((e) => e.event === n))));
     ok(`[${tag}] Tela "Recebemos sua aplicação!" aparece`, await pg.isVisible('#t-title'));
     await pg.screenshot({ path: shot(`apl-${tag}-14-obrigado.png`) });

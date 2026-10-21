@@ -12,7 +12,7 @@
 
   const CONFIG = {
     endpoint: '',                 // ex.: 'https://hooks.zapier.com/hooks/catch/…'
-    whatsapp: '5531992748134',
+    whatsapp: '5531999670406',   // atendente (comercial)
     draftKey: 'nm-aplicacao',
   };
 
@@ -290,7 +290,7 @@
   /* ---------- Envio ---------- */
   const fmtPhone = (v) => (v.ddi ? `+${v.ddi} ` : '') + v.numero;
   const toText = () => {
-    const lines = ['*Aplicação · Planejamento Nutricional Estratégico*', ''];
+    const lines = ['Olá! Acabei de preencher a aplicação do *Planejamento Nutricional Estratégico* pelo site. Seguem minhas respostas:', ''];
     Q.forEach((q, i) => {
       if (q.id === 'acordo' || q.id === 'lgpd') return;
       const v = answers[q.id];
