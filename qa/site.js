@@ -35,7 +35,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
     const r = await pg.evaluate(() => ({
       ovf: document.documentElement.scrollWidth - innerWidth,
       broken: [...document.images].filter((i) => i.complete && i.naturalWidth === 0).map((i) => i.src),
-      wide: [...document.querySelectorAll('main *, footer *')].filter((e) => { const r = e.getBoundingClientRect(); return r.width && r.right > innerWidth + 1 && getComputedStyle(e).position !== 'fixed' && !e.closest('.rail, .tabs, .hero__media, .bens, .light, dialog, .who__media, .pains__arc, .vids--proof, .who__stripe'); }).length,
+      wide: [...document.querySelectorAll('main *, footer *')].filter((e) => { const r = e.getBoundingClientRect(); return r.width && r.right > innerWidth + 1 && getComputedStyle(e).position !== 'fixed' && !e.closest('.rail, .tabs, .hero__media, .bens, .light, dialog, .who__media, .pains__arc, .vids--proof, .who__stripe, .about__band'); }).length,  // .about__band: enfeite cortado por .about__media
     }));
     ok(`${w}px: sem rolagem lateral e sem imagem quebrada`, r.ovf === 0 && !r.broken.length && r.wide === 0, JSON.stringify(r));
     if (w === 390) {
