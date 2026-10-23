@@ -41,7 +41,7 @@ window.NM_CONFIG = {
   GOOGLE_ADS_ID: '',     // ex.: 'AW-123456789'
 
   /* ---------- Contato ---------- */
-  WHATSAPP: '5531992748134',
+  WHATSAPP: '5531999670406',
 
   /* ---------- Teste A/B do título principal ----------
      'auto' sorteia uma vez por visitante e registra o evento "ab_hero".

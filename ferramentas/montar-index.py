@@ -53,7 +53,7 @@ for (slug, inner), dlg in zip(items, dialogs):
     desc = strip_tags(re.search(r'<span class="spec__d">(.*?)</span>', inner, re.S).group(1))
     spec_html.append(f'      <li class="spec rv" id="especialidade-{slug}">{inner.strip()}</li>')
 
-    wa = 'https://wa.me/5531992748134?text=' + quote(
+    wa = 'https://wa.me/5531999670406?text=' + quote(
         f'Olá, Nítio! Vim pelo site e tenho interesse no acompanhamento para: {title}.', safe='')
     d = dlg
     d = re.sub(r'<ul class="sheet__incl">.*?</ul>', INCL, d, flags=re.S)

@@ -7,7 +7,7 @@ O site já sai pronto para isso: título e descrição locais, um único H1, dad
 > **Regra de ouro (NAP):** nome, endereço e telefone devem ser **exatamente iguais** no site, no Google, no Instagram e em todos os cadastros.
 > **Nome:** Nítio Mendes Nutrição
 > **Endereço:** Av. Dr. João Augusto da Fonseca e Silva, 396, 2º andar, Novo Eldorado, Contagem, MG
-> **Telefone:** (31) 99274-8134
+> **Telefone:** (31) 99967-0406
 
 ---
 
