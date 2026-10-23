@@ -46,7 +46,7 @@ window.NM_CONFIG = {
   /* ---------- Teste A/B do título principal ----------
      'auto' sorteia uma vez por visitante e registra o evento "ab_hero".
      'A' ou 'B' fixa a versão. */
-  HERO_AB: 'auto',
+  HERO_AB: 'A',
   HERO_H1: {   // [título, subtítulo]
     A: ['Emagreça, defina e mantenha', 'Sem dieta engessada e sem abrir mão da sua vida!'],
     B: ['Resultado que dura', 'Com uma equipe inteira ao seu lado!'],

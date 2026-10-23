@@ -174,7 +174,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
     await ctx.close();
 
     const c2 = await b.newContext({ viewport: { width: 1440, height: 900 } });
-    await withConfig(c2, { SHOW_PRICES: true, CHECKOUT_URL_ANUAL: 'https://exemplo.com/checkout-anual' });
+    await withConfig(c2, { HERO_AB: 'auto', SHOW_PRICES: true, CHECKOUT_URL_ANUAL: 'https://exemplo.com/checkout-anual' });
     await c2.addInitScript(() => localStorage.setItem('nm-ab-hero', 'B'));
     const p2 = await c2.newPage(); watch(p2, 'ab');
     await p2.goto(BASE + '?utm_source=instagram&utm_medium=bio&utm_campaign=outubro', { waitUntil: 'networkidle' });
