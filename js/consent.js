@@ -12,6 +12,7 @@
   let choice = null;
   try { choice = localStorage.getItem(KEY); } catch (e) {}
   let loaded = false;
+  const hasIds = C.GA4_ID || C.META_PIXEL_ID || C.GOOGLE_ADS_ID;
 
   const load = (src) => { const s = document.createElement('script'); s.async = true; s.src = src; document.head.appendChild(s); };
 
@@ -56,10 +57,16 @@
     const el = document.createElement('div');
     el.className = 'consent'; el.setAttribute('data-consent', '');
     el.setAttribute('role', 'region'); el.setAttribute('aria-label', 'Aviso de cookies');
-    el.innerHTML = `<p>Usamos cookies essenciais para o site funcionar. Com o seu aceite, usamos também cookies de medição para entender de onde vêm as visitas. <a href="${privacy}">Política de privacidade</a></p>
+    /* Sem nenhum ID de medição em config.js, não há o que aceitar: o aviso só informa. */
+    el.innerHTML = hasIds
+      ? `<p>Usamos cookies essenciais para o site funcionar. Com o seu aceite, usamos também cookies de medição para entender de onde vêm as visitas. <a href="${privacy}">Política de privacidade</a></p>
       <div class="consent__actions">
         <button type="button" class="consent__btn" data-c="essential">Recusar não essenciais</button>
         <button type="button" class="consent__btn consent__btn--ok" data-c="all">Aceitar</button>
+      </div>`
+      : `<p>Este site não usa cookies de medição nem de publicidade. Guardamos no seu navegador apenas o essencial para ele funcionar. <a href="${privacy}">Política de privacidade</a></p>
+      <div class="consent__actions">
+        <button type="button" class="consent__btn consent__btn--ok" data-c="essential">Entendi</button>
       </div>`;
     el.addEventListener('click', (e) => { const b = e.target.closest('[data-c]'); if (b) set(b.dataset.c); });
     document.body.appendChild(el);
@@ -69,7 +76,6 @@
   window.nmConsent = { open: banner, get: () => choice };
 
   if (choice === 'all') startTags();
-  const hasIds = C.GA4_ID || C.META_PIXEL_ID || C.GOOGLE_ADS_ID;
   /* O aviso aparece mesmo sem IDs configurados? Não: sem ferramenta de medição,
      só há cookies essenciais e não há o que consentir. */
   const ready = () => { if (!choice && hasIds) banner(); };

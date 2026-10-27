@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nitiomendes.com.br/</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://nitiomendes.com.br/privacidade.html</loc><lastmod>2026-10-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://nitiomendes.com.br/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://nitiomendes.com.br/privacidade.html</loc><lastmod>2026-10-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <!-- blog -->
+  <url><loc>https://nitiomendes.com.br/blog/</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/sono-e-desempenho-metabolico/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/composicao-corporal-versus-peso-balanca/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/nutricao-tirzepatida-semaglutida-guia-clinico/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/o-que-comer-tomando-ozempic-ou-mounjaro/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/como-nao-perder-musculo-durante-o-emagrecimento/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/exames-de-sangue-que-o-nutricionista-analisa/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/intestino-inchaco-gordura-visceral/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/por-que-voce-engorda-mesmo-comendo-pouco/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/erro-mais-comum-de-quem-treina-e-nao-muda-o-corpo/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/por-que-a-balanca-subiu-mas-voce-emagreceu/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/proteina-quanto-voce-precisa-e-como-distribuir/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/resistencia-a-insulina-como-identificar-e-o-que-comer/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/vitamina-d-magnesio-zinco-tres-deficits/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/eixo-intestino-cerebro-humor-e-foco/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/por-que-voce-nunca-manteve-o-resultado/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/o-que-muda-com-um-nutricionista-que-acompanha/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nitiomendes.com.br/blog/historias-reais-primeiros-30-dias-de-acompanhamento/</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- /blog -->
 </urlset>

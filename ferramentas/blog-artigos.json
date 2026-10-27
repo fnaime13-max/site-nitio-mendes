@@ -1,0 +1,945 @@
+[
+  {
+    "slug": "sono-e-desempenho-metabolico",
+    "title": "Sono e desempenho metabólico: por que dormir mal sabota seus resultados",
+    "category": "Metabolismo",
+    "tags": [
+      "sono",
+      "metabolismo",
+      "hormônios",
+      "emagrecimento"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Dormir pouco não é apenas cansaço. É desregulação hormonal, resistência à insulina, perda de massa muscular e sabotagem do emagrecimento. Entenda como o sono conduz seus resultados.",
+    "metaTitle": "Sono e Metabolismo: como dormir mal afeta emagrecimento e performance",
+    "metaDescription": "Entenda como o sono influencia hormônios, sensibilidade à insulina, massa muscular e emagrecimento. Explicação clínica prática do nutricionista Nítio Mendes.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Existe uma cena comum na prática clínica: pacientes que treinam certo, comem bem e mesmo assim não emagrecem, não ganham massa, sentem fome fora de hora e vivem cansados. Em muitos desses casos, o problema principal não está no prato nem na academia. Está no travesseiro."
+      },
+      {
+        "type": "h2",
+        "text": "O sono é uma variável metabólica, não um detalhe"
+      },
+      {
+        "type": "p",
+        "text": "Dormir mal reduz a sensibilidade à insulina em poucas noites, aumenta o cortisol basal, reduz a testosterona, prejudica a liberação do hormônio do crescimento e desregula grelina e leptina. Traduzindo: seu corpo fica mais propenso a acumular gordura, com mais fome, menos saciedade e menor capacidade de construir músculo, mesmo com dieta e treino perfeitos."
+      },
+      {
+        "type": "h2",
+        "text": "O que a literatura mostra"
+      },
+      {
+        "type": "p",
+        "text": "Estudos com privação parcial de sono, dormindo entre 4 e 5 horas por várias noites, mostram queda importante na sensibilidade à insulina em adultos saudáveis. Outros trabalhos evidenciam que, em déficit calórico com sono ruim, a maior parte do peso perdido vem de massa magra, não de gordura. Ou seja, você emagrece pior e piora sua composição corporal."
+      },
+      {
+        "type": "h2",
+        "text": "O que fazer na prática"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Estabelecer horário consistente para dormir e acordar, inclusive nos fins de semana",
+          "Reduzir luz azul e telas nos 60 minutos antes de deitar",
+          "Evitar cafeína após 6 horas antes do horário de dormir",
+          "Cuidar da última refeição do dia, evitando volumes excessivos ou álcool",
+          "Tratar apneia obstrutiva do sono quando houver suspeita clínica"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Antes de aumentar a intensidade do treino ou apertar mais a dieta, avalie honestamente seu sono. Em muitos casos, dormir melhor é a intervenção com maior retorno metabólico possível."
+      }
+    ]
+  },
+  {
+    "slug": "composicao-corporal-versus-peso-balanca",
+    "title": "Composição corporal versus peso na balança: por que o número engana",
+    "category": "Composição Corporal",
+    "tags": [
+      "composição corporal",
+      "balança",
+      "emagrecimento",
+      "hipertrofia"
+    ],
+    "readingTime": "5 min de leitura",
+    "excerpt": "A balança mede peso, não saúde. Entenda por que composição corporal, massa magra e gordura visceral são muito mais importantes do que o número que aparece de manhã.",
+    "metaTitle": "Composição Corporal x Peso na Balança | Nítio Mendes",
+    "metaDescription": "Por que o peso na balança engana e o que realmente importa: massa magra, gordura visceral e composição corporal. Guia clínico do nutricionista Nítio Mendes.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Quase todo paciente inicia o processo obcecado com um número: o peso da balança. E quase todo processo bem conduzido termina com essa obsessão substituída por outra coisa: composição corporal."
+      },
+      {
+        "type": "h2",
+        "text": "O que a balança realmente mede"
+      },
+      {
+        "type": "p",
+        "text": "A balança mede a soma de tudo que existe no seu corpo em determinado momento: músculo, gordura, água, glicogênio, conteúdo intestinal, retenção hídrica. Ela não diferencia o que aumentou nem o que diminuiu. Ganhou 1 kg? Pode ser gordura, pode ser músculo, pode ser inflamação, pode ser ciclo menstrual."
+      },
+      {
+        "type": "h2",
+        "text": "Por que composição corporal importa mais"
+      },
+      {
+        "type": "p",
+        "text": "Duas pessoas com o mesmo peso podem ter corpos completamente diferentes. Uma com 30% de gordura corporal, outra com 18%. A segunda tem menor risco cardiovascular, melhor sensibilidade à insulina, maior taxa metabólica de repouso e melhor performance. O peso é igual, o corpo e a saúde são opostos."
+      },
+      {
+        "type": "h2",
+        "text": "Como acompanhar de forma inteligente"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Medidas de circunferência em pontos padronizados",
+          "Fotos comparativas em intervalos regulares",
+          "Avaliação corporal, com adipometria, quando bem executada",
+          "Marcadores laboratoriais como glicemia, insulina e perfil lipídico",
+          "Sensação subjetiva de energia, disposição e roupas"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Pesar todo dia costuma gerar mais ruído do que informação. O importante é a tendência ao longo de semanas, integrada a outros indicadores. O objetivo nunca deveria ser 'pesar menos'. Deveria ser 'ter menos gordura, mais músculo e mais saúde'."
+      }
+    ]
+  },
+  {
+    "slug": "nutricao-tirzepatida-semaglutida-guia-clinico",
+    "title": "Nutrição no protocolo com tirzepatida e semaglutida: guia clínico",
+    "category": "Farmacologia clínica",
+    "tags": [
+      "tirzepatida",
+      "semaglutida",
+      "mounjaro",
+      "ozempic",
+      "GLP-1"
+    ],
+    "readingTime": "8 min de leitura",
+    "excerpt": "Usar tirzepatida ou semaglutida sem suporte nutricional é o caminho mais curto para perder massa magra e ganhar peso de volta depois. Guia clínico prático para acertar o processo.",
+    "metaTitle": "Nutrição no Mounjaro, Ozempic e Semaglutida: Guia Clínico | Nítio Mendes",
+    "metaDescription": "Como comer no protocolo com tirzepatida (Mounjaro) e semaglutida (Ozempic). Guia clínico para preservar massa magra, evitar efeitos colaterais e manter resultado após a medicação.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Os agonistas de GLP-1 e GIP, como semaglutida (Ozempic, Wegovy) e tirzepatida (Mounjaro), mudaram o tratamento da obesidade. Mas, na prática clínica, também expuseram um problema: o medicamento reduz apetite tão rápido que muitos pacientes emagrecem mal, perdendo massa magra em excesso e criando um cenário perfeito para reganho de peso após a suspensão."
+      },
+      {
+        "type": "h2",
+        "text": "O que muda na fisiologia"
+      },
+      {
+        "type": "p",
+        "text": "Esses fármacos reduzem apetite central, retardam o esvaziamento gástrico e melhoram a sensibilidade à insulina. Isso significa que o paciente come muito menos e sente saciedade prolongada. O risco é justamente esse: comer pouco de tudo, incluindo proteína, e perder músculo junto com a gordura."
+      },
+      {
+        "type": "h2",
+        "text": "Pilares nutricionais durante o uso"
+      },
+      {
+        "type": "h3",
+        "text": "1. Proteína como prioridade"
+      },
+      {
+        "type": "p",
+        "text": "A ingestão proteica precisa ser individualizada e geralmente elevada por quilo de peso, distribuída em várias refeições ao longo do dia, mesmo com pouco apetite. Priorizamos fontes de alta densidade proteica em volume reduzido."
+      },
+      {
+        "type": "h3",
+        "text": "2. Densidade nutricional acima de tudo"
+      },
+      {
+        "type": "p",
+        "text": "Com apetite reduzido, cada refeição precisa entregar o máximo de nutrientes por volume. Isso significa priorizar alimentos íntegros, ricos em vitaminas, minerais e fibras, e reduzir espaço para itens de baixa densidade nutricional."
+      },
+      {
+        "type": "h3",
+        "text": "3. Manejo de efeitos colaterais"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Refeições menores e mais frequentes na fase de titulação",
+          "Reduzir alimentos muito gordurosos ou fritos, que pioram enjoo",
+          "Hidratação ativa, muitas vezes esquecida com a baixa da fome",
+          "Fibras solúveis para manejar constipação"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Treino de força é obrigatório"
+      },
+      {
+        "type": "p",
+        "text": "Nutrição sozinha não preserva músculo em déficit calórico agressivo. O treino de força bem prescrito é parte não negociável do protocolo. Sem ele, boa parte da perda vem de massa magra, e o resultado se torna insustentável."
+      },
+      {
+        "type": "h2",
+        "text": "E depois da medicação?"
+      },
+      {
+        "type": "p",
+        "text": "O maior erro é encarar o GLP-1 como uma solução isolada. O acompanhamento nutricional durante o uso precisa ensinar o paciente a se alimentar, ajustar rotina e sustentar o novo peso quando a dose for reduzida ou suspensa. Sem essa transição planejada, o reganho é regra, não exceção."
+      }
+    ]
+  },
+  {
+    "slug": "o-que-comer-tomando-ozempic-ou-mounjaro",
+    "title": "O que comer tomando Ozempic ou Mounjaro",
+    "category": "Farmacologia clínica",
+    "tags": [
+      "ozempic",
+      "mounjaro",
+      "semaglutida",
+      "tirzepatida"
+    ],
+    "readingTime": "7 min de leitura",
+    "excerpt": "Um guia prático de alimentação durante o uso de semaglutida e tirzepatida, para emagrecer preservando massa magra, controlar efeitos colaterais e não recuperar o peso depois.",
+    "metaTitle": "O que comer tomando Ozempic ou Mounjaro | Nítio Mendes",
+    "metaDescription": "Como se alimentar durante o uso de Ozempic (semaglutida) e Mounjaro (tirzepatida): proteína, densidade nutricional, controle de enjoo e plano de saída da medicação.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Ozempic e Mounjaro reduzem apetite tão rápido que muitos pacientes emagrecem mal: comendo pouco de tudo, perdendo massa magra e criando o cenário perfeito para reganho de peso quando a medicação sair. O que você come nesse período define a qualidade do resultado."
+      },
+      {
+        "type": "h2",
+        "text": "Proteína é inegociável"
+      },
+      {
+        "type": "p",
+        "text": "Mesmo sem fome, a meta proteica precisa ser cumprida em várias refeições ao dia. Priorize fontes densas em pouco volume: ovos, iogurte grego, filé de frango, peixes, cortes magros de carne vermelha, whey. Sem proteína suficiente, boa parte da perda é músculo, não gordura."
+      },
+      {
+        "type": "h2",
+        "text": "Densidade nutricional acima de tudo"
+      },
+      {
+        "type": "p",
+        "text": "Com apetite reduzido, cada refeição precisa entregar o máximo de nutrientes possível. Vegetais coloridos, frutas, leguminosas, cereais integrais e boas gorduras (azeite, castanhas, abacate) entram em primeiro lugar. Ultraprocessados perdem espaço porque simplesmente não cabem no dia."
+      },
+      {
+        "type": "h2",
+        "text": "Como reduzir enjoo e desconforto"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Refeições menores e mais frequentes na fase de titulação da dose",
+          "Evitar frituras, molhos gordurosos e álcool nas primeiras semanas",
+          "Manter hidratação ativa mesmo sem sede",
+          "Fibras solúveis (aveia, chia, frutas com casca) para manejar constipação"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "E depois da medicação?"
+      },
+      {
+        "type": "p",
+        "text": "O maior erro é usar o medicamento sem aprender a comer. O acompanhamento nutricional precisa preparar o paciente para sustentar o peso quando a dose for reduzida. Sem essa transição planejada, o reganho é regra, não exceção."
+      }
+    ]
+  },
+  {
+    "slug": "como-nao-perder-musculo-durante-o-emagrecimento",
+    "title": "Como não perder músculo durante o emagrecimento",
+    "category": "Composição Corporal",
+    "tags": [
+      "massa magra",
+      "emagrecimento",
+      "proteína",
+      "treino de força"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Emagrecer sem preservar massa magra é o caminho mais curto para o efeito sanfona. Entenda os quatro pilares para perder gordura e manter (ou até ganhar) músculo no processo.",
+    "metaTitle": "Como não perder músculo emagrecendo | Nítio Mendes",
+    "metaDescription": "Proteína, treino de força, déficit calórico inteligente e recuperação: os quatro pilares para emagrecer preservando massa muscular e evitar o efeito sanfona.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Quase todo mundo que já emagreceu e recuperou o peso passou pelo mesmo problema: perdeu músculo junto com a gordura. Corpo com menos músculo gasta menos energia, sente mais fome e recupera peso rapidamente quando a dieta afrouxa. Preservar massa magra não é detalhe, é a chave do resultado sustentável."
+      },
+      {
+        "type": "h2",
+        "text": "1. Proteína suficiente e distribuída no dia"
+      },
+      {
+        "type": "p",
+        "text": "A ingestão precisa ser individualizada, normalmente entre 1,6 e 2,4 g por kg de peso, distribuída em 3 a 5 refeições. Uma dose única gigante ao final do dia não substitui a distribuição contínua ao longo das horas."
+      },
+      {
+        "type": "h2",
+        "text": "2. Treino de força bem prescrito"
+      },
+      {
+        "type": "p",
+        "text": "Sem estímulo mecânico consistente, o corpo entende o músculo como custo metabólico desnecessário em déficit e o degrada primeiro. Musculação séria, com progressão de carga, é o que sinaliza ao corpo que o músculo precisa ser preservado."
+      },
+      {
+        "type": "h2",
+        "text": "3. Déficit calórico inteligente"
+      },
+      {
+        "type": "p",
+        "text": "Déficits muito agressivos aceleram a perda de massa magra. Ritmos entre 0,5% e 1% do peso corporal por semana costumam ser o ponto de equilíbrio entre resultado visível e preservação muscular."
+      },
+      {
+        "type": "h2",
+        "text": "4. Sono e recuperação"
+      },
+      {
+        "type": "p",
+        "text": "Dormir mal é uma forma silenciosa de perder músculo. Estudos mostram que, em déficit calórico com sono ruim, a maior parte da perda vem de massa magra, não de gordura. Sono e recuperação são parte do processo, não bônus."
+      }
+    ]
+  },
+  {
+    "slug": "exames-de-sangue-que-o-nutricionista-analisa",
+    "title": "Exames de sangue que o nutricionista analisa e o médico não explica",
+    "category": "Exames laboratoriais",
+    "tags": [
+      "exames",
+      "resistência à insulina",
+      "vitamina D",
+      "ferritina"
+    ],
+    "readingTime": "7 min de leitura",
+    "excerpt": "Existe uma leitura clínica dos seus exames que raramente é feita na consulta médica tradicional e que pode explicar por que você não consegue emagrecer, ganhar músculo ou ter energia.",
+    "metaTitle": "Exames de sangue que o nutricionista analisa | Nítio Mendes",
+    "metaDescription": "Insulina, ferritina, vitamina D, TSH, homocisteína e outros marcadores subestimados na consulta médica tradicional. Guia clínico do nutricionista.",
+    "content": [
+      {
+        "type": "p",
+        "text": "O médico olha os exames buscando doença. O nutricionista clínico olha os mesmos exames buscando funcionalidade: até onde seu corpo está operando bem antes de virar diagnóstico. Muita coisa que aparece como 'normal' está longe do funcional."
+      },
+      {
+        "type": "h2",
+        "text": "Insulina de jejum e HOMA-IR"
+      },
+      {
+        "type": "p",
+        "text": "A glicemia pode estar normal enquanto sua insulina está pedindo socorro. Insulina de jejum elevada e HOMA-IR alterado são sinais precoces de resistência à insulina, muito antes da glicose subir. Ignorar isso é perder anos até o diagnóstico virar pré-diabetes."
+      },
+      {
+        "type": "h2",
+        "text": "Ferritina, saturação de transferrina e B12"
+      },
+      {
+        "type": "p",
+        "text": "Cansaço, queda de cabelo, baixa performance e névoa mental frequentemente aparecem com ferritina baixa mesmo com hemograma normal. B12 no limite inferior da referência já causa sintomas cognitivos e neurológicos."
+      },
+      {
+        "type": "h2",
+        "text": "Vitamina D, magnésio e zinco"
+      },
+      {
+        "type": "p",
+        "text": "Os três déficits mais comuns e mais devastadores para performance, humor, imunidade e composição corporal. Frequentemente ignorados porque 'estão na referência'."
+      },
+      {
+        "type": "h2",
+        "text": "TSH, T3 livre e T4 livre"
+      },
+      {
+        "type": "p",
+        "text": "TSH sozinho não conta a história. Muitos pacientes com sintomas hipotireoidianos têm T3 livre baixo mesmo com TSH normal. É preciso olhar o painel completo."
+      },
+      {
+        "type": "h2",
+        "text": "Perfil lipídico avançado e inflamação"
+      },
+      {
+        "type": "p",
+        "text": "Colesterol total é uma foto incompleta. Relação triglicerídeos/HDL, LDL, proteína C reativa ultrassensível e homocisteína dizem muito mais sobre risco cardiovascular real."
+      }
+    ]
+  },
+  {
+    "slug": "intestino-inchaco-gordura-visceral",
+    "title": "Intestino preso, inchaço e gordura visceral: a conexão que ninguém te contou",
+    "category": "Saúde intestinal",
+    "tags": [
+      "intestino",
+      "inchaço",
+      "gordura visceral",
+      "microbiota"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Constipação e inchaço não são só desconforto. São sinais de uma microbiota inflamada que impacta diretamente sua gordura visceral e sua resistência à insulina.",
+    "metaTitle": "Intestino, inchaço e gordura visceral | Nítio Mendes",
+    "metaDescription": "A conexão entre intestino, microbiota, inflamação e gordura visceral. Por que constipação e inchaço travam seus resultados metabólicos.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Muitos pacientes tratam intestino preso e inchaço como um problema separado do peso. Não é. A saúde do seu intestino conversa diretamente com o seu metabolismo, sua inflamação sistêmica e o quanto de gordura visceral você acumula."
+      },
+      {
+        "type": "h2",
+        "text": "Microbiota e metabolismo"
+      },
+      {
+        "type": "p",
+        "text": "Uma microbiota desequilibrada aumenta a permeabilidade intestinal, libera moléculas inflamatórias na corrente sanguínea e mantém o corpo em inflamação crônica de baixo grau. Esse estado inflamatório piora resistência à insulina e favorece acúmulo de gordura visceral, aquela que mora ao redor dos órgãos."
+      },
+      {
+        "type": "h2",
+        "text": "Sinais de que o problema é intestinal"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Inchaço abdominal recorrente, principalmente à tarde e à noite",
+          "Constipação ou fezes muito irregulares",
+          "Gases, mau hálito persistente e sensação de peso",
+          "Barriga que não reduz mesmo com dieta e treino",
+          "Alergias, rinites e queda de imunidade sem causa óbvia"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "O que ajuda na prática"
+      },
+      {
+        "type": "p",
+        "text": "Fibras variadas (solúveis e insolúveis), fermentados, hidratação real, redução de ultraprocessados, sono adequado e, em muitos casos, ajuste da microbiota com estratégia clínica específica. Não é sobre 'chá detox'. É sobre reconstruir um ecossistema."
+      }
+    ]
+  },
+  {
+    "slug": "por-que-voce-engorda-mesmo-comendo-pouco",
+    "title": "Por que você engorda mesmo comendo pouco",
+    "category": "Metabolismo",
+    "tags": [
+      "metabolismo",
+      "resistência à insulina",
+      "cortisol",
+      "emagrecimento"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Comer pouco e não emagrecer não é falha moral. É desregulação hormonal, adaptação metabólica e leitura errada da própria fome. Entenda o que realmente está acontecendo.",
+    "metaTitle": "Por que você engorda comendo pouco | Nítio Mendes",
+    "metaDescription": "Adaptação metabólica, resistência à insulina, cortisol elevado e subestimação alimentar: as reais causas de quem come pouco e não emagrece.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Existe uma frustração recorrente na prática clínica: 'como muito pouco e não emagreço'. Na quase totalidade dos casos, o problema não é preguiça metabólica misteriosa, e sim uma combinação de fatores mensuráveis."
+      },
+      {
+        "type": "h2",
+        "text": "Adaptação metabólica"
+      },
+      {
+        "type": "p",
+        "text": "Anos de dietas muito restritivas reduzem a taxa metabólica de repouso, principalmente quando combinadas com perda de massa magra. O corpo aprende a operar com menos energia. Comer pouco deixa de gerar déficit real."
+      },
+      {
+        "type": "h2",
+        "text": "Resistência à insulina"
+      },
+      {
+        "type": "p",
+        "text": "Um corpo resistente à insulina armazena gordura com muito mais facilidade e libera essa gordura com muito mais dificuldade. Não é sobre quantidade absoluta, é sobre resposta hormonal ao que você come."
+      },
+      {
+        "type": "h2",
+        "text": "Cortisol e sono"
+      },
+      {
+        "type": "p",
+        "text": "Cortisol cronicamente elevado por estresse e sono ruim mantém o corpo em modo de retenção. Muitos pacientes 'comem pouco' porém dormem 5 horas e vivem em pressão alta. Não emagrece."
+      },
+      {
+        "type": "h2",
+        "text": "Subestimação alimentar"
+      },
+      {
+        "type": "p",
+        "text": "Estudos mostram que pessoas que se dizem em déficit costumam subestimar em 30% a 50% o que realmente comem, principalmente em lanches, bebidas calóricas e finais de semana. Não é má fé. É viés perceptivo humano."
+      }
+    ]
+  },
+  {
+    "slug": "erro-mais-comum-de-quem-treina-e-nao-muda-o-corpo",
+    "title": "O erro mais comum de quem treina e não muda o corpo",
+    "category": "Composição Corporal",
+    "tags": [
+      "treino",
+      "hipertrofia",
+      "emagrecimento",
+      "nutrição"
+    ],
+    "readingTime": "5 min de leitura",
+    "excerpt": "Treinar duro por meses sem ver mudança visual é um dos cenários mais frustrantes. Existe um erro central por trás de quase todos esses casos.",
+    "metaTitle": "Por que você treina e não muda o corpo | Nítio Mendes",
+    "metaDescription": "O erro central de quem treina meses e não muda o corpo: alimentação incompatível com o objetivo. Guia clínico prático.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Existe um padrão muito claro em quem treina há meses e não muda o corpo: a alimentação está incompatível com o objetivo. Não muito, não pouco. Incompatível."
+      },
+      {
+        "type": "h2",
+        "text": "Quem quer emagrecer, não está em déficit"
+      },
+      {
+        "type": "p",
+        "text": "O treino aumenta a fome. Sem controle real do que se come, o consumo sobe junto com o gasto, e o corpo fica no mesmo lugar. Suar não é sinal de déficit."
+      },
+      {
+        "type": "h2",
+        "text": "Quem quer hipertrofiar, não está em superávit"
+      },
+      {
+        "type": "p",
+        "text": "Comer 'bem' não é comer 'suficiente'. Ganho de massa exige superávit calórico calculado e proteína distribuída. Sem isso, o estímulo do treino não vira músculo."
+      },
+      {
+        "type": "h2",
+        "text": "Quem quer recomposição, não mediu nada"
+      },
+      {
+        "type": "p",
+        "text": "Recomposição corporal existe, mas exige margem estreita de calorias, alta ingestão proteica, sono bom e treino sério. Fazer 'no feeling' entrega quase sempre estagnação."
+      },
+      {
+        "type": "h2",
+        "text": "A saída"
+      },
+      {
+        "type": "p",
+        "text": "Definir o objetivo com clareza, medir consumo real por um período, ajustar calorias e proteína à meta e revisar a cada duas ou três semanas. Sem estratégia mensurável, o treino vira ritual sem retorno."
+      }
+    ]
+  },
+  {
+    "slug": "por-que-a-balanca-subiu-mas-voce-emagreceu",
+    "title": "Por que a balança subiu mas você emagreceu",
+    "category": "Composição Corporal",
+    "tags": [
+      "balança",
+      "retenção",
+      "composição corporal"
+    ],
+    "readingTime": "5 min de leitura",
+    "excerpt": "O peso pode subir enquanto a gordura cai. Entenda por que a balança oscila e o que realmente indica progresso.",
+    "metaTitle": "Balança subiu mas você emagreceu | Nítio Mendes",
+    "metaDescription": "Retenção hídrica, glicogênio, ciclo menstrual, treino intenso e ganho de massa magra: por que a balança sobe mesmo quando você emagrece.",
+    "content": [
+      {
+        "type": "p",
+        "text": "A balança mede a soma de tudo que existe no seu corpo em determinado momento. Ela não sabe se o que subiu foi músculo, água, glicogênio, conteúdo intestinal ou gordura. Confiar no número diário é o caminho mais rápido para desistir de um processo que está funcionando."
+      },
+      {
+        "type": "h2",
+        "text": "Retenção hídrica"
+      },
+      {
+        "type": "p",
+        "text": "Sal, treino intenso, ciclo menstrual, sono ruim e estresse aumentam a retenção temporária. É comum ver oscilações de 1 a 2 kg em 48 horas sem qualquer mudança de gordura corporal."
+      },
+      {
+        "type": "h2",
+        "text": "Glicogênio muscular"
+      },
+      {
+        "type": "p",
+        "text": "Cada grama de glicogênio armazena cerca de 3 g de água. Aumentou os carboidratos no dia anterior? Encheu o músculo, encheu de água, a balança subiu. Não é gordura."
+      },
+      {
+        "type": "h2",
+        "text": "Ganho de massa magra"
+      },
+      {
+        "type": "p",
+        "text": "Quem treina forte e come bem pode ganhar músculo enquanto perde gordura. O peso oscila para cima em alguns momentos e o espelho, as medidas e as fotos entregam o resultado real."
+      },
+      {
+        "type": "h2",
+        "text": "O que fazer"
+      },
+      {
+        "type": "p",
+        "text": "Pesar em condições padronizadas (mesmo horário, mesmo dia da semana), olhar a tendência ao longo de três a quatro semanas, integrar com medidas, fotos e como as roupas estão vestindo. Balança é um dado. Não é o dado."
+      }
+    ]
+  },
+  {
+    "slug": "proteina-quanto-voce-precisa-e-como-distribuir",
+    "title": "Proteína: quanto você realmente precisa e como distribuir no dia",
+    "category": "Macronutrientes",
+    "tags": [
+      "proteína",
+      "hipertrofia",
+      "emagrecimento",
+      "leucina"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Muita gente come proteína suficiente no total do dia, mas distribui tão mal que não gera resposta anabólica real. Guia técnico e prático.",
+    "metaTitle": "Quanto de proteína por dia | Nítio Mendes",
+    "metaDescription": "Faixas de ingestão proteica por objetivo, distribuição por refeição, limite anabólico e leucina: o que a evidência diz sobre proteína.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Proteína é o macronutriente mais mal calculado nas dietas comuns. E é justamente o que mais influencia saciedade, preservação de massa magra e resposta ao treino."
+      },
+      {
+        "type": "h2",
+        "text": "Quanto por dia"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Sedentário adulto: 1,2 a 1,6 g/kg de peso",
+          "Emagrecimento com treino: 1,6 a 2,2 g/kg",
+          "Hipertrofia: 1,6 a 2,2 g/kg",
+          "Atleta em déficit agressivo: até 2,4 g/kg",
+          "Pós-bariátrico e usuário de GLP-1: individualizado, geralmente elevado"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Distribuição por refeição"
+      },
+      {
+        "type": "p",
+        "text": "Concentrar toda a proteína no jantar é subótimo. A síntese proteica muscular responde melhor a estímulos repetidos ao longo do dia. Distribua entre 3 a 5 refeições, com 25 a 45 g por refeição."
+      },
+      {
+        "type": "h2",
+        "text": "Leucina e limite anabólico"
+      },
+      {
+        "type": "p",
+        "text": "Cada refeição precisa entregar cerca de 2,5 a 3 g de leucina para maximizar a síntese proteica. Isso equivale, na prática, a uma boa dose de proteína animal por refeição (ovos, carne, frango, peixe, laticínios) ou combinações vegetais bem planejadas."
+      },
+      {
+        "type": "h2",
+        "text": "Como aplicar"
+      },
+      {
+        "type": "p",
+        "text": "Comece definindo a meta diária pelo seu peso, divida pelas refeições que você realmente faz e ajuste a partir daí. Sem isso, quase todo mundo come menos proteína do que imagina."
+      }
+    ]
+  },
+  {
+    "slug": "resistencia-a-insulina-como-identificar-e-o-que-comer",
+    "title": "Resistência à insulina: como identificar nos exames e o que comer",
+    "category": "Metabolismo",
+    "tags": [
+      "insulina",
+      "HOMA-IR",
+      "glicemia",
+      "carboidratos"
+    ],
+    "readingTime": "7 min de leitura",
+    "excerpt": "Antes da diabetes existe um caminho longo de resistência à insulina silenciosa. Reconhecer e agir cedo muda a trajetória metabólica de forma decisiva.",
+    "metaTitle": "Resistência à insulina: exames e alimentação | Nítio Mendes",
+    "metaDescription": "Como identificar resistência à insulina nos exames (insulina de jejum, HOMA-IR, triglicerídeos/HDL) e o que comer para reverter o quadro.",
+    "content": [
+      {
+        "type": "p",
+        "text": "A resistência à insulina é uma das causas mais subestimadas de dificuldade para emagrecer, cansaço, sonolência pós-refeição e acúmulo de gordura abdominal. E é totalmente reversível quando identificada cedo."
+      },
+      {
+        "type": "h2",
+        "text": "Sinais nos exames"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Insulina de jejum elevada, mesmo com glicose normal",
+          "HOMA-IR acima de 2,5",
+          "Relação triglicerídeos/HDL alta",
+          "Esteatose hepática em ultrassom",
+          "Hemoglobina glicada no limite superior"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Sinais clínicos"
+      },
+      {
+        "type": "p",
+        "text": "Sonolência 1 a 2 horas após refeições ricas em carboidrato, acantose nigricans (escurecimento de pele em dobras), aumento de gordura visceral e vontade constante de doce após comer."
+      },
+      {
+        "type": "h2",
+        "text": "O que comer"
+      },
+      {
+        "type": "p",
+        "text": "Proteína em todas as refeições, fibras (frutas com casca, folhas, leguminosas), gorduras boas (azeite, castanhas, peixes gordos), redução de ultraprocessados e ajuste dos carboidratos para versões integrais e em quantidade adequada ao seu contexto. Ordem alimentar (proteína e fibras antes do carboidrato) reduz o pico glicêmico."
+      },
+      {
+        "type": "h2",
+        "text": "O que impacta além do prato"
+      },
+      {
+        "type": "p",
+        "text": "Sono, treino de força, caminhada diária pós-refeição e controle de peso corporal são fatores tão importantes quanto o que se come. Resistência à insulina se trata com estilo de vida completo, não só com dieta."
+      }
+    ]
+  },
+  {
+    "slug": "vitamina-d-magnesio-zinco-tres-deficits",
+    "title": "Vitamina D, magnésio e zinco: os três déficits que mais comprometem performance",
+    "category": "Micronutrientes",
+    "tags": [
+      "vitamina D",
+      "magnésio",
+      "zinco",
+      "performance"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Três micronutrientes que aparecem deficientes em uma fração enorme dos pacientes e cujo impacto em energia, humor, imunidade e composição corporal é subestimado.",
+    "metaTitle": "Vitamina D, magnésio e zinco | Nítio Mendes",
+    "metaDescription": "Impacto clínico de déficits de vitamina D, magnésio e zinco em performance, imunidade, testosterona, humor e composição corporal.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Existem três déficits que aparecem sistematicamente na prática clínica e que quase ninguém trata bem: vitamina D, magnésio e zinco. Corrigir os três muda mais coisas do que quase qualquer 'dieta da moda'."
+      },
+      {
+        "type": "h2",
+        "text": "Vitamina D"
+      },
+      {
+        "type": "p",
+        "text": "Envolvida em imunidade, saúde óssea, testosterona, humor e sensibilidade à insulina. Valores no piso da referência (20-30 ng/mL) já cursam com sintomas. Muitos pacientes se beneficiam ao manter entre 40 e 60 ng/mL, com suplementação individualizada e exposição solar consciente."
+      },
+      {
+        "type": "h2",
+        "text": "Magnésio"
+      },
+      {
+        "type": "p",
+        "text": "Cofator de mais de 300 reações enzimáticas. Déficit se manifesta como câimbras, sono ruim, ansiedade, constipação, palpitações e queda de performance. Presente em folhas verdes escuras, castanhas, sementes e cacau, mas frequentemente insuficiente na dieta moderna."
+      },
+      {
+        "type": "h2",
+        "text": "Zinco"
+      },
+      {
+        "type": "p",
+        "text": "Fundamental para imunidade, cicatrização, testosterona, paladar e olfato. Déficit é comum em quem faz dieta muito restritiva, em vegetarianos sem planejamento e em pós-bariátricos."
+      },
+      {
+        "type": "h2",
+        "text": "Como corrigir"
+      },
+      {
+        "type": "p",
+        "text": "A base é sempre a alimentação. Suplementação, quando necessária, precisa ser guiada por exame e dosada individualmente. Automedicação com doses altas de zinco, por exemplo, gera outros desequilíbrios (cobre, ferro). Corrigir déficit é trabalho clínico, não moda."
+      }
+    ]
+  },
+  {
+    "slug": "eixo-intestino-cerebro-humor-e-foco",
+    "title": "Eixo intestino-cérebro: como o que você come afeta seu humor e foco",
+    "category": "Saúde mental",
+    "tags": [
+      "intestino",
+      "cérebro",
+      "humor",
+      "ansiedade",
+      "foco"
+    ],
+    "readingTime": "7 min de leitura",
+    "excerpt": "O que você come chega ao seu cérebro muito antes do que você imagina. Entenda o eixo intestino-cérebro e como usá-lo a favor do seu humor, foco e energia mental.",
+    "metaTitle": "Eixo intestino-cérebro: humor e foco | Nítio Mendes",
+    "metaDescription": "Como microbiota, inflamação, neurotransmissores e micronutrientes conectam alimentação, humor, ansiedade e capacidade de foco.",
+    "content": [
+      {
+        "type": "p",
+        "text": "A ideia de que o intestino é 'o segundo cérebro' virou clichê, mas a fisiologia por trás é séria. O eixo intestino-cérebro conecta microbiota, sistema imunológico, nervo vago e produção de neurotransmissores. O que você come influencia diretamente como você pensa e sente."
+      },
+      {
+        "type": "h2",
+        "text": "Neurotransmissores e o prato"
+      },
+      {
+        "type": "p",
+        "text": "Grande parte da serotonina do corpo é produzida no intestino. Nutrientes como triptofano, B6, folato, B12, magnésio, zinco e ômega-3 são cofatores para essa produção. Uma alimentação pobre nesses nutrientes reduz a matéria-prima disponível para o cérebro operar."
+      },
+      {
+        "type": "h2",
+        "text": "Inflamação e humor"
+      },
+      {
+        "type": "p",
+        "text": "Uma microbiota inflamada e uma dieta ultraprocessada mantêm o corpo em inflamação sistêmica de baixo grau, associada a piora de depressão, ansiedade e capacidade cognitiva. Reduzir essa inflamação melhora o cenário mental de forma perceptível."
+      },
+      {
+        "type": "h2",
+        "text": "Foco e picos glicêmicos"
+      },
+      {
+        "type": "p",
+        "text": "Refeições que geram picos rápidos e quedas de glicose criam ciclos de energia mental instável. A queda pós-almoço, a dificuldade de concentrar depois de doces e a irritabilidade quando fica muito tempo sem comer costumam ser sinais glicêmicos, não emocionais."
+      },
+      {
+        "type": "h2",
+        "text": "Prática"
+      },
+      {
+        "type": "p",
+        "text": "Priorizar alimentos íntegros, fibras variadas, proteína adequada, ômega-3 (peixes gordos, chia, linhaça), reduzir ultraprocessados e cuidar do sono. Nutrição não substitui psicoterapia nem psiquiatria quando necessárias, mas potencializa dramaticamente ambas."
+      }
+    ]
+  },
+  {
+    "slug": "por-que-voce-nunca-manteve-o-resultado",
+    "title": "Por que você nunca conseguiu manter o resultado e o que fazer diferente",
+    "category": "Comportamento",
+    "tags": [
+      "manutenção",
+      "hábitos",
+      "efeito sanfona"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "Emagrecer é a parte fácil. Manter o resultado é onde a maioria falha. Entenda o que falta e como estruturar um processo que sobrevive à vida real.",
+    "metaTitle": "Por que você não mantém o resultado | Nítio Mendes",
+    "metaDescription": "As três razões pelas quais dietas resultam em efeito sanfona e como construir um processo de manutenção sustentável.",
+    "content": [
+      {
+        "type": "p",
+        "text": "A maioria das pessoas já emagreceu ao menos uma vez. Poucos mantiveram. Não é falta de força de vontade. É falta de estrutura para a fase que ninguém treina: a manutenção."
+      },
+      {
+        "type": "h2",
+        "text": "1. Você fez uma dieta que não é sua vida"
+      },
+      {
+        "type": "p",
+        "text": "Um plano radical, muito distante da sua rotina real, funciona por semanas e colapsa depois. Se você não come assim para sempre, você volta a comer como antes. E o corpo volta a ser como antes."
+      },
+      {
+        "type": "h2",
+        "text": "2. Você perdeu massa magra no processo"
+      },
+      {
+        "type": "p",
+        "text": "Perda de músculo reduz o gasto metabólico e aumenta a fome. Quando a dieta relaxa, o reganho é rápido e a maior parte volta como gordura."
+      },
+      {
+        "type": "h2",
+        "text": "3. Você nunca aprendeu a manter"
+      },
+      {
+        "type": "p",
+        "text": "Manutenção é uma fase técnica, com calorias diferentes, refeições diferentes, monitoramento diferente. Se ninguém te ensinou a operar nessa fase, você volta ao modo antigo por default."
+      },
+      {
+        "type": "h2",
+        "text": "O que fazer diferente"
+      },
+      {
+        "type": "p",
+        "text": "Construir a mudança dentro da sua vida real, preservar músculo, aprender a se auto-monitorar e ter alguém que continue com você depois que a fase 'emocionante' passou. É onde entra o valor do acompanhamento contínuo."
+      }
+    ]
+  },
+  {
+    "slug": "o-que-muda-com-um-nutricionista-que-acompanha",
+    "title": "O que muda quando você tem um nutricionista que realmente acompanha você",
+    "category": "Método",
+    "tags": [
+      "acompanhamento",
+      "método",
+      "resultado"
+    ],
+    "readingTime": "5 min de leitura",
+    "excerpt": "Consultar um nutricionista uma vez e receber uma dieta é uma coisa. Ser acompanhado clinicamente é outra completamente diferente, e o resultado prova.",
+    "metaTitle": "Diferença de um nutricionista que acompanha | Nítio Mendes",
+    "metaDescription": "Por que uma consulta pontual não entrega resultado sustentável e o que muda com acompanhamento clínico próximo, integrado e contínuo.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Existe uma diferença enorme entre 'passar em um nutricionista' e 'ser acompanhado por um nutricionista clínico'. Na prática, é a diferença entre receber uma folha e ter alguém dentro do processo com você."
+      },
+      {
+        "type": "h2",
+        "text": "Consulta pontual"
+      },
+      {
+        "type": "p",
+        "text": "Você conta seu caso em 40 minutos, recebe um plano padronizado, e sai empolgado. Sozinho, nas semanas seguintes, encontra as primeiras dificuldades reais e não tem para quem perguntar. O processo esfria e morre em silêncio."
+      },
+      {
+        "type": "h2",
+        "text": "Acompanhamento clínico"
+      },
+      {
+        "type": "p",
+        "text": "A leitura clínica não termina na consulta. Você tem suporte diário, checkpoints quinzenais para ajuste fino, revisão de exames ao longo do tempo, comunicação direta com a equipe e um plano que muda com sua vida. O processo é vivo."
+      },
+      {
+        "type": "h2",
+        "text": "Por que isso muda o resultado"
+      },
+      {
+        "type": "p",
+        "text": "Adesão não depende de motivação, depende de ambiente. Ter alguém do lado clínico ao longo do processo transforma um plano teórico em uma prática que sobrevive à rotina real. É por isso que acompanhamentos longos costumam entregar resultados que dietas pontuais não conseguem."
+      }
+    ]
+  },
+  {
+    "slug": "historias-reais-primeiros-30-dias-de-acompanhamento",
+    "title": "Histórias reais: o que acontece nos primeiros 30 dias de acompanhamento",
+    "category": "Método",
+    "tags": [
+      "acompanhamento",
+      "método",
+      "primeiros passos"
+    ],
+    "readingTime": "6 min de leitura",
+    "excerpt": "O que muda de verdade no primeiro mês de acompanhamento clínico. Um mapa realista para quem está pensando em começar e quer saber onde vai chegar.",
+    "metaTitle": "Primeiros 30 dias de acompanhamento | Nítio Mendes",
+    "metaDescription": "Como é o primeiro mês de acompanhamento clínico com o Nítio Mendes: avaliação, plano, ajustes, primeiros resultados e o que muda na rotina.",
+    "content": [
+      {
+        "type": "p",
+        "text": "O primeiro mês de acompanhamento é decisivo. Não porque o corpo muda tudo em 30 dias, e sim porque é onde a operação toda ganha ritmo. Um resumo realista do que acontece por aqui nesse período."
+      },
+      {
+        "type": "h2",
+        "text": "Semana 1: leitura clínica"
+      },
+      {
+        "type": "p",
+        "text": "Conversa profunda sobre sua história, tentativas anteriores, rotina real, sono, treino, exames de sangue, marcadores hormonais e composição corporal. É onde o diagnóstico é construído. Sem esse passo, qualquer plano vira suposição."
+      },
+      {
+        "type": "h2",
+        "text": "Semana 2: plano na sua vida real"
+      },
+      {
+        "type": "p",
+        "text": "Entrega do plano alimentar, orientação de suplementação se necessário, alinhamento de treino com a equipe e definição dos indicadores que vamos acompanhar. O plano não é uma folha, é um sistema para caber na sua semana."
+      },
+      {
+        "type": "h2",
+        "text": "Semana 3: os primeiros ajustes"
+      },
+      {
+        "type": "p",
+        "text": "É aqui que a maioria das dietas falha e o acompanhamento brilha. Ajustamos o que está pegando, mudamos o que não está funcionando na prática, e resolvemos as dificuldades reais que aparecem."
+      },
+      {
+        "type": "h2",
+        "text": "Semana 4: primeira revisão de progresso"
+      },
+      {
+        "type": "p",
+        "text": "Checkpoint estruturado: composição corporal, energia, sono, adesão, sintomas, comportamento. A partir daí, o processo entra em fase de constância. Não é sobre 'fase inicial'. É sobre construir a base do resultado que vai durar."
+      }
+    ]
+  }
+]
