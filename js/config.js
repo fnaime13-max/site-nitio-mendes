@@ -43,6 +43,13 @@ window.NM_CONFIG = {
   /* ---------- Contato ---------- */
   WHATSAPP: '5531999670406',
 
+  /* ---------- Vagas (faixa do topo, CTA final e FAQ) ----------
+     null = "Vagas limitadas para <mês>". Só coloque um número se for real
+     (ex.: 6 → "Restam 6 vagas para novembro"). A partir do dia indicado,
+     o site já fala da agenda do mês seguinte. */
+  VAGAS_RESTANTES: null,
+  VIRA_MES_NO_DIA: 20,
+
   /* ---------- Teste A/B do título principal ----------
      'auto' sorteia uma vez por visitante e registra o evento "ab_hero".
      'A' ou 'B' fixa a versão. */

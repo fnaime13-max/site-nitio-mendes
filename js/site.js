@@ -94,6 +94,9 @@
     const el = $(a.getAttribute('href'));
     if (!el) return;
     e.preventDefault();
+    // Botão dentro de uma ficha aberta (ex.: "Garantir minha vaga"): fecha a ficha antes de rolar
+    const dlg = a.closest('dialog[open]');
+    if (dlg) { dlg.classList.remove('is-closing'); dlg.close(); lenis && lenis.start(); }
     if (lenis) lenis.scrollTo(el, { offset: -80, duration: 1.2 });
     else el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
     history.replaceState(null, '', a.getAttribute('href') === '#inicio' ? location.pathname + location.search : a.getAttribute('href'));

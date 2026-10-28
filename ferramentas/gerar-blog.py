@@ -19,7 +19,7 @@ from urllib.parse import quote
 RAIZ = Path(__file__).resolve().parent.parent
 DADOS = RAIZ / 'ferramentas' / 'blog-artigos.json'
 SITE = 'https://nitiomendes.com.br'
-VERSAO = '20261029b'          # mesmo ?v= das outras páginas
+VERSAO = '20261029c'          # mesmo ?v= das outras páginas
 DATA_PADRAO = '2026-10-26'    # data de publicação neste domínio
 WA = '5531999670406'
 CRN = 'CRN-9 36148'
