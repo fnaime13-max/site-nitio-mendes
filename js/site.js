@@ -110,7 +110,8 @@
   $$('.rv').forEach(watch);
 
   /* brilho dourado passa uma vez no botão principal do hero */
-  if (!reduced) setTimeout(() => { const b = $('.hero .btn--gold'); if (b) { b.classList.add('is-shine'); setTimeout(() => b.classList.remove('is-shine'), 1100); } }, 1400);
+  const afterIntro = (fn) => (document.documentElement.classList.contains('intro-on') ? document.addEventListener('nm:intro-end', fn, { once: true }) : fn());
+  if (!reduced) afterIntro(() => setTimeout(() => { const b = $('.hero .btn--gold'); if (b) { b.classList.add('is-shine'); setTimeout(() => b.classList.remove('is-shine'), 1100); } }, 1400));
 
   /* ---------- Prova imediata: antes/depois (só com a flag) ---------- */
   const baCard = (it, i) => {
