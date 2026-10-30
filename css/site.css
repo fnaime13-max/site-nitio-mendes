@@ -566,3 +566,45 @@ html, body { overflow-x: hidden; }
 .actbar__in { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
 .actbar .btn { min-width: 0; padding-inline: .5rem; }
 .about__media { overflow-x: clip; }
+
+/* ==========================================================================
+   Abertura (1x por sessão; some com clique/tecla/rolagem e com movimento reduzido)
+   O monograma é desenhado em traço dourado, ganha o metal, o nome assenta e a
+   tela abre em diagonal (-12°, o mesmo ângulo da faixa dourada do hero).
+   ========================================================================== */
+.intro { display: none; }
+html.intro-on { overflow: hidden; }
+html.intro-on .intro, .intro.is-open { display: block; position: fixed; inset: 0; z-index: 9999; overflow: hidden; cursor: pointer; animation: introKill 0s 6s forwards; }
+@keyframes introKill { to { visibility: hidden; pointer-events: none; } }
+/* o hero espera a abertura terminar para começar a própria animação */
+html.intro-on .hero__in, html.intro-on .hn .ch { animation-play-state: paused; }
+
+.intro__cut { position: absolute; left: 50%; top: 50%; width: 300vmax; height: 300vmax; transform: translate(-50%, -50%) rotate(-12deg); }
+.intro__half { position: absolute; left: 0; right: 0; height: calc(50% + 1px); background: #070707; transition: transform 1s var(--nm-ease-io); }
+.intro__half--a { top: 0; }
+.intro__half--b { bottom: 0; }
+.intro__seam { position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px; background: linear-gradient(90deg, transparent 30%, #FFEB99 45%, #E2B955 50%, #FFEB99 55%, transparent 70%); transform: scaleX(0); opacity: 0; transition: transform .45s var(--nm-ease), opacity .3s; }
+
+.intro__core { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: radial-gradient(34vmax 26vmax at 50% 50%, rgba(201,152,58,.12), transparent 70%); transition: opacity .35s var(--nm-ease), transform .45s var(--nm-ease), filter .35s; }
+.intro__mono { width: clamp(78px, 12vw, 116px); height: auto; overflow: visible; filter: drop-shadow(0 18px 40px rgba(201,152,58,.25)); }
+.intro__line { fill: none; stroke: #E8C062; stroke-width: .9; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: introDraw 1s var(--nm-ease-io) .15s forwards, introFade .5s ease 1.15s forwards; }
+.intro__fill { opacity: 0; animation: introFill .6s ease .85s forwards; }
+.intro__sheen { transform: translateX(0); animation: introSheen 1s var(--nm-ease-io) 1.25s forwards; }
+@keyframes introDraw { to { stroke-dashoffset: 0; } }
+@keyframes introFade { to { opacity: 0; } }
+@keyframes introFill { to { opacity: 1; } }
+@keyframes introSheen { to { transform: translateX(190px); } }
+
+.intro__name { margin-top: 1.6rem; font-family: var(--nm-display); font-weight: 700; text-transform: uppercase; font-size: clamp(1.5rem, 1.1rem + 2vw, 2.4rem); line-height: 1; letter-spacing: .62em; padding-left: .62em; color: #fff; opacity: 0; filter: blur(6px); animation: introName 1.1s var(--nm-ease) 1s forwards; }
+@keyframes introName { to { opacity: 1; filter: blur(0); letter-spacing: .26em; padding-left: .26em; } }
+.intro__rule { display: block; width: clamp(120px, 22vw, 220px); height: 1px; margin-top: 1.1rem; background: var(--nm-gold-grad-ui); transform: scaleX(0); animation: introRule .8s var(--nm-ease) 1.35s forwards; }
+@keyframes introRule { to { transform: scaleX(1); } }
+.intro__role { margin-top: .9rem; font-size: .7rem; font-weight: 600; letter-spacing: .34em; padding-left: .34em; text-transform: uppercase; color: var(--nm-gold-light); opacity: 0; animation: introFill .7s ease 1.6s forwards; }
+
+/* saída: o conteúdo recua, a costura dourada acende e as metades se abrem */
+.intro.is-out .intro__core { opacity: 0; transform: scale(.96); filter: blur(4px); }
+.intro.is-out .intro__seam { transform: scaleX(1); opacity: 1; }
+.intro.is-open { pointer-events: none; animation: none; }
+.intro.is-open .intro__seam { opacity: 0; transition-duration: .45s, .6s; }
+.intro.is-open .intro__half--a { transform: translateY(-100%); }
+.intro.is-open .intro__half--b { transform: translateY(100%); }
